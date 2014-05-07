@@ -1,0 +1,298 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: XMLSign, Configuration: Release MinSize|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\ActiveX\XMLSign\ReleaseMinSize\RSP000013.rsp" with contents
+[
+/O2 /I "include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "_WINDLL" /D "_ATL_STATIC_REGISTRY" /D "_MBCS" /FD /EHsc /MT /Yu"StdAfx.h" /Fp".\ReleaseMinSize/XMLSign.pch" /Fo".\ReleaseMinSize/" /Fd".\ReleaseMinSize/" /FR".\ReleaseMinSize/" /W3 /c
+.\Signature.cpp
+]
+Creating command line "cl.exe @c:\ActiveX\XMLSign\ReleaseMinSize\RSP000013.rsp /nologo"
+Creating temporary file "c:\ActiveX\XMLSign\ReleaseMinSize\RSP000014.rsp" with contents
+[
+/OUT:".\ReleaseMinSize/XMLSign.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"..\securexmlc\lib" /LIBPATH:"lib" /DLL /NODEFAULTLIB:"libc.lib" /NODEFAULTLIB:"libcd.lib" /DEF:".\XMLSign.def" /PDB:".\ReleaseMinSize/XMLSign.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:".\ReleaseMinSize/XMLSign.lib" /MACHINE:I386 crypt32.lib xmlsig.lib ws2_32.lib msxml2.lib libxml2.lib Version.lib shlwapi.lib comctl32.lib odbc32.lib odbccp32.lib wldap32.lib zlib.lib gdiplus.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\ReleaseMinSize\CAMClient.obj
+.\ReleaseMinSize\CertVerify.obj
+.\ReleaseMinSize\CharConversion.obj
+.\ReleaseMinSize\config.obj
+.\ReleaseMinSize\CRLCache.obj
+.\ReleaseMinSize\License.obj
+.\ReleaseMinSize\ShowSelectCert.obj
+.\ReleaseMinSize\Signature.obj
+.\ReleaseMinSize\Sntp.obj
+.\ReleaseMinSize\StdAfx.obj
+.\ReleaseMinSize\XMLSign.obj
+.\ReleaseMinSize\XMLSign.res
+]
+Creating command line "link.exe @c:\ActiveX\XMLSign\ReleaseMinSize\RSP000014.rsp"
+Creating temporary file "c:\ActiveX\XMLSign\ReleaseMinSize\BAT000015.bat" with contents
+[
+@echo off
+regsvr32 /s /c "c:\ActiveX\XMLSign\ReleaseMinSize\XMLSign.dll"
+echo regsvr32 exec. time > ".\ReleaseMinSize\regsvr32.trg"
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing registration"
+exit 1
+:VCEnd
+]
+Creating command line "c:\ActiveX\XMLSign\ReleaseMinSize\BAT000015.bat"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+Signature.cpp
+Signature.cpp(296) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(452) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(474) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(475) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(477) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(490) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(498) : warning C4995: 'lstrcpy': name was marked as #pragma deprecated
+Signature.cpp(498) : warning C4995: 'lstrcpyA': name was marked as #pragma deprecated
+Signature.cpp(670) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(1669) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(1878) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(1882) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(1888) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(2087) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2477) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(2600) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2602) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2604) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2625) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2628) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2629) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2666) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2694) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2730) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2733) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2734) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2772) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2800) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(3140) : warning C4101: 'guidStr' : unreferenced local variable
+Signature.cpp(3136) : warning C4101: 'sigGuid' : unreferenced local variable
+Signature.cpp(3662) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(4909) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+Signature.cpp(4910) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+Signature.cpp(4913) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+Signature.cpp(4960) : warning C4995: 'wcscpy': name was marked as #pragma deprecated
+Signature.cpp(5149) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(5185) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(5192) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6269) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6565) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6568) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6571) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6577) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6601) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6603) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6605) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6613) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6693) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6701) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6726) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6727) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(7233) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(7234) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(7260) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(7266) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(7658) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(7661) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8089) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(8146) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8147) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8149) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8150) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8187) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8295) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8458) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8502) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8532) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8533) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8534) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8535) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8658) : warning C4101: 'guidStr' : unreferenced local variable
+Signature.cpp(8654) : warning C4101: 'sigGuid' : unreferenced local variable
+Signature.cpp(9322) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(9751) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(9846) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(11349) : warning C4018: '<' : signed/unsigned mismatch
+Signature.cpp(11593) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(11529) : warning C4101: 'hFile' : unreferenced local variable
+Signature.cpp(11649) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(11655) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(11617) : warning C4101: 'EncryptedString' : unreferenced local variable
+Signature.cpp(11619) : warning C4101: 'bstrEncryptedString' : unreferenced local variable
+Signature.cpp(12266) : warning C4018: '<' : signed/unsigned mismatch
+Signature.cpp(12301) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12301) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12301) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12303) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12321) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12321) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12321) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12323) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12347) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12347) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12347) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12349) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12366) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12366) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12366) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12368) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12381) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12381) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12381) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12383) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12403) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12403) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12403) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12405) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12430) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12430) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12430) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12432) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12450) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12450) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12450) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12452) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12469) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12469) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12469) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12471) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        Signature.cpp(12064) : definition of 'i' used
+        Signature.cpp(12266) : definition of 'i' ignored
+Signature.cpp(12047) : warning C4101: 'EncryptParams' : unreferenced local variable
+Signature.cpp(12061) : warning C4101: 'EncryptParamsSize' : unreferenced local variable
+Signature.cpp(12873) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13297) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13629) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13848) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13854) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13942) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(13943) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(13944) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(14360) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(14396) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(14403) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(14682) : warning C4101: 'guidStr' : unreferenced local variable
+Signature.cpp(14678) : warning C4101: 'sigGuid' : unreferenced local variable
+Signature.cpp(15009) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(15629) : warning C4101: 'guidStr' : unreferenced local variable
+Signature.cpp(15625) : warning C4101: 'sigGuid' : unreferenced local variable
+Signature.cpp(16341) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(16544) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(16671) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(17187) : warning C4101: 'guidStr' : unreferenced local variable
+Signature.cpp(17183) : warning C4101: 'sigGuid' : unreferenced local variable
+Signature.cpp(17582) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(17670) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(17808) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(17974) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(17979) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(18412) : warning C4101: 'guidStr' : unreferenced local variable
+Signature.cpp(18408) : warning C4101: 'sigGuid' : unreferenced local variable
+Signature.cpp(19218) : warning C4101: 'pUnknown' : unreferenced local variable
+Signature.cpp(19410) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(19452) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(19631) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(19679) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19792) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19830) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19835) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19840) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19845) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19850) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19855) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19860) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Linking...
+   Creating library .\ReleaseMinSize/XMLSign.lib and object .\ReleaseMinSize/XMLSign.exp
+License.obj : warning LNK4217: locally defined symbol _xmlFree imported in function "public: int __thiscall CLicense::verifyFormSchema(unsigned char *,struct _xmlDoc *,struct _GLOBAL_SIG *)" (?verifyFormSchema@CLicense@@QAEHPAEPAU_xmlDoc@@PAU_GLOBAL_SIG@@@Z)
+Performing registration
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\ActiveX\XMLSign\ReleaseMinSize\BuildLog.htm"
+XMLSign - 0 error(s), 163 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

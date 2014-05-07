@@ -1,0 +1,25 @@
+SCC = This is a Source Code Control file
+
+[XMLSign.dsp]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/XMLSign", JBRAAAAA
+
+[XMLSign.vcproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\cdrive\XMLSignature"
+SCC_Project_Name = "$/XMLSign", JBRAAAAA
+
+[XMLSign.dsw]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/XMLSign", JBRAAAAA
+
+[XMLSign.sln]
+SCC_Aux_Path = "\\Infomosaic-eng2\cdrive\XMLSignature"
+SCC_Project_Name = "$/XMLSign", JBRAAAAA
+
+[FormLicense.vcproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/XMLSign/FormLicense", GIVAAAAA
+
+[FormLicensePS.vcproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/XMLSign/FormLicense", GIVAAAAA

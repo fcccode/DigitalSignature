@@ -1,0 +1,86 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: XMLSign, Configuration: NssDebug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\ActiveX\XMLSign\NssDebug\RSP00000B.rsp" with contents
+[
+/OUT:".\NssDebug/NssXMLSign.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"libnss" /LIBPATH:"lib" /LIBPATH:"..\securexmlc\lib" /DLL /NODEFAULTLIB:"libc.lib" /NODEFAULTLIB:"libcd.lib" /NODEFAULTLIB:"libcmt.lib" /DEF:".\XMLSign.def" /DEBUG /PDB:".\NssDebug/XMLSign.pdb" /MAP:".\NssDebug/XMLSign.map" /SUBSYSTEM:WINDOWS /IMPLIB:".\NssDebug/XMLSign.lib" /MACHINE:I386 nsldap32v50.lib smime3.lib ssl3.lib nss3.lib libplc4.lib libplds4.lib libnspr4.lib Pem2PfxUtil.lib libeay32.lib xmlsigd_nss.lib crypt32.lib ws2_32.lib msxml2.lib libxml2d.lib version.lib shlwapi.lib comctl32.lib odbc32.lib odbccp32.lib gdiplus.lib wldap32.lib zlib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\nssdebug\CAMClient.obj
+.\nssdebug\CertVerify.obj
+.\nssdebug\CharConversion.obj
+.\nssdebug\config.obj
+.\nssdebug\CRLCache.obj
+.\nssdebug\License.obj
+.\nssdebug\ShowSelectCert.obj
+.\nssdebug\Signature.obj
+.\nssdebug\Sntp.obj
+.\nssdebug\StdAfx.obj
+.\nssdebug\XMLSign.obj
+.\nssdebug\XMLSign.res
+]
+Creating command line "link.exe @c:\ActiveX\XMLSign\NssDebug\RSP00000B.rsp"
+Creating temporary file "c:\ActiveX\XMLSign\NssDebug\BAT00000C.bat" with contents
+[
+@echo off
+regsvr32 /s /c "c:\ActiveX\XMLSign\nssdebug\NssXMLSign.dll"
+echo regsvr32 exec. time > "NssDebug\regsvr32.trg"
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing Registration"
+exit 1
+:VCEnd
+]
+Creating command line "c:\ActiveX\XMLSign\NssDebug\BAT00000C.bat"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Linking...
+   Creating library .\NssDebug/XMLSign.lib and object .\NssDebug/XMLSign.exp
+XMLSign.exp : warning LNK4070: /OUT:XMLSign.DLL directive in .EXP differs from output filename '.\NssDebug/NssXMLSign.dll'; ignoring directive
+License.obj : warning LNK4049: locally defined symbol _xmlFree imported
+libxml2d.lib(c14n.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(catalog.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(debugXML.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(encoding.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(entities.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(error.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(globals.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(hash.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(HTMLparser.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(HTMLtree.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(list.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(nanoftp.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(nanohttp.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(parser.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(parserInternals.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(SAX.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(threads.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(tree.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(uri.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(valid.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(xmlIO.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(xmlmemory.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(xmlregexp.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(xmlschemas.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(xmlschemastypes.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(xmlunicode.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(xpath.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libxml2d.lib(xpointer.obj) : warning LNK4204: 'c:\ActiveX\XMLSign\NssDebug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+Performing Registration
+Project : error PRJ0019: A tool returned an error code from "Performing Registration"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\ActiveX\XMLSign\NssDebug\BuildLog.htm"
+XMLSign - 1 error(s), 30 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

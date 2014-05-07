@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[CSharpWinApp.csproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/SecureXMLRelease/ActiveX/Programming/SecureXMLFromDotNet/CSharpWinApp", SUTAAAAA
+
+[JITC.sln]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/XMLSign/JITC/JITCTestSuite", UXTAAAAA
+
+[JITCTestSuite.csproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/XMLSign/JITC/JITCTestSuite", UXTAAAAA

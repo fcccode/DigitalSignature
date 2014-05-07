@@ -1,0 +1,48 @@
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\objsafe.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\wtypes.idl";
+
+[
+	object,
+	uuid(0674A7D1-0A9C-4FE4-B914-96BCC6EDC4CF),
+	dual,
+	helpstring("ICaptureImage Interface"),
+	pointer_default(unique)
+] 
+#line 24 "c:\\activex\\xmlsign\\sigwinimage\\captureimage.h"
+interface ICaptureImage : IDispatch {
+#line 26 "c:\\activex\\xmlsign\\sigwinimage\\captureimage.h"
+	[id(1),helpstring("method CaptureCurrentWindowImage")] HRESULT  CaptureCurrentWindowImage([out,retval] BSTR *WindowImageFileName );
+	[propput,id(2),helpstring("property PhysicalSignatureFile")] HRESULT  PhysicalSignatureFile([in] BSTR newVal);
+	[propput,id(3),helpstring("property UpperX")] HRESULT  UpperX([in] LONG newVal);
+	[propput,id(4),helpstring("property UpperY")] HRESULT  UpperY([in] LONG newVal);
+	[propput,id(5),helpstring("property Width")] HRESULT  Width([in] LONG newVal);
+	[propput,id(6),helpstring("property Height")] HRESULT  Height([in] LONG newVal);
+	[id(7),helpstring("method ShowFileSignature")] HRESULT  ShowFileSignature([in] BSTR guidStr, [out,retval] BSTR *outPngFilePath );
+	[id(8),helpstring("method CaptureMouseSignature")] HRESULT  CaptureMouseSignature([in] BSTR guidStr, [out,retval] BSTR *outPngFilePath );
+};
+
+
+[ version(1.0), uuid(BF3869AD-A4C0-4D47-8044-45BF95F550B7), helpstring("SigWinImage 1.0 Type Library") ]
+library SigWinImage
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(F18805CC-5075-4D36-BB01-76A4CAF6EE31),
+		helpstring("CaptureImage Class")
+	] 
+#line 49 "c:\\activex\\xmlsign\\sigwinimage\\captureimage.h"
+	coclass CCaptureImage {
+		interface ICaptureImage;
+	};
+
+}
+

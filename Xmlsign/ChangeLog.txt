@@ -1,0 +1,214 @@
+// This is the changelog file for SecureXML ActiveX Component
+-------------------------------------------------------------
+02/21/2003
+
+Version 2.1.129.31
+New Features
+•	Encryption (for multiple recipients) and decryption of strings and files are now supported. In order to use the encryption features, a new license file is required.
+•	Additional certificate checking parameters such as Certificate Policy, Certificate Chain and Certificate Path Length have been added.
+•	SecureXML is now DoD JITC compliant. Applications can now easily become DoD JITC compliant by setting DoDCompliance property to 1. Please note that the end application will still need to be tested by the JITC but its certification is almost certain.
+•	Now CRL files and/or their URLs can be provided externally if the certificates don’t contain this information.
+•	Certficate trust can now be limited to a set of selected root certificates.
+•	SecureXML now outputs the result of applying user contrained policies as well as authority contrained policies.
+•	You can now provide a set of detached object URIs when creating signature. SecureXML will add additional references for these detached objects and include them as part of the signature. 
+
+The following object methods have been added:
+•	EncryptStr
+•	DecryptStr
+•	EncryptFile
+•	DecryptFile
+•	VerifyActiveCertificate
+•	ReadAllBase64
+
+Following object properties have been added:
+•	RecipientCertificates
+•	RecipientCertificateFiles
+•	RecipientCertificateStore
+•	DoDCompliance
+•	TrustedRoots
+•	CRLLocation
+•	CertificatePolicy
+•	AuthorityConstrainedPolicy
+•	UserConstrainedPolicy
+•	CertificatePolicyChecking	
+•	CertificateChainValidation
+•	CertificatePathLengthChecking
+•	CertificatePolicyExplicit
+•	CertificateTrustExplicit
+•	DetachedObjects
+•	AttachedObjects
+•	DecryptionPFXCertFile
+•	DecryptUsingPFXFileCert
+•	DecryptionPFXPassword
+•	XpathNamespace
+
+Bug Fixes 
+None
+Other Changes
+•	URL reference is now allowed for all signature modes (enveloped, enveloping and detached) of the Sign method. 
+•	The whole set of X509 certificates, which make up the certificate chain are now included for each signed document unless the ExcludeSignerCertificate property is set to 1.
+•	SignDataStr now base64 encodes the input string before creating the signature. A corresponding base64 transform has been added hence the signed object is still the original string. This is done to allow for non-XML characters in the input string.
+
+
+
+12/25/2002 Version 2.0.128.30
+
+New Features 
+
+1. Java (Sun JVM 1.4.1) is now fully supported. 
+
+2. Easy way to co-sign is now supported. 
+
+3. Signing multiple files at once is now supported. 
+
+4. A new method to sign any arbitrary string has been added. The method prepares appropriate XML template and 
+creates the XML signature. The input string is preserved in the clear so the data signed can be seen by 
+human eye. Also, co-signing the signed XML thus produced is supported. 
+
+5. Setting SignatureID before invoking any of the signature creation methods is no longer required. SecureXML 
+internally generated a GUID and assigns it as the SignatureID if it is not set already. 
+
+6. Support for configuration file has been added. It allows users to initialize the object properties using 
+data contained in an XML file. Additional method has been provided to set object properties using any arbitrary 
+config file at run time. 
+
+7. Now the users have an option not to include a copy of the signer's certificate for each signature being created. The default behavior is to include the certificate.
+
+8. Certificate selection window is now also supported on Windows 98 platform as well. 
+
+The following object methods have been added:
+
+SignDataStr 
+CoSignXMLStr 
+SignFiles 
+CoSignFile 
+Following object properties have been added:
+
+ExcludeSignerCertificate 
+ConfigFileName 
+OverwriteFile 
+-------------------------------------
+
+11/13/2002 Version 2.0.128.29
+
+1. Fixed HMAC related bugs in C-Library. 
+2. ActiveX now supports HMAC signature creation and verification.
+
+
+11/12/2002 Manoj Srivastava
+
+1. Added method ChangeOrAddProperty, which looks for a property and if found changes 
+its value to the new value, otherwise it adds it as a new property.
+
+2. Fixed bug in SignXMLStr and other template signing function where they looked the signature
+template as a child of the root element only. Now it can find the signature element with
+matching Signature Id any where in the template file.
+
+3. Fixed bug in all signature creation function where multiple properties with the same name were added
+when the sign function was called more than once.
+
+4. Mukti added SignXMLXpathStr method which adds an XPATH transform to an XML without a matching signature
+template.
+
+09/24/2002 Version 2.0.127.28
+
+Linked with c-lib version 1.2.7 (which is identical to C-lib version 1.2.5)
+
+Version 2.0.126.28
+
+Fixed problem with xml document encoding
+ 
+1. It no longer converts from BSTR to single character.
+2. It prepends FFFE to the input BSTR before passing it to the C-library
+3. It calls xmlDocDumpMemory instead of xmlDocDumpFormatMemory to prepare the template for signing.
+
+Version 2.0.125.27
+
+Bug Fixes: IE crashed when switching to a new page after a call to GetError() function.
+
+Other change: The license check now allows signature verification on all client machines with or 
+without a valid license file. On Windows 2000 Server and .NET Server verification still requires a
+valid license.
+
+Version 2.0.125.26
+
+This version adds the support for physical signature capture and inclusion with XML Signature.
+It uses a helper ActiveX SecurePad.dll for supporting WinTab campatible signature pads.
+
+Support for Window image capture has also been added.
+
+Version 1.9.125.25
+
+Bug Fixes 
+1. Support for Windows 98SE added again. The release 1.9.124.24 used a function from platform SDK which
+is not supported on Windows 98SE. This function has been replaced by a backwards compatible function.
+
+New Features
+
+Support for certificate validity against certificate revocation list added.
+Following Object Properties have been added:
+
+CrlChecking
+SigCertStatus
+
+Following Object Methods have been added:
+
+VerifyX509CertCRL
+VerifyPFXCertCRL
+
+
+Version 1.9.124.24
+
+Bug Fixes
+
+1. Enveloping and Detached signature creation crashed the component when using Sign() method. It was due 
+   to the fact that C-Runtime library expected a certificate to be preassigned. After the PFX file
+   support addition, the clib no longer pops the certificate selection window in axSign()
+
+Other Changes:
+
+License check now checks for Host Name and OS type as well.
+
+
+Version 1.9.124.23
+
+C-Runtime library update only
+
+
+Version 1.9.123.23
+
+Bug Fixes
+
+1. PFX file import failed for a certificate exported using PFXExportCertificate 
+   method with null password.
+2. IE crashed when the user clicked the cancel button on the certificate selection 
+   window during signature creation process.
+
+
+Version 1.9.122.22
+
+Fixed base64decode, replaced with a different version which returns the actual number of bytes 
+written in out buffer correctly. No need to trim nulls in the end.
+
+Added PFX File Support. Modified License class to validate HostName if HostName != TrialHost
+Added VerifyXMLStr function.
+
+
+Version 1.9.119.16
+
+Changes from previous version (manoj@infomosaic.com)
+   Added SignXMLEnveloped function. This function is used to produce an enveloped signature
+   in a XML based form signing application. It creates a signature element and signes the
+   entire input XML (minus the signature element itself). Tested the debug version with a
+   web application.
+
+
+Version: 1.9.119.15
+
+ Changes from previous version (anil@infomosaic.com):
+    Added the License Class to the ActiveX component. An object of this class type is
+    instantiated in the Signature Class and is used to verify the license file.
+
+
+Version: 1.8.119.15
+

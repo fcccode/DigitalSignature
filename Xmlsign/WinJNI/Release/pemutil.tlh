@@ -1,0 +1,68 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (f23514c1).
+//
+// c:\activex\xmlsign\winjni\release\pemutil.tlh
+//
+// C++ source equivalent of Win32 type library PemUtil\Release\PemUtil.dll
+// compiler-generated file created 12/13/04 at 16:21:37 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace PemUtil {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("9c90c924-8646-4ed4-8eef-5a6b94b827f9"))
+/* LIBID */ __PemUtil;
+struct /* coclass */ CPemObject;
+struct __declspec(uuid("12f2bf07-dc45-4684-a4bc-8a5f44984777"))
+/* dual interface */ IPemObject;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IPemObject, __uuidof(IPemObject));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("d8f3211f-302f-45db-8187-cdf6b7677d90"))
+CPemObject;
+    // [ default ] interface IPemObject
+
+struct __declspec(uuid("12f2bf07-dc45-4684-a4bc-8a5f44984777"))
+IPemObject : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t CovertToPFX (
+        _bstr_t pemFileName,
+        _bstr_t pemPassword );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CovertToPFX (
+        /*[in]*/ BSTR pemFileName,
+        /*[in]*/ BSTR pemPassword,
+        /*[out,retval]*/ BSTR * pfxFilePath ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\activex\xmlsign\winjni\release\pemutil.tli"
+
+} // namespace PemUtil
+
+#pragma pack(pop)

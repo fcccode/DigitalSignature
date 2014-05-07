@@ -1,0 +1,502 @@
+<HTML>
+<HEAD>
+<TITLE>Sign Document</TITLE>
+<STYLE>
+  .xml {font-size:10pt;font-family:Arial;cursor:hand}
+  .tag {color:purple; font-weight:bold;cursor:hand}
+  .attribute {color:blue; font-weight:bold;cursor:hand}
+  .attrvalue {color:magenta; font-weight:bold;cursor:hand }
+  .comment {color:green; font-weight:bold;cursor:hand }
+  .pi {color:brown; font-weight:bold;cursor:hand }
+  h3  { background-color:#80f0c0 } 
+  A:link { color:#003399; text-decoration:none; }
+  A:visited { color:#6699CC; text-decoration:none; }
+  A:hover { text-decoration:underline; }
+</STYLE>
+
+</HEAD>
+
+<OBJECT ID="Test3" CLASSID="CLSID:D300C133-A6F6-4FB4-A734-4865FBF5A3B1" 
+	CODEBASE="XMLDigitalSignature.cab#Version=1,0,0,1">
+</OBJECT>
+<SCRIPT LANGUAGE="VBScript">
+
+DIM storedString
+DIM storedValue
+Const S_String="SHA1"
+DIM count
+DIM xmlfile
+DIM xmlfs
+DIM w
+DIM xmlSignature
+DIM certfile
+DIM certdata
+DIM var1
+DIM reason
+count = 0
+var1=""
+xmlSignature = "Testing"
+
+Dim SerialNo
+Dim IssuedTo
+Dim IssuedBy
+Dim ExpiryDate
+
+Function loadForm() 
+Dim Element
+Dim CertIndex
+Dim radioHTML
+
+radioHTML = ""
+count = Test3.CertificateCount
+For CertIndex = 0 to (count-1)
+     Set Element=document.createElement("OPTION")
+     SerialNo = Test3.GetCertificateInfo(CertIndex, 1)
+     IssuedBy = Test3.GetCertificateInfo(CertIndex, 2)
+     IssuedTo = Test3.GetCertificateInfo(CertIndex, 3)
+     ExpiryDate = Test3.GetCertificateInfo(CertIndex, 4)
+     Element.text=" Issued to " & IssuedTo & "Issued By : " & IssuedBy & "Expiry: " & ExpiryDate
+     Element.value=SerialNo
+     document.UserInfo.Certificates.Add Element
+Next
+End Function
+
+'This function will generate a random password
+'The length of the password is specified by the first
+'parameter (PasswordLength) and it must be greater 3 
+'or more characters
+'The password generated will contain at least one lower case
+'at least one upper case and at least one number.
+'If the creation is sucessful the password will be
+'returned in the second paramenter (ReturnedPassword) and
+'the function will return true.
+'If the password creation fails (PasswordLength < 3) the function will return
+'false
+
+Function RandomPassword(PasswordLength, ReturnedPassword)
+
+    Dim lNumberOfLowerCases
+    Dim lNumberOfUpperCases
+    Dim lNumberOfNumbers
+    Dim l, j
+    
+    ReturnedPassword = ""
+    If PasswordLength < 3 Then
+        RandomPassword = False
+        Exit Function
+    End If
+
+    'Get the number of digits for each type of characters
+    Randomize
+    lNumberOfLowerCases = CInt((PasswordLength - 3) * Rnd) + 1
+    lNumberOfUpperCases = CInt((PasswordLength - lNumberOfLowerCases - 2) * Rnd) + 1
+    lNumberOfNumbers = PasswordLength - lNumberOfLowerCases - lNumberOfUpperCases
+
+    
+    
+    ReturnedPassword = ""
+    For l = 1 To PasswordLength
+        Randomize
+        j = CInt(2 * Rnd + 1)
+        Select Case j
+        Case 1 'Lower Case
+            If lNumberOfLowerCases > 0 Then
+                ReturnedPassword = ReturnedPassword & Chr(CInt(25 * Rnd) + 97)
+                lNumberOfLowerCases = lNumberOfLowerCases - 1
+            Else
+                l = l - 1 'Re-do the loop
+            End If
+        Case 2 'Upper Case
+            If lNumberOfUpperCases > 0 Then
+                ReturnedPassword = ReturnedPassword & Chr(CInt(25 * Rnd) + 65)
+                lNumberOfUpperCases = lNumberOfUpperCases - 1
+            Else
+                l = l - 1 'Re-do the loop
+            End If
+        Case 3 'Number
+            If lNumberOfNumbers > 0 Then
+                ReturnedPassword = ReturnedPassword & CInt(9 * Rnd)
+                lNumberOfNumbers = lNumberOfNumbers - 1
+            Else
+                l = l - 1 'Re-do the loop
+            End If
+        End Select
+        For j = 1 To 100
+            'Give the seed some time
+        Next
+    Next
+    
+        
+    RandomPassword = True
+End Function 
+
+
+
+Function TestVar ()
+	Dim retval
+	retval = 1
+
+	if (UserInfo.EnvelopingFlag.Checked = True) Then
+	   Test3.EnvelopingFlag = 1
+	else
+	   Test3.EnvelopingFlag = 0
+	end if
+	if (UserInfo.ZeroSpaceFlag.Checked = True) Then
+	   Test3.ZeroSpaceFlag = 1
+	else
+	   Test3.ZeroSpaceFlag = 0
+	end if
+	storedValue = Test3.EnvelopingFlag
+	var1 = "<br>Enveloping Flag = " & storedValue
+	oData.innerHTML = var1
+
+	storedValue = RandomPassword(20,storedString)
+
+	Test3.SignatureID = "Infomosaic" & Date & storedString & Time
+	storedString =Test3.Sign(UserInfo.file_name.value)
+	var1 = var1 & "<br>XML Signature Temp File = " & storedString
+	oData.innerHTML = var1
+
+	retval = Test3.Verify(storedString)
+	reason=""
+	if (retval = 0) then
+	  reason = Test3.GetError
+	end if
+	var1 = var1 & "<br> Return Value From Verify = " & retval & "Reason = " & reason
+	oData.innerHTML = var1
+
+	storedString = Test3.SignatureID
+	var1 = var1 & "<br>Signature ID = " & storedString & "<br>Before call to Sign"
+	oData.innerHTML = var1
+
+	xmlSignature = Test3.GetXMLSignature()
+	retval = Test3.SaveXMLSignature(UserInfo.out_file_name.value)
+
+	var1 = var1 & "<br><p>" & "Signature = <br>" &  xmlSignature  & "</p>" & "<br>After accessing signature"
+	oData.innerHTML = var1
+	Test3.Empty()
+End Function
+
+Dim xmldoc, xindex
+Dim NODE_ELEMENT, NODE_ATTRIBUTE, NODE_TEXT, NODE_CDATA, NODE_ENTITYREF, NODE_ENTITY
+Dim NODE_PI , NODE_COMMENT, NODE_DOCUMENT, NODE_DOCTYPE, NODE_DOCFRAG, NODE_NOTATION
+
+NODE_ELEMENT = 1
+NODE_ATTRIBUTE = 2
+NODE_TEXT = 3
+NODE_CDATA = 4
+NODE_ENTITYREF = 5
+NODE_ENTITY = 6
+NODE_PI = 7
+NODE_COMMENT = 8
+NODE_DOCUMENT = 9
+NODE_DOCTYPE = 10
+NODE_DOCFRAG = 11
+NODE_NOTATION = 12
+
+sub validate()
+
+	'stop
+    Set xmldoc = createObject("Msxml2.DOMDocument")
+    xmldoc.onreadystatechange = getRef("HandleReadyState")
+    xmldoc.ondataavailable = getRef("HandleData") 
+     
+    document.all("XML").innerHTML = ""
+    errordiv.innerHTML = ""
+    ERRORSRC.innerText = ""
+    if (schema.checked) then
+		xmldoc.validateOnParse = true
+    else
+        xmldoc.validateOnParse = false
+    end if
+    
+    Dim url, xml 
+    url = xmlurl.value
+    
+    if (url <> "") then
+        xmldoc.load(url)
+    else
+        alert("Enter url OR enter local file name")
+        exit sub 
+    end if
+end sub
+
+sub HandleData
+	Dim count, root
+    count = xmldoc.childNodes.length
+    Set root = xmldoc.documentElement
+    if (not isnull(root)) then
+        count = count + root.childNodes.length
+    end if
+    errordiv.innerHTML = "Loaded " & count & " nodes"
+end sub
+
+sub HandleReadyState
+	Dim msg, retVal, reason, var1
+    if (xmldoc.readyState = 4) then
+        if (xmldoc.childNodes.length = 0) then
+            HandleError(xmldoc)
+        else
+            
+            msg = "Your XML is well formed"
+            if (schema.checked) then
+                msg = msg & " and is validated"
+		retVal = Test3.Verify(xmlurl)
+		reason=""
+		if (retval = 0) then
+	  		reason = Test3.GetError
+		end if
+		var1 = "<br> Return Value From Verify = " & retval & "Reason = " & reason
+		oData.innerHTML = var1
+            end if
+            errordiv.innerHTML = msg
+            xindex = 0
+            DisplayTree xmldoc, document.all("XML")
+        end if
+    end if
+end sub
+
+function FormatErrorCode(rc)
+    if (rc < 0) then
+		rc = (65536*65536) + rc
+	end if
+		FormatErrorCode = "0x" + Ucase(cStr(rc))
+		' rc.toString(16).toUpperCase()
+end function
+
+sub HandleError( xmldoc )
+	Dim err, msg 
+    Set err = xmldoc.parseError
+    msg = "<span class=tag>" & err.reason & "<br>File: " & err.url
+    msg = msg & "<br>Line: " & err.line
+    msg = msg & ", Position: " & err.linepos
+    msg = msg & ", ErrorCode: " & FormatErrorCode(err.errorCode)
+    msg = msg & "</span>"
+    document.all("errordiv").innerHTML = msg
+    
+    Dim code, i
+    code = ""
+    
+    if (err.linepos > 0 AND err.srcText <> "") then
+        'code = err.srcText.replace(/\t/g," ") + "\n";
+        code = Replace(err.srcText , "\t" , " ") & "\n"
+        for i = 1 to err.linepos - 1 
+            code = code & "-"
+        next
+        code = code & "^"
+    end if
+    document.all("ERRORSRC").innerText = code
+end sub
+
+sub ToggleVisibility(name1)
+    Dim e1
+    Set e1 = document.all(name1)
+    if (e1.style.display = "none") then
+        e1.style.display = ""
+        e1.value = ""
+    else
+        e1.style.display = "none"
+    end if
+end sub
+
+sub DisplayTree(node, html)
+    
+    Dim id, dd, attributes, exists, child, children
+    id = "x" & xindex
+    xindex = xindex + 1
+    html.innerHTML = "<dl class=xml><dt><dd id=" & id & "></dl>"
+    Set dd = html.all(id)
+    Set attributes = node.attributes
+
+    ' Possible test for nonexistence... I stopped here before new years.. 
+    if (not isnull(attributes)) and (not attributes is nothing) then
+        Set child = attributes.nextNode
+        while not isnull(child) and not child is nothing
+			Call AddRow(dd, child)
+			Set child = attributes.nextNode
+        wend
+    end if
+    Set children = node.childNodes
+    Set child = children.nextNode
+    while not isnull(child) and not child is nothing
+		Call AddRow(dd, child)
+		Set child = children.nextNode
+	wend
+end sub
+
+function formatNode(typ)
+	Dim types(13)
+	types(0) = "none"
+	types(1) = "ELEMENT"
+	types(2) = "ATTRIBUTE"
+	types(3) = "TEXT"
+	types(4) = "CDATA"
+	types(5) = "ENTITYREF"
+	types(6) = "ENTITY"
+	types(7) = "PI"
+	types(8) = "COMMENT"
+	types(9) = "DOCUMENT" 
+	types(10) = "SCHEMA"
+	types(11) = "DOCFRAG"
+	types(12) = "NOTATION" 
+    formatNode = types(typ)
+end function
+
+function getNodeName(node)
+    Dim typ, name
+    typ = node.nodeType
+    name = ""
+    if (typ = NODE_ELEMENT   OR _ 
+        typ = NODE_ATTRIBUTE OR _
+        typ = NODE_ENTITYREF OR _
+        typ = NODE_PI        OR _
+        typ = NODE_DOCTYPE   OR _
+        typ = NODE_ENTITY    OR _
+        typ = NODE_NOTATION) then
+        name = node.nodeName
+    end if
+    getNodeName = name
+end function
+
+sub AddRow(dd, child)
+	Dim id, typ, row
+    id = "x" & xindex
+    xindex = xindex + 1
+    typ = child.nodeType
+    row = ""
+    
+    if (child.hasChildNodes()) then 
+        row = "<li style='list-style-type:disc'>"
+    else 
+        row = "<li style='list-style-type:circle'>"
+	end if
+	
+	Dim hideValue , style
+    hideValue = false
+    style = "xml"
+    if (typ = NODE_ELEMENT) then
+        style = "tag"
+    elseif (typ = NODE_ATTRIBUTE) then
+        style = "attribute"
+    elseif (typ = NODE_COMMENT) then
+        style = "comment"
+    elseif (typ = NODE_PI) then
+        if (not isnull(child.attributes)) then
+            hideValue = true
+        end if
+        style = "pi"
+    end if
+
+    row = row & "<span class=" & style & " onclick=ToggleRow('" & id & "') "
+    row = row & "onmouseover=MouseMove('over') onmouseout=MouseMove('exit')>"
+    row = row & formatNode(typ) & ": "
+    
+    row = row & getNodeName(child)
+
+    if  not hideValue AND not isnull(child.nodeValue) then
+        row = row & " " & child.nodeValue
+    end if
+    
+    row = row &  "</span><div xstate=0 id=" & id & "></div>"
+    dd.insertAdjacentHTML "BeforeEnd", row 
+
+    ' store XML nodes on html elements as expando properties.
+    Dim item, div
+    Set item = dd.children(dd.children.length-1) ' the list item.
+    Set div = item.all(id)
+    Call div.setAttribute("xml", child)
+end sub
+
+sub ToggleRow(divid)
+	Dim div
+    Set div = XML.all(divid)
+    if (div.xstate = 0) then
+        div.xstate = 1
+        DisplayTree div.xml, div
+    else if (div.xstate = 1) then
+			div.xstate = 2
+			div.style.display = "none"
+		 else
+			div.xstate = 1
+			div.style.display = ""
+		 end if
+    end if
+end sub
+
+sub MouseMove(which)
+	Dim row, color
+	if which = "over" then 
+	color = yellow
+	else
+	color = ""
+	end if
+	
+    Set row = window.event.srcElement
+    row.style.backgroundColor = color
+end sub
+
+
+</SCRIPT>
+
+
+<body TOPMARGIN="0" onload="loadForm()">
+<table width=100% cellspacing=0 cellpadding =0 bgcolor=CCCCFF>
+<tr><td bgcolor=navy width=100% colspan=3><font size=3  color=white><b>XML Signature: Sign document</b>
+    </td>
+</tr>
+<tr><td><br>Select the file to be digitally signed<p>
+    </td>
+	<form name="UserInfo" action="verify.asp" method="post">
+	<td><input name=file_name type=file size=30 value="c:\projects\XMLSignature.doc">
+	</td>
+</tr>
+<tr><td>or enter URI here<p></td> 
+	<td><input name=URI_name type=text size=30></td>
+</tr>
+<tr><td>Save resulting XML Document as<p></td> 
+	<td><input name=out_file_name type=file size=30></td>
+</tr>
+<tr><td colspan=2>
+	<INPUT TYPE="CHECKBOX" CHECKED NAME="EnvelopingFlag" > Enveloping Signature</td>
+</tr>
+<tr><td colspan=2><INPUT TYPE="CHECKBOX" NAME="ZeroSpaceFlag" > ZeroSpace transformation<p></td>
+</tr>
+<tr><td>Description<p></td> 
+	<td><input name=URI_desc type=text size=30><p></td>
+</tr>
+<tr><td>TimeStamp service URL<p></td> 
+	<td><input name=tstmp_srv type=text size=30 value="http://nist.time.gov:8013"><p></td>
+</tr>
+<tr><td colspan=2> <hr><p></td></tr>
+<tr><td colspan=2>Choose certificate to sign document:<p></td></tr>
+<tr><td colspan=2> <SELECT NAME="Certificates"> </SELECT></td>
+</tr>
+<tr><td colspan=2><span id="radioform"> </span>	</td>
+</tr>
+<tr><td><input type="Button" value="Sign!" OnClick="TestVar()"><p></td>
+</tr>
+</table>
+<Span ID="oData"> This is where output shows up </Span>
+<p>
+<p>Please enter an URL or local file name
+<br>Filename must begin with file:// 
+<br>URL must begin with http:// 
+<P> <input id="xmlurl" value="file://" size="60">
+<p>
+check the &quot;Validation&quot; box if you want to validate your document:
+<P><input type="checkbox" checked id="schema">Validation
+<p>click the &quot;Validate&quot; button to see if your text is valid XML:
+
+<P><input type="button" value="VALIDATE" style="FONT-WEIGHT: bold" onclick="validate()">
+<br>&nbsp;
+<div id="ERRORDIV" style="COLOR: purple; FONT-SIZE: 16px; FONT-WEIGHT: bold"></div>
+
+<xmp id="ERRORSRC"></xmp>
+<div id="XML" class="xml"></div>
+
+<br>
+<font FACE="MS SANS SERIF" SIZE="1" COLOR="black">
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Programming SecureXML Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--webbot bot="PurpleText" PREVIEW="Meta Data Starts Here" -->
+<meta name="title" content="Infomosaic: XML Signature">
+<meta name="keywords" content="XML security, XML Signature, Digital Signature, Web Service Security, XML Signature ActiveX, XML Security Made Easy, Secure Web Application, smart card, services and products for secure e-business,">
+<meta name="description" content="Infomosaic provides XML Security Software. SecureXML is the first C-Language implementation of the W3C XML Digital Signature standard. Its small 
+              code size is highly optimized making it most appropriate for high 
+              volume XML transaction applications">
+<META NAME="abstract" CONTENT="Infomosaic provides XML Security Software. SecureXML is the first C-Language 
+              implementation of the W3C XML Digital Signature standard. Its small 
+              code size is highly optimized making it most appropriate for high 
+              volume XML transaction applications">
+<META NAME="revisit-after" CONTENT="3 days">
+<META NAME="robots" CONTENT="FOLLOW,INDEX">
+<!--webbot bot="PurpleText" PREVIEW="Meta Data Ends Here" -->
+</head>
+<body bgcolor="#FFFFFF">
+<div align="left"></div>
+<table border="0" align="left" height="689" cellspacing="0" width="730" cellpadding="0">
+  <tr valign="top" align="left"> 
+    <td colspan="2" height="177"> 
+      <div align="left"><a href="../OnlineApps/index.html"> </a> 
+        <table border="0" cellpadding="0" cellspacing="0" width="730">
+          <!-- fwtable fwsrc="toplinks.png" fwbase="toplinks.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="1" -->
+          <tr> 
+            <td colspan="22"><img name="toplinks_r1_c1" src="../LocalWebApps/newimages/toplinks_r1_c1.jpg" width="730" height="133" border="0"></td>
+          </tr>
+        </table>
+        <hr color="#FF9933">
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="100" height="548" valign="top" background="../OnlineApps/orangeswipe.gif"> 
+      <p><a href="index.htm"><font color="#009999"><b>Programming Home</b></font></a></p>
+    </td>
+    <td height="548" valign="top" width=514> 
+      <table width="90%" border="0" align="center">
+        <tr> 
+          <td><font face="Arial, Helvetica, sans-serif" size="3" color="#009999"><b>Using 
+            <font color="#FF9933">S</font>ecure<font color="#FF9933">X</font>ML 
+            Digital Signature from Java </b></font> 
+            <p>Java classes for SecureXML are included as securexml.jar file. 
+              Java with SecureXML requires jacob.jar and jacob.dll files also 
+              included with SecureXML. Both the jar files need to be added to 
+              your CLASSPATH environment variable and the jacob.dll should be 
+              in your PATH environment variable. If you are using SecureXML from 
+              a Java applet, you will also need to provide appropriate access 
+              permissions to the two files in your .java.policy file.</p>
+            <p><font color="#FF0000">import com.jacob.com.*;<br>
+              import infomosaic.securexml.*;</font></p>
+            <p><br>
+              public class SignTest<br>
+              {</p>
+            <blockquote> 
+              <p><br>
+                public static void main(String[] args)<br>
+                {</p>
+              <p><br>
+                <font color="#FF0000">Signature</font> s1 = new <font color="#FF0000">Signature</font>(); 
+                <font color="#009900">/* Creates an instance of the SecureXML 
+                Signature object */</font><br>
+                String outFilePath;<br>
+                <font color="#009900">/* Lets report the number of certificates 
+                installed in the local windows certificate store for the currently 
+                logged on user <br>
+                */</font><br>
+                System.out.println(&quot;Certificate Count=&quot;+ s1.<font color="#FF0000">getCertificateCount</font>()); 
+                <br>
+                <font color="#009900">/* Lets show the certificate selection window 
+                */</font><br>
+                s1.<font color="#FF0000">selectActiveCertificate</font>(); <br>
+                <font color="#009900">/* Read the file to be signed */</font><br>
+                String fileData = s1.<font color="#FF0000">readAll</font>(&quot;signature.tmpl&quot;);<br>
+                <font color="#009900">/* Sign the XML read from the file */</font><br>
+                String outFileData = s1.<font color="#FF0000">signXMLStr</font>(fileData, 
+                &quot;MySignature&quot;);<br>
+                <font color="#009900">/* Show the signed XML */</font><br>
+                System.out.println(&quot;Signed XML= &quot;+ outFileData);<br>
+                <font color="#009900">/* Save the signed XML to a file */</font><br>
+                s1.<font color="#FF0000">saveXMLStr</font>(outFileData, &quot;signatureSigned.xml&quot;);<br>
+                <font color="#009900">/* Verify the signature we just created 
+                */</font><br>
+                int result = s1.<font color="#FF0000">verify</font>(&quot;signatureSigned.xml&quot;);<br>
+                System.out.println(&quot;Signature verification result= &quot;+ 
+                result);<br>
+                String verifyResult = s1.<font color="#FF0000">secureXMLVerify</font>(outFileData);<br>
+                System.out.println(&quot;secureXMLVerify = &quot;+ verifyResult);</p>
+              <p><font color="#009900">/* Lets create another signature */</font><br>
+                s1.<font color="#FF0000">setSignatureID</font>(0, &quot;MySignature1234&quot;);<br>
+                s1.<font color="#FF0000">setExcludeSignerCertificate</font>(1);<br>
+                s1.<font color="#FF0000">setProperties</font>(0, 0, &quot;Date=12/19/2002&quot;);<br>
+                s1.<font color="#FF0000">setAddWindowImage</font>(1);<br>
+                s1.<font color="#FF0000">setPhysicalSignatureUsage</font>(2);<br>
+                <font color="#009900">/* This time, lets just sign a simple data 
+                string */</font><br>
+                outFileData = s1.<font color="#FF0000">signDataStr</font>(&quot;This 
+                is my input&quot;);<br>
+                System.out.println(&quot;Signed Data Str XML= &quot;+ outFileData);<br>
+                <font color="#009900">/* Save the signed XML to a file */</font><br>
+                s1.<font color="#FF0000">saveXMLStr</font>(outFileData, &quot;dataSigned.xml&quot;);<br>
+                <font color="#009900">/* Verify the signature we just created 
+                */</font><br>
+                result = s1.<font color="#FF0000">verify</font>(&quot;dataSigned.xml&quot;);<br>
+                String propertyStr = s1.<font color="#FF0000">getProperties</font>(0,0);<br>
+                System.out.println(&quot;Signature Property 0 = &quot;+ propertyStr);</p>
+              <p> <font color="#009900">/* The following code passes a list of 
+                files to be signed */<br>
+                /* The output XML contains Base64 encoded file content along with 
+                the signature */</font><br>
+                String [] fileList = new String[3];<br>
+                fileList[0] = &quot;f1.doc&quot;;<br>
+                fileList[1] = &quot;f2.txt&quot;;<br>
+                fileList[2] = &quot;f3.doc&quot;;<br>
+                SafeArray sA = new SafeArray(Variant.VariantString, new int [] 
+                {0}, new int [] {fileList.length + 1});<br>
+                sA.fromStringArray(fileList);<br>
+                String outFileName = s1.<font color="#FF0000">signFiles</font>(new 
+                Variant(sA), &quot;3FilesSigned.xml&quot;);<br>
+                System.out.println(&quot;Out File Name = &quot; + outFileName);</p>
+              <p>}</p>
+            </blockquote>
+            <p>}<br>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p><font size="1" face="Arial, Helvetica, sans-serif"><b><br>
+        </b></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" height="46" valign="top" background="../OnlineApps/orangeswipe.gif"> 
+      <div align="center">All contents are Copyright © 2000--2002 Infomosaic Corporation. 
+        All rights reserved. <br>
+        Page last updated on 
+        <!-- #BeginDate format:fcAm1 -->Thursday, January 2, 2003<!-- #EndDate -->
+      </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

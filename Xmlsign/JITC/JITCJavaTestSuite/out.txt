@@ -1,0 +1,2083 @@
+JITC Test for SecureXML Java API
+Test Run Date = Mon Dec 05 10:50:21 PST 2005
+SecureXML Path = C:\ActiveX\XMLSign\lib 
+
+SecureXML Version = 2.5.145.44
+
+________________________________________________________
+
+
+Test 1 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test1/test1.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 2 Successful. Certificate Validation Failed 
+Last Error: 78: At least one of the certificates in the chain has invalid signature
+
+Certificate File = input/jitc/test2/test2.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 3 Successful. Certificate Validation Failed 
+Last Error: 78: At least one of the certificates in the chain has invalid signature
+
+Certificate File = input/jitc/test3/test3.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 4 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test4/test4.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 5 Successful. Certificate Validation Failed 
+Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+
+Certificate File = input/jitc/test5/test5.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 6 Successful. Certificate Validation Failed 
+Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+
+Certificate File = input/jitc/test6/test6.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 7 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test7/test7.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 8 Successful. Certificate Validation Failed 
+Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+
+Certificate File = input/jitc/test8/test8.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 9 Successful. Certificate Validation Failed 
+Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+
+Certificate File = input/jitc/test9/test9.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 10 Successful. Certificate Validation Failed 
+Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+
+Certificate File = input/jitc/test10/test10.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 11 Successful. Certificate Validation Failed 
+Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+
+Certificate File = input/jitc/test11/test11.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 12 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test12/test12.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 13 Successful. Certificate Validation Failed 
+Last Error: 83: Issuer name <> Subject name of issuer certificate
+
+Certificate File = input/jitc/test13/test13.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 14 Successful. Certificate Validation Failed 
+Last Error: 83: Issuer name <> Subject name of issuer certificate
+
+Certificate File = input/jitc/test14/test14.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 15 Successful. Certificate Validated Successfully 
+
+Certificate File = input/jitc/test15/test15.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 16 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test16/test16.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 17 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test17/test17.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 18 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test18/test18.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 19 Successful. Certificate Validation Failed 
+Last Error: 74: No CRL related data found for the certificate/chain
+
+Certificate File = input/jitc/test19/test19.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 20 Successful. Certificate Validation Failed 
+Last Error: 75: Certificate revoked according to CRL
+
+Certificate File = input/jitc/test20/test20.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 21 Successful. Certificate Validation Failed 
+Last Error: 75: Certificate revoked according to CRL
+
+Certificate File = input/jitc/test21/test21.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 22 Successful. Certificate Validation Failed 
+Last Error: 84: Either the intermediate certificate does not have a basicConstraints extension or it is not marked critical or the cA is set to false
+
+Certificate File = input/jitc/test22/test22.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 23 Successful. Certificate Validation Failed 
+Last Error: 84: Either the intermediate certificate does not have a basicConstraints extension or it is not marked critical or the cA is set to false
+
+Certificate File = input/jitc/test23/test23.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 24 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test24/test24.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 25 Successful. Certificate Validation Failed 
+Last Error: 84: Either the intermediate certificate does not have a basicConstraints extension or it is not marked critical or the cA is set to false
+
+Certificate File = input/jitc/test25/test25.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 26 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test26/test26.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 27 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test27/test27.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 28 Successful. Certificate Validation Failed 
+Last Error: 85: Certificate key usage error
+
+Certificate File = input/jitc/test28/test28.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 29 Successful. Certificate Validation Failed 
+Last Error: 85: Certificate key usage error
+
+Certificate File = input/jitc/test29/test29.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 30 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test30/test30.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 31 Successful. Certificate Validation Failed 
+Last Error: 85: Certificate key usage error
+
+Certificate File = input/jitc/test31/test31.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 32 Successful. Certificate Validation Failed 
+Last Error: 85: Certificate key usage error
+
+Certificate File = input/jitc/test32/test32.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 33 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test33/test33.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 34 Successful. ipolset=any policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test34/test34.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 34 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test34/test34.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 34 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test34/test34.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 34 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test34/test34.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 34 Successful. ipolset=not test-policy-1, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test34/test34.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 34 Successful. ipolset=not test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test34/test34.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 35 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test35/test35.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 35 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test35/test35.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 36 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test36/test36.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 36 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test36/test36.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 37 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test37/test37.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 37 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test37/test37.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 38 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test38/test38.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 38 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test38/test38.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 39 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test39/test39.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 39 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test39/test39.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test39/test39.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test39/test39.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 39 Successful. ipolset=set not including test-policy-1, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test39/test39.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test39/test39.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 40 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test40/test40.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 40 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test40/test40.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 41 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test41/test41.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 41 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test41/test41.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 42 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test42/test42.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 42 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test42/test42.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 43 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test43/test43.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 43 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test43/test43.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 44 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test44/test44.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 44 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test44/test44.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 45 Successful. ipolset=any policy, explicit=false. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test45/test45.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 45 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test45/test45.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 46 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test46/test46.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 46 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test46/test46.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 46 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test46/test46.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 46 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test46/test46.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 46 Successful. ipolset=not including test-policy-1, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test46/test46.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 46 Successful. ipolset=not including test-policy-1, explicit=false. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test46/test46.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 47 Successful. ipolset=any policy, explicit=false. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test47/test47.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 47 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test47/test47.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 48 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test48/test48.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 48 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test48/test48.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 48 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test48/test48.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 48 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test48/test48.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 48 Successful. ipolset=not including test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test48/test48.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 48 Successful. ipolset=not including test-policy-1, explicit=true, Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test48/test48.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 49 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test49/test49.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 49 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test49/test49.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 49 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test49/test49.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 49 Successful. ipolset=not including test-policy-1/2, explicit=true, Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test49/test49.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 49 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test49/test49.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 49 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test49/test49.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 50 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test50/test50.p12
+
+
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 50 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test50/test50.p12
+
+
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 50 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test50/test50.p12
+
+
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 50 Successful. ipolset=not including test-policy-1/2, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test50/test50.p12
+
+
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 50 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test50/test50.p12
+
+
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.5.29.32.0
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 50 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test50/test50.p12
+
+
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.5.29.32.0
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 51 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test51/test51.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 51 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test51/test51.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 52 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test52/test52.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test52/test52.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 52 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test52/test52.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test52/test52.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 52 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test52/test52.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test52/test52.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 53 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test53/test53.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 53 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test53/test53.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test53/test53.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test53/test53.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test53/test53.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 53 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 86: Certificate policy validation failed
+
+Certificate File = input/jitc/test53/test53.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 53 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+
+Certificate File = input/jitc/test53/test53.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 53 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test53/test53.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+2.16.840.1.101.3.1.48.2
+2.16.840.1.101.3.1.48.3
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 54 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 90: There is a violation of the path length constraint in the certificate chain
+
+Certificate File = input/jitc/test54/test54.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 55 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 90: There is a violation of the path length constraint in the certificate chain
+
+Certificate File = input/jitc/test55/test55.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = true
+
+________________________________________________________
+
+
+Test 56 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test56/test56.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 57 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+
+Certificate File = input/jitc/test57/test57.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 58 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 90: There is a violation of the path length constraint in the certificate chain
+
+Certificate File = input/jitc/test58/test58.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 59 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 90: There is a violation of the path length constraint in the certificate chain
+
+Certificate File = input/jitc/test59/test59.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 60 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 90: There is a violation of the path length constraint in the certificate chain
+
+Certificate File = input/jitc/test60/test60.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 61 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed 
+Last Error: 90: There is a violation of the path length constraint in the certificate chain
+
+Certificate File = input/jitc/test61/test61.p12
+
+
+Authority Constrained Policy Set = <Empty>
+
+User Constrained Policy Set = <Empty>
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 62 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test62/test62.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 63 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test63/test63.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 64 Successful. Certificate Validation Failed 
+Last Error: 74: No CRL related data found for the certificate/chain
+
+Certificate File = input/jitc/test64/test64.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 65 Successful. Certificate Validation Failed 
+Last Error: 74: No CRL related data found for the certificate/chain
+
+Certificate File = input/jitc/test65/test65.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 66 Successful. Certificate Validation Failed 
+Last Error: 74: No CRL related data found for the certificate/chain
+
+Certificate File = input/jitc/test66/test66.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 67 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test67/test67.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 68 Successful. Certificate Validation Failed 
+Last Error: 58: Import failed for PFX certificate
+
+Certificate File = input/jitc/test68/test68.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 69 Successful. Certificate Validation Failed 
+Last Error: 75: Certificate revoked according to CRL
+
+Certificate File = input/jitc/test69/test69.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 70 Successful. Certificate Validation Failed 
+Last Error: 75: Certificate revoked according to CRL
+
+Certificate File = input/jitc/test70/test70.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 71 Successful. Certificate Validation Failed 
+Last Error: 75: Certificate revoked according to CRL
+
+Certificate File = input/jitc/test71/test71.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 72 Successful. Certificate Validation Failed 
+Last Error: 87: The nextUpdate time is earlier than current time
+
+Certificate File = input/jitc/test72/test72.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 73 Successful. Certificate Validation Failed 
+Last Error: 87: The nextUpdate time is earlier than current time
+
+Certificate File = input/jitc/test73/test73.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 74 Successful. Certificate Validated Successfully
+
+Certificate File = input/jitc/test74/test74.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 75 Successful. Certificate Validation Failed 
+Last Error: 73: Generic error on CRL validation
+
+Certificate File = input/jitc/test75/test75.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+
+Test 76 Successful. Certificate Validation Failed 
+Last Error: 73: Generic error on CRL validation
+
+Certificate File = input/jitc/test76/test76.p12
+
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Explicit Policy Indicator = false
+
+________________________________________________________
+
+

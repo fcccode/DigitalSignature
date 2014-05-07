@@ -1,0 +1,198 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (c04ee989).
+//
+// c:\activex\xmlsign\winjni\nss release\ocspax.tlh
+//
+// C++ source equivalent of Win32 type library ..\lib\ocspAx.dll
+// compiler-generated file created 12/28/04 at 13:24:23 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace ocspAX {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("2bc2e19d-db8e-492e-8cbc-c78af8d32d1a"))
+/* LIBID */ __ocspAX;
+struct /* coclass */ OcspClient;
+struct __declspec(uuid("c8be4864-227a-4a1b-84ee-473681bd4872"))
+/* dual interface */ IOcspClient;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IOcspClient, __uuidof(IOcspClient));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("b15c7688-86e5-48bd-9c71-1e131cd191a9"))
+OcspClient;
+    // [ default ] interface IOcspClient
+
+struct __declspec(uuid("c8be4864-227a-4a1b-84ee-473681bd4872"))
+IOcspClient : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetTextResponse))
+    _bstr_t TextResponse;
+    __declspec(property(get=Geterrors))
+    _bstr_t errors;
+    __declspec(property(get=GetBase64Response))
+    _bstr_t Base64Response;
+    __declspec(property(get=GetRevocationTime))
+    _bstr_t RevocationTime;
+    __declspec(property(get=GetRevocationReason))
+    _bstr_t RevocationReason;
+    __declspec(property(get=GetOcspNonce,put=PutOcspNonce))
+    _bstr_t OcspNonce;
+    __declspec(property(put=PutResponderCAFileName))
+    _bstr_t ResponderCAFileName;
+    __declspec(property(put=PutCheckCertificate))
+    _bstr_t CheckCertificate;
+    __declspec(property(put=PutIssuerCertificate))
+    _bstr_t IssuerCertificate;
+    __declspec(property(put=PutCheckCertificateFileName))
+    _bstr_t CheckCertificateFileName;
+    __declspec(property(put=PutIssuerCertificateFileName))
+    _bstr_t IssuerCertificateFileName;
+    __declspec(property(put=PutCheckCertificateFileFormat))
+    unsigned short CheckCertificateFileFormat;
+    __declspec(property(put=PutIssuerCertificateFileFormat))
+    unsigned short IssuerCertificateFileFormat;
+    __declspec(property(put=PutSignerPFXCertificate))
+    _bstr_t SignerPFXCertificate;
+    __declspec(property(put=PutSignerPFXPassword))
+    _bstr_t SignerPFXPassword;
+    __declspec(property(put=PutCheckPFXPassword))
+    _bstr_t CheckPFXPassword;
+    __declspec(property(get=GetresponderUrl,put=PutresponderUrl))
+    _bstr_t responderUrl;
+    __declspec(property(put=PutproxyHost))
+    _bstr_t proxyHost;
+    __declspec(property(put=PutproxyPort))
+    unsigned short proxyPort;
+    __declspec(property(put=PutproxyUsername))
+    _bstr_t proxyUsername;
+    __declspec(property(put=PutproxyPassword))
+    _bstr_t proxyPassword;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    unsigned short verify (
+        _bstr_t responderUrl );
+    _bstr_t GetTextResponse ( );
+    _bstr_t Geterrors ( );
+    _bstr_t GetBase64Response ( );
+    _bstr_t GetRevocationTime ( );
+    _bstr_t GetRevocationReason ( );
+    _bstr_t GetOcspNonce ( );
+    void PutOcspNonce (
+        _bstr_t pVal );
+    void PutResponderCAFileName (
+        _bstr_t _arg1 );
+    void PutCheckCertificate (
+        _bstr_t _arg1 );
+    void PutIssuerCertificate (
+        _bstr_t _arg1 );
+    void PutCheckCertificateFileName (
+        _bstr_t _arg1 );
+    void PutIssuerCertificateFileName (
+        _bstr_t _arg1 );
+    void PutCheckCertificateFileFormat (
+        unsigned short _arg1 );
+    void PutIssuerCertificateFileFormat (
+        unsigned short _arg1 );
+    void PutSignerPFXCertificate (
+        _bstr_t _arg1 );
+    void PutSignerPFXPassword (
+        _bstr_t _arg1 );
+    void PutCheckPFXPassword (
+        _bstr_t _arg1 );
+    _bstr_t GetresponderUrl ( );
+    void PutresponderUrl (
+        _bstr_t pVal );
+    void PutproxyHost (
+        _bstr_t _arg1 );
+    void PutproxyPort (
+        unsigned short _arg1 );
+    void PutproxyUsername (
+        _bstr_t _arg1 );
+    void PutproxyPassword (
+        _bstr_t _arg1 );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_verify (
+        /*[in]*/ BSTR responderUrl,
+        /*[out,retval]*/ unsigned short * ret ) = 0;
+      virtual HRESULT __stdcall get_TextResponse (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_errors (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Base64Response (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_RevocationTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_RevocationReason (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_OcspNonce (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_OcspNonce (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall put_ResponderCAFileName (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_CheckCertificate (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_IssuerCertificate (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_CheckCertificateFileName (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_IssuerCertificateFileName (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_CheckCertificateFileFormat (
+        /*[in]*/ unsigned short _arg1 ) = 0;
+      virtual HRESULT __stdcall put_IssuerCertificateFileFormat (
+        /*[in]*/ unsigned short _arg1 ) = 0;
+      virtual HRESULT __stdcall put_SignerPFXCertificate (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_SignerPFXPassword (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_CheckPFXPassword (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall get_responderUrl (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_responderUrl (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall put_proxyHost (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_proxyPort (
+        /*[in]*/ unsigned short _arg1 ) = 0;
+      virtual HRESULT __stdcall put_proxyUsername (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_proxyPassword (
+        /*[in]*/ BSTR _arg1 ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\activex\xmlsign\winjni\nss release\ocspax.tli"
+
+} // namespace ocspAX
+
+#pragma pack(pop)

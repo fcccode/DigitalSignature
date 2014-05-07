@@ -1,0 +1,25 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (18ec7f52).
+//
+// c:\activex\xmlsign\winjni\release\selectcert.tli
+//
+// Wrapper implementations for Win32 type library SelectCert\Release\SelectCert.dll
+// compiler-generated file created 03/18/04 at 13:05:27 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ICertListWindow wrapper method implementations
+//
+
+inline HRESULT ICertListWindow::Initialize ( const _variant_t & certInfoList, long certCount ) {
+    HRESULT _hr = raw_Initialize(certInfoList, certCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ICertListWindow::selectCertificate ( long * certIndex ) {
+    long _result = 0;
+    HRESULT _hr = raw_selectCertificate(certIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}

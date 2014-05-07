@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Programming SecureXML Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--webbot bot="PurpleText" PREVIEW="Meta Data Starts Here" -->
+<meta name="title" content="Infomosaic: XML Signature">
+<meta name="keywords" content="XML security, XML Signature, Digital Signature, Web Service Security, XML Signature ActiveX, XML Security Made Easy, Secure Web Application, smart card, services and products for secure e-business,">
+<meta name="description" content="Infomosaic provides XML Security Software. SecureXML is the first C-Language implementation of the W3C XML Digital Signature standard. Its small 
+              code size is highly optimized making it most appropriate for high 
+              volume XML transaction applications">
+<META NAME="abstract" CONTENT="Infomosaic provides XML Security Software. SecureXML is the first C-Language 
+              implementation of the W3C XML Digital Signature standard. Its small 
+              code size is highly optimized making it most appropriate for high 
+              volume XML transaction applications">
+<META NAME="revisit-after" CONTENT="3 days">
+<META NAME="robots" CONTENT="FOLLOW,INDEX">
+<!--webbot bot="PurpleText" PREVIEW="Meta Data Ends Here" -->
+</head>
+<body bgcolor="#FFFFFF">
+<div align="left"></div>
+<table border="0" align="left" height="689" cellspacing="0" width="730" cellpadding="0">
+  <tr valign="top" align="left"> 
+    <td colspan="2" height="177"> 
+      <div align="left"><a href="../OnlineApps/index.html"> </a> 
+        <table border="0" cellpadding="0" cellspacing="0" width="730">
+          <!-- fwtable fwsrc="toplinks.png" fwbase="toplinks.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="1" -->
+          <tr> 
+            <td colspan="22"><img name="toplinks_r1_c1" src="../LocalWebApps/newimages/toplinks_r1_c1.jpg" width="730" height="133" border="0"></td>
+          </tr>
+        </table>
+        <hr color="#FF9933">
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="100" height="548" valign="top" background="../OnlineApps/orangeswipe.gif"> 
+      <p><a href="index.htm"><font color="#009999"><b>Programming Home</b></font></a></p>
+    </td>
+    <td height="548" valign="top" width=595>      <table width="90%" border="0" align="center">
+        <tr> 
+          <td> 
+            <p><a href="#VBScriptDev">Visual Basic Script / ASP Development</a><br>
+              <a href="#VB60Dev">Visual Basic 6.0 Development</a> </p>
+            <p><a name="VBScriptDev"></a>The process of using SecureXML from VBScript 
+              either on the client side or on an ASP page on the server side starts 
+              with first creating an instance of the SecureXML Signature object 
+              by doing a CreateObject on the object name:</p>
+            <p>Set SigObj = CreateObject(&quot;XMLSign.Signature&quot;) on the 
+              client side and<br>
+              Set SigObj = Server.CreateObject(&quot;XMLSign.Signature&quot;) 
+              on an ASP page for server side usage.</p>
+            <p>Access to all methods and properties are straight forward as their 
+              names remain exactly the same as in the XMLSign.idl file.<br>
+              Example 1: PKI Signature, Co-Signing</p>
+            <p>'Create SecureXML Signature object<br>
+              Set SigObj = CreateObject(&quot;XMLSign.Signature&quot;)</p>
+            <p>'Set a signature property<br>
+              SigObj.ChangeOrAddProperty &quot;Signer Name&quot;, &quot;John Doe&quot;</p>
+            <p>' Set ExcludeSignerCertificate to 1 if you don't want to include 
+              a copy of the signer's certificate in the signed XML<br>
+              SigObj.ExcludeSignerCertificate = 1</p>
+            <p>' Just sign a simple data string<br>
+              res = SigObj.SignDataStr(&quot;This is my test data&quot;)</p>
+            <p>'Co-sign the signed xml produced above<br>
+              res = SigObj.CoSignXMLStr(res)</p>
+            <p>'Check for errors<br>
+              MsgBox(SigObj.GetLastError)</p>
+            <p>'Save the signed xml containing two signatures to a file<br>
+              SigObj.SaveXMLStr res, &quot;TestFiles\c1.xml&quot;</p>
+            <p>'Verify the signed XML created above<br>
+              res = SigObj.SecureXMLVerify(res)</p>
+            <p>'Display verification result<br>
+              MsgBox(res)</p>
+            <p>Example 2: HMAC or Password based signatures</p>
+            <p>'Create SecureXML Signature object<br>
+              Set SigObj = CreateObject(&quot;XMLSign.Signature&quot;)</p>
+            <p>'Set Signature Id<br>
+              SigObj.SignatureID(0) = &quot;MySignature&quot;</p>
+            <p>' Set EnvelopingFlag to Enveloped mode<br>
+              SigObj.EnvelopingFlag = 2<br>
+              ' Enable HMAC signing<br>
+              SigObj.UseHMAC = 1<br>
+              ' Set the signing password<br>
+              SigObj.HMACPassword = &quot;password&quot;</p>
+            <p>'Set some other signature property<br>
+              SigObj.ChangeOrAddProperty &quot;Location&quot;, &quot;Honolulu&quot;</p>
+            <p>'Create the signature<br>
+              res1 = SigObj.Sign(&quot;TestFiles\catalog.xml&quot;)<br>
+              MsgBox res1 &amp; &quot;Last Error = &quot; &amp; SigObj.GetLastError</p>
+            <p>'Enable SaveXMLSignature to overwrite existing files<br>
+              SigObj.OverwriteFile = 1</p>
+            <p>'Save the signature created above<br>
+              SigObj.SaveXMLSignature &quot;TestFiles\c1.xml&quot;<br>
+              MsgBox &quot;Signature Saved As TestFiles\c1.xml&quot;</p>
+            <p><a href="#VBScriptDev">Visual Basic Script / ASP Development<br>
+              </a><a href="#VB60Dev">Visual Basic 6.0 Development</a></p>
+            <p><a name="VB60Dev"></a>There are two ways to create an instance 
+              of the SecureXML Digital Signature object in Visual Basic 6.0. One 
+              way is to follow the usage presented for Visual Basic Script. This 
+              method, also know as late binding method has a disadvantage that 
+              you don't get the benefit of the Intellisense built into the VB 
+              6.0 development environment. Also there is a run-time penalty for 
+              late binding. The preferred way is to create a reference to the 
+              SecureXML Digital Signature type library in your VB 6.0 development 
+              environment and then declare a typed object. In order to create 
+              a reference to the SecureXML Digital Signature Type Library, please 
+              click on Project pull down menu and select References&#133; At this 
+              point you will be presented with a dialog box with a list of available 
+              references. Please locate and select an entry called &quot;Infomosaic 
+              SecureXML Digital Signature 1.0 Type Library&quot;. If you don't 
+              find this entry, click on the browse button and locate and select 
+              XMLSign.dll in C:\Program Files\Infomosaic\SecureXML directory or 
+              the SecureXML install directory if you chose a different directory 
+              during installation.</p>
+            <p>After you have created a reference to the SecureXML Digital Signature 
+              Type Library you would need to declare a variable of this new type. 
+              This is done as follows:</p>
+            <p>Public SigObj As XMLSIGNLib.Signature</p>
+            <p>Later in your code, you would need to create an instance of the 
+              SecureXML object as follows:</p>
+            <p>Set SigObj = New XMLSIGNLib.Signature</p>
+            <p>Now SigObj points to an instance of the SecureXML Digital Signature 
+              object and the VB 6.0 development environment can help you use it 
+              by presenting you with a list of methods and properties available 
+              for this object. For the most part if you go through the sample 
+              VB 6.0 project included with the SecureXML download, you will have 
+              your first VB application running within one or two days.</p>
+            <p>With VB, all the method and property names remain the same as in 
+              the IDL file and the VB 6.0 Intellisense can help you use them without 
+              having to read this guide in great detail.<br>
+            </p>
+            <p><br>
+            </p>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td colspan="2" height="46" valign="top" background="../OnlineApps/orangeswipe.gif"> 
+      <div align="center">All contents are Copyright © 2000--2002 Infomosaic Corporation. 
+        All rights reserved. <br>
+        Page last updated on 
+        <!-- #BeginDate format:fcAm1 -->Thursday, January 2, 2003<!-- #EndDate -->
+      </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

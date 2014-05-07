@@ -1,0 +1,1 @@
+keytool -list -keystore InfomosaicCodeSigningCert.pfx -storetype PKCS12 -storepass SecureXML#1

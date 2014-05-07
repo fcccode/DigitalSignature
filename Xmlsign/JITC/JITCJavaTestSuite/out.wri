@@ -1,0 +1,1428 @@
+Signature object created. SecureXML Path = C:\Program Files\Infomosaic\SecureXML 
+
+
+Test 1 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 2 Successful. Certificate Validation Failed Last Error: 78
+Test 3 Successful. Certificate Validation Failed Last Error: 78
+Test 4 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 5 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 6 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 7 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 8 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 9 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 10 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 11 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 12 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 13 Successful. Certificate Validation Failed Last Error: 83
+Test 14 Successful. Certificate Validation Failed Last Error: 83
+Test 15 Successful. Certificate Validated Successfully 
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 16 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 17 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 18 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 19 Successful. Certificate Validation Failed Last Error: 74
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 20 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 21 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 22 Successful. Certificate Validation Failed Last Error: 84
+Test 23 Successful. Certificate Validation Failed Last Error: 84
+Test 24 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 25 Successful. Certificate Validation Failed Last Error: 84
+Test 26 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 27 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 28 Successful. Certificate Validation Failed Last Error: 85
+Test 29 Successful. Certificate Validation Failed Last Error: 85
+Test 30 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 31 Successful. Certificate Validation Failed Last Error: 85
+Test 32 Successful. Certificate Validation Failed Last Error: 85
+Test 33 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=any policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=not test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=not test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 35 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 35 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 36 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 36 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 37 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 37 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 38 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 38 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 39 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=set not including test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 40 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 40 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 41 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 41 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 42 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 42 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 43 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 43 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 44 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 44 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 45 Successful. ipolset=any policy, explicit=false. Certificate Validation Failed Last Error: 86
+Test 45 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 46 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=not including test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=not including test-policy-1, explicit=false. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 47 Successful. ipolset=any policy, explicit=false. Certificate Validation Failed Last Error: 86
+Test 47 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 48 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=not including test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=not including test-policy-1, explicit=true, Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 49 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 49 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 49 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 49 Successful. ipolset=not including test-policy-1/2, explicit=true, Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 49 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 49 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 50 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 50 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 50 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 50 Successful. ipolset=not including test-policy-1/2, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 50 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.5.29.32.0
+
+Test 50 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.5.29.32.0
+
+Test 51 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Test 51 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 52 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 53 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 53 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 53 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 53 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 53 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 54 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 55 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 56 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 57 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 58 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 59 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 60 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 61 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 62 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 63 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 64 Successful. Certificate Validation Failed Last Error: 74
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 65 Successful. Certificate Validation Failed Last Error: 74
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 66 Successful. Certificate Validation Failed Last Error: 74
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 67 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 68 Successful. Certificate Validation Failed Last Error: 58
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 69 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 70 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 71 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 72 Successful. Certificate Validation Failed Last Error: 87
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 73 Successful. Certificate Validation Failed Last Error: 87
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 74 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 75 Successful. Certificate Validation Failed Last Error: 73
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 76 Successful. Certificate Validation Failed Last Error: 73
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+
+Test 1 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 2 Successful. Certificate Validation Failed Last Error: 78
+Test 3 Successful. Certificate Validation Failed Last Error: 78
+Test 4 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 5 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 6 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 7 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 8 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 9 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 10 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 11 Successful. Certificate Validation Failed Last Error: 76
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 12 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 13 Successful. Certificate Validation Failed Last Error: 83
+Test 14 Successful. Certificate Validation Failed Last Error: 83
+Test 15 Successful. Certificate Validated Successfully 
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 16 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 17 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 18 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 19 Successful. Certificate Validation Failed Last Error: 74
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 20 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 21 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 22 Successful. Certificate Validation Failed Last Error: 84
+Test 23 Successful. Certificate Validation Failed Last Error: 84
+Test 24 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 25 Successful. Certificate Validation Failed Last Error: 84
+Test 26 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 27 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 28 Successful. Certificate Validation Failed Last Error: 85
+Test 29 Successful. Certificate Validation Failed Last Error: 85
+Test 30 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 31 Successful. Certificate Validation Failed Last Error: 85
+Test 32 Successful. Certificate Validation Failed Last Error: 85
+Test 33 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=any policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=not test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 34 Successful. ipolset=not test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 35 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 35 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 36 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 36 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 37 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 37 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 38 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 38 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 39 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=set not including test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 39 Successful. ipolset=set including test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 40 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 40 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 41 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 41 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 42 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 42 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 43 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 43 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 44 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 44 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 45 Successful. ipolset=any policy, explicit=false. Certificate Validation Failed Last Error: 86
+Test 45 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 46 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=not including test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 46 Successful. ipolset=not including test-policy-1, explicit=false. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 47 Successful. ipolset=any policy, explicit=false. Certificate Validation Failed Last Error: 86
+Test 47 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 48 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=not including test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 48 Successful. ipolset=not including test-policy-1, explicit=true, Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 49 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 49 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 49 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 49 Successful. ipolset=not including test-policy-1/2, explicit=true, Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 49 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 49 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 50 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 50 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 50 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 50 Successful. ipolset=not including test-policy-1/2, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 50 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.5.29.32.0
+
+Test 50 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.5.29.32.0
+
+User Constrained Policy Set = 
+2.5.29.32.0
+
+Test 51 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Test 51 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86
+Test 52 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 53 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 53 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 53 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 53 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 53 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.2
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.3
+
+Test 54 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 55 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 56 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 57 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 58 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 59 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 60 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 61 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90
+Test 62 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 63 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 64 Successful. Certificate Validation Failed Last Error: 74
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 65 Successful. Certificate Validation Failed Last Error: 74
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 66 Successful. Certificate Validation Failed Last Error: 74
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 67 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 68 Successful. Certificate Validation Failed Last Error: 58
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 69 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 70 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 71 Successful. Certificate Validation Failed Last Error: 75
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 72 Successful. Certificate Validation Failed Last Error: 87
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 73 Successful. Certificate Validation Failed Last Error: 87
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 74 Successful. Certificate Validated Successfully
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 75 Successful. Certificate Validation Failed Last Error: 73
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+Test 76 Successful. Certificate Validation Failed Last Error: 73
+Authority Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+
+User Constrained Policy Set = 
+2.16.840.1.101.3.1.48.1
+

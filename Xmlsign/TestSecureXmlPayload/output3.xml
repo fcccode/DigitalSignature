@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<SecureXML_Payload><SourceProcess_Id>3</SourceProcess_Id><Nonce>This is my nonce 3</Nonce><SignatureObject_Id>7</SignatureObject_Id><API><API_Name>getSecureXMLPath</API_Name><Param_Count>1</Param_Count><Param Type="String"><Value>C:\temp</Value></Param></API></SecureXML_Payload>
+

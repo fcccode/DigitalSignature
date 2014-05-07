@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XMLSign - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\manoj\LOCALS~1\Temp\RSP335.tmp" with contents
+[
+gdiplus.lib xmlsigd.lib crypt32.lib ws2_32.lib libxml2d.lib version.lib shlwapi.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wldap32.lib wldap32.lib zlib.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Debug/XMLSign.pdb" /map:"Debug/XMLSign.map" /debug /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"libcd.lib" /nodefaultlib:"libcmtd.lib" /nodefaultlib:"libcpmt.lib" /def:".\XMLSign.def" /out:"Debug/XMLSign.dll" /implib:"Debug/XMLSign.lib" /pdbtype:sept /libpath:"lib" 
+.\Debug\CAMClient.obj
+.\Debug\config.obj
+.\Debug\License.obj
+.\Debug\ShowSelectCert.obj
+.\Debug\SigFileImage.obj
+.\Debug\SigMouseImage.obj
+.\Debug\Signature.obj
+.\Debug\StdAfx.obj
+.\Debug\WindowImage.obj
+.\Debug\XMLSign.obj
+.\Debug\XMLSign.res
+]
+Creating command line "link.exe @C:\DOCUME~1\manoj\LOCALS~1\Temp\RSP335.tmp"
+Creating temporary file "C:\DOCUME~1\manoj\LOCALS~1\Temp\RSP336.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Debug\XMLSign.dll"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\manoj\LOCALS~1\Temp\RSP336.bat"
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library Debug/XMLSign.lib and object Debug/XMLSign.exp
+XMLSign.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::Init(void)" (??0Init@ios_base@std@@QAE@XZ)
+config.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::Init(void)" (??0Init@ios_base@std@@QAE@XZ)
+License.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::Init(void)" (??0Init@ios_base@std@@QAE@XZ)
+ShowSelectCert.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::Init(void)" (??0Init@ios_base@std@@QAE@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::Init(void)" (??0Init@ios_base@std@@QAE@XZ)
+XMLSign.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::~Init(void)" (??1Init@ios_base@std@@QAE@XZ)
+config.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::~Init(void)" (??1Init@ios_base@std@@QAE@XZ)
+License.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::~Init(void)" (??1Init@ios_base@std@@QAE@XZ)
+ShowSelectCert.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::~Init(void)" (??1Init@ios_base@std@@QAE@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: __thiscall std::ios_base::Init::~Init(void)" (??1Init@ios_base@std@@QAE@XZ)
+XMLSign.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::_Winit(void)" (??0_Winit@std@@QAE@XZ)
+config.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::_Winit(void)" (??0_Winit@std@@QAE@XZ)
+License.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::_Winit(void)" (??0_Winit@std@@QAE@XZ)
+ShowSelectCert.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::_Winit(void)" (??0_Winit@std@@QAE@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::_Winit(void)" (??0_Winit@std@@QAE@XZ)
+XMLSign.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::~_Winit(void)" (??1_Winit@std@@QAE@XZ)
+config.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::~_Winit(void)" (??1_Winit@std@@QAE@XZ)
+License.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::~_Winit(void)" (??1_Winit@std@@QAE@XZ)
+ShowSelectCert.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::~_Winit(void)" (??1_Winit@std@@QAE@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Winit::~_Winit(void)" (??1_Winit@std@@QAE@XZ)
+License.obj : error LNK2001: unresolved external symbol "void __cdecl std::_Xlen(void)" (?_Xlen@std@@YAXXZ)
+Signature.obj : error LNK2001: unresolved external symbol "void __cdecl std::_Xlen(void)" (?_Xlen@std@@YAXXZ)
+License.obj : error LNK2001: unresolved external symbol "void __cdecl std::_Xran(void)" (?_Xran@std@@YAXXZ)
+Signature.obj : error LNK2001: unresolved external symbol "void __cdecl std::_Xran(void)" (?_Xran@std@@YAXXZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::ios_base::~ios_base(void)" (??1ios_base@std@@UAE@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Lockit::~_Lockit(void)" (??1_Lockit@std@@QAE@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Lockit::_Lockit(void)" (??0_Lockit@std@@QAE@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: void __thiscall std::ios_base::clear(int,bool)" (?clear@ios_base@std@@QAEXH_N@Z)
+Signature.obj : error LNK2001: unresolved external symbol "bool __cdecl std::uncaught_exception(void)" (?uncaught_exception@std@@YA_NXZ)
+Signature.obj : error LNK2001: unresolved external symbol "__int64 const std::_Fpz" (?_Fpz@std@@3_JB)
+Signature.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * std::locale::_Locimp::_Global" (?_Global@_Locimp@locale@std@@0PAV123@A)
+Signature.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Init(void)" (?_Init@locale@std@@CAPAV_Locimp@12@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "struct _iobuf * __cdecl std::__Fiopen(char const *,int)" (?__Fiopen@std@@YAPAU_iobuf@@PBDH@Z)
+Signature.obj : error LNK2001: unresolved external symbol "protected: void __thiscall std::ios_base::_Addstd(void)" (?_Addstd@ios_base@std@@IAEXXZ)
+Signature.obj : error LNK2001: unresolved external symbol "protected: void __thiscall std::ios_base::_Init(void)" (?_Init@ios_base@std@@IAEXXZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: bool __thiscall std::locale::_Iscloc(void)const " (?_Iscloc@locale@std@@QBE_NXZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: class std::locale::facet const * __thiscall std::locale::_Getfacet(unsigned int,bool)const " (?_Getfacet@locale@std@@QBEPBVfacet@12@I_N@Z)
+Signature.obj : error LNK2001: unresolved external symbol "private: static int std::locale::id::_Id_cnt" (?_Id_cnt@id@locale@std@@0HA)
+Signature.obj : error LNK2001: unresolved external symbol "public: class std::locale & __thiscall std::locale::_Addfac(class std::locale::facet *,unsigned int,unsigned int)" (?_Addfac@locale@std@@QAEAAV12@PAVfacet@12@II@Z)
+Signature.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Locinfo::~_Locinfo(void)" (??1_Locinfo@std@@QAE@XZ)
+Signature.obj : error LNK2001: unresolved external symbol "public: __thiscall std::_Locinfo::_Locinfo(char const *)" (??0_Locinfo@std@@QAE@PBD@Z)
+Signature.obj : error LNK2001: unresolved external symbol __Getcvt
+Debug/XMLSign.dll : fatal error LNK1120: 24 unresolved externals
+Error executing link.exe.
+<h3>Output Window</h3>
+Creating temporary file "C:\DOCUME~1\manoj\LOCALS~1\Temp\RSP33A.tmp" with contents
+[
+/nologo /o"Debug/XMLSign.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\CAMClient.sbr
+.\Debug\config.sbr
+.\Debug\License.sbr
+.\Debug\ShowSelectCert.sbr
+.\Debug\SigFileImage.sbr
+.\Debug\SigMouseImage.sbr
+.\Debug\Signature.sbr
+.\Debug\WindowImage.sbr
+.\Debug\XMLSign.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\manoj\LOCALS~1\Temp\RSP33A.tmp"
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+XMLSign.dll - 43 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

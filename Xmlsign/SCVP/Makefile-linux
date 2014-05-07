@@ -1,0 +1,27 @@
+#
+
+CURLROOT= /home/dupont/curl-7.10.7
+OPENSSLROOT= /home/dupont/openssl-0.9.7c
+LIBRESOLVSEC= /usr/local/lib/libresolvsec.a
+
+CC=gcc
+CFLAGS+= -g -O -Wall -Wno-format-extra-args -Ddnssec_trust -Dldap_lookup
+CFLAGS+= -I${CURLROOT}/include -I${OPENSSLROOT}/include
+LDFLAGS+= -L${CURLROOT}/lib/.libs -lcurl \
+	-L${OPENSSLROOT} -lcrypto -lssl \
+	${LIBRESOLVSEC} -lresolv -lldap
+
+all: clt srv simplesrv
+
+clt: scvp_clt.c
+	${CC} ${CFLAGS} scvp_clt.c -o clt ${LDFLAGS}
+
+srv: scvp_srv.o scvp_ldap.o getrrcertbyname.o
+	${CC} ${CFLAGS} scvp_srv.o scvp_ldap.o getrrcertbyname.o \
+	-o srv ${LDFLAGS}
+
+simplesrv: simplesrv.c
+	gcc -g -Wall simplesrv.c -o simplesrv
+
+clean:
+	-rm *.o a.out clt srv

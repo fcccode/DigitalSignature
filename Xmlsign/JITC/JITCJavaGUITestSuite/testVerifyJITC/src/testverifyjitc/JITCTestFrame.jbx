@@ -1,0 +1,43 @@
+[PropertyInfo]
+addCrlFileButton,javax.swing.JButton,false,false, , ,false,<default>
+addCrlUrlButton,javax.swing.JButton,false,false, , ,false,<default>
+anyPolicy,javax.swing.JCheckBox,false,false, , ,false,<default>
+borderLayout1,java.awt.BorderLayout,false,false, , ,false,<default>
+certId,String,false,false, , ,false,<default>
+certificateFile,javax.swing.JTextField,false,false, , ,false,<default>
+certPassword,javax.swing.JTextField,false,false, , ,false,<default>
+crlList,javax.swing.JList,false,false, , ,false,<default>
+enterPasswordLabel,javax.swing.JLabel,false,false, , ,false,<default>
+JLabel1,javax.swing.JLabel,false,false, , ,false,<default>
+JLabel2,javax.swing.JLabel,false,false, , ,false,<default>
+JLabel3,javax.swing.JLabel,false,false, , ,false,<default>
+JPanel1,javax.swing.JPanel,false,false, , ,false,<default>
+JPanel2,javax.swing.JPanel,false,false, , ,false,<default>
+JPanel3,javax.swing.JPanel,false,false, , ,false,<default>
+JPanel4,javax.swing.JPanel,false,false, , ,false,<default>
+listModel,javax.swing.DefaultListModel,false,false, , ,false,<default>
+policyExplicit,javax.swing.JCheckBox,false,false, , ,false,<default>
+removeCrlEntryButton,javax.swing.JButton,false,false, , ,false,<default>
+resetButton,javax.swing.JButton,false,false, , ,false,<default>
+saveAsFileButton,javax.swing.JButton,false,false, , ,false,<default>
+selectCertFromStoreButton,javax.swing.JButton,false,false, , ,false,<default>
+selectedTrustedRoot,javax.swing.JTextField,false,false, , ,false,<default>
+selectFileButton,javax.swing.JButton,false,false, , ,false,<default>
+selectTrustedRootButton,javax.swing.JButton,false,false, , ,false,<default>
+sigObj,infomosaic.securexml.Signature,false,false, , ,false,<default>
+storeCertCN,javax.swing.JTextField,false,false, , ,false,<default>
+testPolicy1,javax.swing.JCheckBox,false,false, , ,false,<default>
+testPolicy2,javax.swing.JCheckBox,false,false, , ,false,<default>
+testPolicy3,javax.swing.JCheckBox,false,false, , ,false,<default>
+testPolicy4,javax.swing.JCheckBox,false,false, , ,false,<default>
+testPolicy5,javax.swing.JCheckBox,false,false, , ,false,<default>
+usingPFX,boolean,false,false, , ,false,<default>
+usingStore,boolean,false,false, , ,false,<default>
+verificationResultTextArea,javax.swing.JTextArea,false,false, , ,false,<default>
+verifyButton,javax.swing.JButton,false,false, , ,false,<default>
+viewCertificateButton,javax.swing.JButton,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

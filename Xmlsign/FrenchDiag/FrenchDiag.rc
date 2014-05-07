@@ -1,0 +1,189 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(AFX_TARG_FRC)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(AFX_TARG_FRC) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 2,4,141,40
+ PRODUCTVERSION 2,4,141,40
+ FILEFLAGSMASK 0x1fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "Comments", "Infomosaic SecureXML Digital Signature & Encryption"
+            VALUE "CompanyName", "Infomosaic Corporation"
+            VALUE "FileDescription", "SecureXML Digital Signature & Encryption Module"
+            VALUE "FileVersion", "2, 4, 141, 40"
+            VALUE "InternalName", "XMLSign"
+            VALUE "LegalCopyright", "Copyright 2000-2004 Infomosaic Corporation"
+            VALUE "LegalTrademarks", "SecureXML and Infomosaic are registered trade marks of Infomosaic Corporation"
+            VALUE "OriginalFilename", "XMLSign.DLL"
+            VALUE "ProductName", "SecureXML Digital Signature & Encryption"
+            VALUE "ProductVersion", "2, 4, 141, 40"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(AFX_TARG_FRC)
+#if defined(APSTUDIO_INVOKED)
+IDD_SHOWSELECTCERT$(AFX_TARG_FRC) DIALOGEX 0, 0, 305, 190
+#else
+IDD_SHOWSELECTCERT DIALOGEX 0, 0, 305, 190
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choix du certificat"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Oui",IDOK,7,147,50,16
+    PUSHBUTTON      "Annuler",IDCANCEL,61,147,50,16
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,31,290,110
+    PUSHBUTTON      "Visualiser le certificat",IDC_BUTTON1,115,148,75,15
+    LTEXT           "Choisir le certificat que vous souhaitez utiliser:",
+                    IDC_STATIC,9,9,258,15
+    LTEXT           "Infomosaic SecureXML Digital Signature. Copyright (c) Infomosaic Corporation 2001-2005",
+                    IDC_STATIC,7,172,291,12
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "IDD_SHOWSELECTCERT$(AFX_TARG_FRC)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "XMLSign"
+    IDC_SIGOK               "    OK    "
+    IDS_SIGNEW              "Start Over"
+    IDS_SERIALNO            "Numéro de série"
+    IDS_EXPDATE             "Date d'expiration"
+    IDS_ISSUEDBY            "Délivré par"
+    IDS_ISSUEDTO            "Délivré à"
+    IDS_MSGINSTALL          "Please Install PKI Certificate"
+    IDS_MSGNOCERT           "No PKI Certificates Found"
+    IDS_CAPTION             "Choix du certificat"
+END
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

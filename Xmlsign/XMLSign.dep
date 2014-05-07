@@ -1,0 +1,129 @@
+# Microsoft Developer Studio Generated Dependency File, included by XMLSign.mak
+
+.\License.cpp : \
+	"..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\program files\microsoft sdk\include\shtypes.h"\
+	"..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\..\xmlsiglib\include\ax.h"\
+	"..\..\xmlsiglib\include\coresig.h"\
+	"..\..\xmlsiglib\include\libxml\catalog.h"\
+	"..\..\xmlsiglib\include\libxml\encoding.h"\
+	"..\..\xmlsiglib\include\libxml\entities.h"\
+	"..\..\xmlsiglib\include\libxml\globals.h"\
+	"..\..\xmlsiglib\include\libxml\hash.h"\
+	"..\..\xmlsiglib\include\libxml\htmlparser.h"\
+	"..\..\xmlsiglib\include\libxml\parserinternals.h"\
+	"..\..\xmlsiglib\include\libxml\threads.h"\
+	"..\..\xmlsiglib\include\libxml\tree.h"\
+	"..\..\xmlsiglib\include\libxml\valid.h"\
+	"..\..\xmlsiglib\include\libxml\xmlerror.h"\
+	"..\..\xmlsiglib\include\libxml\xmlio.h"\
+	"..\..\xmlsiglib\include\libxml\xmlmemory.h"\
+	"..\..\xmlsiglib\include\libxml\xmlwin32version.h"\
+	"..\..\xmlsiglib\include\libxml\xpath.h"\
+	"..\..\xmlsiglib\include\libxml\xpathinternals.h"\
+	"..\..\xmlsiglib\include\libxml\xpointer.h"\
+	"..\..\xmlsiglib\include\utils.h"\
+	"..\..\xmlsiglib\include\xs.h"\
+	".\errors.h"\
+	".\License.h"\
+	".\StdAfx.h"\
+	
+
+.\Signature.cpp : \
+	"..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\program files\microsoft sdk\include\dimm.h"\
+	"..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\program files\microsoft sdk\include\shtypes.h"\
+	"..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\..\xmlsiglib\include\ax.h"\
+	"..\..\xmlsiglib\include\base64.h"\
+	"..\..\xmlsiglib\include\coresig.h"\
+	"..\..\xmlsiglib\include\libxml\catalog.h"\
+	"..\..\xmlsiglib\include\libxml\encoding.h"\
+	"..\..\xmlsiglib\include\libxml\entities.h"\
+	"..\..\xmlsiglib\include\libxml\globals.h"\
+	"..\..\xmlsiglib\include\libxml\hash.h"\
+	"..\..\xmlsiglib\include\libxml\htmlparser.h"\
+	"..\..\xmlsiglib\include\libxml\parserinternals.h"\
+	"..\..\xmlsiglib\include\libxml\threads.h"\
+	"..\..\xmlsiglib\include\libxml\tree.h"\
+	"..\..\xmlsiglib\include\libxml\valid.h"\
+	"..\..\xmlsiglib\include\libxml\xmlerror.h"\
+	"..\..\xmlsiglib\include\libxml\xmlio.h"\
+	"..\..\xmlsiglib\include\libxml\xmlmemory.h"\
+	"..\..\xmlsiglib\include\libxml\xmlwin32version.h"\
+	"..\..\xmlsiglib\include\libxml\xpath.h"\
+	"..\..\xmlsiglib\include\libxml\xpathinternals.h"\
+	"..\..\xmlsiglib\include\libxml\xpointer.h"\
+	"..\..\xmlsiglib\include\utils.h"\
+	"..\..\xmlsiglib\include\xs.h"\
+	".\errors.h"\
+	".\License.h"\
+	".\Signature.h"\
+	".\StdAfx.h"\
+	".\XMLSign.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\program files\microsoft sdk\include\shtypes.h"\
+	"..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\program files\microsoft sdk\include\winefs.h"\
+	".\StdAfx.h"\
+	
+
+.\XMLSign.cpp : \
+	"..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\program files\microsoft sdk\include\shtypes.h"\
+	"..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\..\xmlsiglib\include\ax.h"\
+	"..\..\xmlsiglib\include\coresig.h"\
+	"..\..\xmlsiglib\include\libxml\catalog.h"\
+	"..\..\xmlsiglib\include\libxml\encoding.h"\
+	"..\..\xmlsiglib\include\libxml\entities.h"\
+	"..\..\xmlsiglib\include\libxml\globals.h"\
+	"..\..\xmlsiglib\include\libxml\hash.h"\
+	"..\..\xmlsiglib\include\libxml\htmlparser.h"\
+	"..\..\xmlsiglib\include\libxml\parserinternals.h"\
+	"..\..\xmlsiglib\include\libxml\threads.h"\
+	"..\..\xmlsiglib\include\libxml\tree.h"\
+	"..\..\xmlsiglib\include\libxml\valid.h"\
+	"..\..\xmlsiglib\include\libxml\xmlerror.h"\
+	"..\..\xmlsiglib\include\libxml\xmlio.h"\
+	"..\..\xmlsiglib\include\libxml\xmlmemory.h"\
+	"..\..\xmlsiglib\include\libxml\xmlwin32version.h"\
+	"..\..\xmlsiglib\include\libxml\xpath.h"\
+	"..\..\xmlsiglib\include\libxml\xpathinternals.h"\
+	"..\..\xmlsiglib\include\libxml\xpointer.h"\
+	"..\..\xmlsiglib\include\utils.h"\
+	".\errors.h"\
+	".\License.h"\
+	".\Signature.h"\
+	".\StdAfx.h"\
+	".\XMLSign.h"\
+	".\XMLSign_i.c"\
+	
+
+.\XMLSign.rc : \
+	".\Signature.rgs"\
+	".\XMLSign.tlb"\
+	

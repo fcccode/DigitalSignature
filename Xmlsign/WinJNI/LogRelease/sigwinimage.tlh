@@ -1,0 +1,109 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (38d0cc66).
+//
+// c:\activex\xmlsign\winjni\logrelease\sigwinimage.tlh
+//
+// C++ source equivalent of Win32 type library SigWinImage\Release\SigWinImage.dll
+// compiler-generated file created 04/11/05 at 11:31:49 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace SigWinImage {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("bf3869ad-a4c0-4d47-8044-45bf95f550b7"))
+/* LIBID */ __SigWinImage;
+struct /* coclass */ CCaptureImage;
+struct __declspec(uuid("0674a7d1-0a9c-4fe4-b914-96bcc6edc4cf"))
+/* dual interface */ ICaptureImage;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICaptureImage, __uuidof(ICaptureImage));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("f18805cc-5075-4d36-bb01-76a4caf6ee31"))
+CCaptureImage;
+    // [ default ] interface ICaptureImage
+
+struct __declspec(uuid("0674a7d1-0a9c-4fe4-b914-96bcc6edc4cf"))
+ICaptureImage : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(put=PutPhysicalSignatureFile))
+    _bstr_t PhysicalSignatureFile;
+    __declspec(property(put=PutUpperX))
+    long UpperX;
+    __declspec(property(put=PutUpperY))
+    long UpperY;
+    __declspec(property(put=PutWidth))
+    long Width;
+    __declspec(property(put=PutHeight))
+    long Height;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t CaptureCurrentWindowImage ( );
+    void PutPhysicalSignatureFile (
+        _bstr_t _arg1 );
+    void PutUpperX (
+        long _arg1 );
+    void PutUpperY (
+        long _arg1 );
+    void PutWidth (
+        long _arg1 );
+    void PutHeight (
+        long _arg1 );
+    _bstr_t ShowFileSignature (
+        _bstr_t guidStr );
+    _bstr_t CaptureMouseSignature (
+        _bstr_t guidStr );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CaptureCurrentWindowImage (
+        /*[out,retval]*/ BSTR * WindowImageFileName ) = 0;
+      virtual HRESULT __stdcall put_PhysicalSignatureFile (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall put_UpperX (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_UpperY (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Height (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_ShowFileSignature (
+        /*[in]*/ BSTR guidStr,
+        /*[out,retval]*/ BSTR * outPngFilePath ) = 0;
+      virtual HRESULT __stdcall raw_CaptureMouseSignature (
+        /*[in]*/ BSTR guidStr,
+        /*[out,retval]*/ BSTR * outPngFilePath ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\activex\xmlsign\winjni\logrelease\sigwinimage.tli"
+
+} // namespace SigWinImage
+
+#pragma pack(pop)

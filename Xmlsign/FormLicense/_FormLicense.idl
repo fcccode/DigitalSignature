@@ -1,0 +1,41 @@
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\objsafe.idl";
+
+[
+	object,
+	uuid(9C2C7A7E-E901-43F4-91F5-869B20DC6A1A),
+	dual,
+	helpstring("IValidation Interface"),
+	pointer_default(unique)
+] 
+#line 45 "c:\\activex\\xmlsign\\formlicense\\validation.h"
+interface IValidation : IDispatch {
+#line 47 "c:\\activex\\xmlsign\\formlicense\\validation.h"
+	[id(1),helpstring("method ValidateXmlWithSchema")] HRESULT  ValidateXmlWithSchema([in] BSTR instanceXMLStr, [in] BSTR schemaXmlStr, [out,retval] ULONG *validationStatus);
+	[id(2),helpstring("method ValidateFormLicense")] HRESULT  ValidateFormLicense([in] BSTR formXmlStr, [out,retval] ULONG *validationStatus);
+};
+
+
+[ version(1.0), uuid(31376B01-45EF-442D-9109-7B08F6219051), helpstring("FormLicense 1.0 Type Library") ]
+library FormLicense
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(667A9827-D2EF-42D5-A9A7-4B6209ECBD04),
+		helpstring("Validation Class")
+	] 
+#line 64 "c:\\activex\\xmlsign\\formlicense\\validation.h"
+	coclass CValidation {
+		interface IValidation;
+	};
+
+}
+

@@ -1,0 +1,19 @@
+D/digests////
+D/encodings////
+D/engines////
+D/io////
+D/params////
+/AsymmetricBlockCipher.java/1.1.2.1/Sat Nov 22 00:50:11 2003//Tpro5-ea
+/AsymmetricCipherKeyPair.java/1.1.2.1/Sat Nov 22 00:50:23 2003//Tpro5-ea
+/AsymmetricCipherKeyPairGenerator.java/1.1.2.1/Sat Nov 22 00:50:29 2003//Tpro5-ea
+/BlockCipher.java/1.1.2.1/Sat Nov 22 00:50:37 2003//Tpro5-ea
+/CipherKeyGenerator.java/1.1.2.1/Sat Nov 22 00:50:42 2003//Tpro5-ea
+/CipherParameters.java/1.1.2.1/Sat Nov 22 00:50:48 2003//Tpro5-ea
+/CryptoException.java/1.1.2.1/Sat Nov 22 00:50:55 2003//Tpro5-ea
+/DataLengthException.java/1.1.2.1/Sat Nov 22 00:51:01 2003//Tpro5-ea
+/Digest.java/1.1.2.1/Sat Nov 22 00:51:08 2003//Tpro5-ea
+/InvalidCipherTextException.java/1.1.2.1/Sat Nov 22 00:51:15 2003//Tpro5-ea
+/KeyGenerationParameters.java/1.1.2.1/Sat Nov 22 00:51:20 2003//Tpro5-ea
+/RuntimeCryptoException.java/1.1.2.1/Sat Nov 22 00:51:26 2003//Tpro5-ea
+/StreamBlockCipher.java/1.1.2.1/Sat Nov 22 00:51:32 2003//Tpro5-ea
+/StreamCipher.java/1.1.2.1/Sat Nov 22 00:51:39 2003//Tpro5-ea

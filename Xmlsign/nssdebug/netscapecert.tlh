@@ -1,0 +1,82 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (78322e43).
+//
+// c:\activex\xmlsign\nssdebug\netscapecert.tlh
+//
+// C++ source equivalent of Win32 type library ..\lib\NetscapeCert.dll
+// compiler-generated file created 05/25/05 at 11:40:58 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace NetscapeCert {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("d0d24f2b-a223-4e79-9551-f99b486958d7"))
+/* LIBID */ __NetscapeCert;
+struct /* coclass */ CCertStore;
+struct __declspec(uuid("0d61aa35-48d5-47f5-8249-f685f75250fd"))
+/* dual interface */ ICertStore;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICertStore, __uuidof(ICertStore));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("0a06154b-8ff9-48b2-a819-b68c327fc773"))
+CCertStore;
+    // [ default ] interface ICertStore
+
+struct __declspec(uuid("0d61aa35-48d5-47f5-8249-f685f75250fd"))
+ICertStore : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(put=PutNetscapeStorePassword))
+    _bstr_t NetscapeStorePassword;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    char * GetCertificateList (
+        unsigned long * certCount );
+    void PutNetscapeStorePassword (
+        _bstr_t _arg1 );
+    _bstr_t ExportNetscapeCert (
+        _bstr_t certSerialNumber );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetCertificateList (
+        /*[out]*/ unsigned long * certCount,
+        /*[out,retval]*/ char * * certArray ) = 0;
+      virtual HRESULT __stdcall put_NetscapeStorePassword (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_ExportNetscapeCert (
+        /*[in]*/ BSTR certSerialNumber,
+        /*[out,retval]*/ BSTR * pfxFilePath ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\activex\xmlsign\nssdebug\netscapecert.tli"
+
+} // namespace NetscapeCert
+
+#pragma pack(pop)

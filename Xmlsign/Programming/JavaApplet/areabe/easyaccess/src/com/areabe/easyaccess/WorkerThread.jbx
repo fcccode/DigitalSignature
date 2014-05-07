@@ -1,0 +1,20 @@
+[PropertyInfo]
+cfg,Config,false,false, , ,false,<default>
+dns,Named,false,false, , ,false,<default>
+dnsFailed,boolean,false,false, , ,false,<default>
+dnsModified,boolean,false,false, , ,false,<default>
+helper,NativeHelper,false,false, , ,false,<default>
+keepAlive,boolean,false,false, , ,false,<default>
+listenerLock,Object,false,false, , ,false,<default>
+log,Log,false,false, , ,false,<default>
+lt,ListenerThread,false,false, , ,false,<default>
+serverSockets,Vector,false,false, , ,false,<default>
+serverSockLock,Object,false,false, , ,false,<default>
+sockets,Vector,false,false, , ,false,<default>
+sockLock,Object,false,false, , ,false,<default>
+tcpFailed,boolean,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

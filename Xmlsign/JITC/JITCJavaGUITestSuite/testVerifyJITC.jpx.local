@@ -1,0 +1,24 @@
+build.menu.1[0]=com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make
+build.menu.2[0]=com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;rebuild
+content.layout.xml.[0]=<project-layout><tab_container selected_index="1"><tab node_name="src/testverifyjitc/CertFilter.java"/><tab node_name="src/testverifyjitc/JITCTestFrame.java"/><tab node_name="src/testverifyjitc/runVerifyJITC.java"/><tab node_name="src/testverifyjitc/UserInputDialog.java"/><tab node_name="src/testverifyjitc/Utils.java"/></tab_container></project-layout>
+debug.NoTracingClasses.1[0]=16 java.lang.Object1  1 -1
+debug.NoTracingClasses.2[0]=21 java.lang.ClassLoader1  1 -1
+debug.NoTracingClasses.3[0]=16 java.lang.String1  1 -1
+debug.SplitThreadsAndDataView[0]=0
+debug.Watches.1[0]=1  115 selectedIndices10 expression1  02  501  01  01  01  1 -1
+history.files.active[0]=src/testverifyjitc/JITCTestFrame.java,F;350,15063
+history.files.open.1[0]=src/testverifyjitc/CertFilter.java,F;1,102
+history.files.open.2[0]=src/testverifyjitc/JITCTestFrame.java,F;350,15063
+history.files.open.3[0]=src/testverifyjitc/runVerifyJITC.java,F;1,0
+history.files.open.4[0]=src/testverifyjitc/UserInputDialog.java,F;27,1499
+history.files.open.5[0]=src/testverifyjitc/Utils.java,F;1,633
+import.optimize.legacyPropertiesRead[0]=1
+packagebrowser.lastClassName[0]=javax.swing.JDialog
+sys.Author[0]=Manoj K Srivastava
+sys.DefaultPackage[0]=testverifyjitc
+sys.ReopenHistory.1[0]=[C%|/Borland/JBuilder2005/jdk1.4/src.zip]/java/awt/EventDispatchThread.java
+sys.ReopenHistory.2[0]=src/testverifyjitc/UserInput.java
+sys.ReopenHistory.3[0]=[C%|/Borland/JBuilder2005/jdk1.4/src.zip]/javax/swing/AbstractButton.java
+sys.ReopenHistory.4[0]=src/testverifyjitc/ImageFilter.java
+team.lastScanned[0]=1122069294155
+wizard.package.package_history.1[0]=testverifyjitc

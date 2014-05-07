@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetscapeUtil", "NetscapeUtil.vcproj", "{BB601F01-24F9-40EE-800E-DE85A7E69194}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetscapeUtilTest", "NetscapeUtilTest\NetscapeUtilTest.vcproj", "{3E341E82-5FC8-4645-B212-7670B5DD4C4A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BB601F01-24F9-40EE-800E-DE85A7E69194}.Debug.ActiveCfg = Debug|Win32
+		{BB601F01-24F9-40EE-800E-DE85A7E69194}.Debug.Build.0 = Debug|Win32
+		{BB601F01-24F9-40EE-800E-DE85A7E69194}.Release.ActiveCfg = Release|Win32
+		{BB601F01-24F9-40EE-800E-DE85A7E69194}.Release.Build.0 = Release|Win32
+		{3E341E82-5FC8-4645-B212-7670B5DD4C4A}.Debug.ActiveCfg = Debug|Win32
+		{3E341E82-5FC8-4645-B212-7670B5DD4C4A}.Debug.Build.0 = Debug|Win32
+		{3E341E82-5FC8-4645-B212-7670B5DD4C4A}.Release.ActiveCfg = Release|Win32
+		{3E341E82-5FC8-4645-B212-7670B5DD4C4A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

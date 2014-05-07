@@ -1,0 +1,165 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta name="Description" content="">
+<meta name="Keywords" content="">
+<title>Login Portal</title>
+<link rel="STYLESHEET" type="text/css" href="./css/color.css">
+<script type="text/javascript" language="JavaScript">
+<!--
+//css
+function bCheck(){
+var cssName;
+var av = navigator.appVersion;
+var ua = navigator.userAgent;
+var mac = (av.indexOf("Mac",0) !=-1)?1:0;
+var ie = (ua.indexOf('MSIE')>=0)?1:0;
+var N6 = navigator.userAgent.indexOf("Gecko")!=-1?1:0;
+if(mac && ie){
+cssName = (ua.indexOf('4.5')>=0)?"macie4":"macie5";
+}else if(mac){
+cssName = (!N6)?"macnn4":"macnn6";
+}else if(ie){
+cssName = (ua.indexOf('MSIE 6.0')>=0)?"winie6":"winie5";
+}else{
+cssName = (!N6)?"winnn4":"winnn6";
+}
+document.writeln("<link rel=\"STYLESHEET\"type=\"text/css\"href=\"./css/"+cssName+".css\">");
+}
+bCheck();
+var newLink;
+var linksEnabled=false;
+function new_win(url){
+   if (linksEnabled) {
+	W="";
+	H="";
+	T="yes";
+	R="yes";
+	newLink=window.open(url, "_blank", "toolbar=" +T +", location=no," + W + H + " directories=no, status=no, menubar=yes, scrollbars=yes, resizable=yes, dependent=yes");
+	newLink.focus();
+   }
+}
+function disableLinks(){
+   linksEnabled=false;
+   var aLnk=document.getElementsByName("alink");
+   for (i=0; i<aLnk.length; i++) {
+     aLnk[i].disabled = true;
+   }
+}
+function enableLinks(){
+   linksEnabled=true;
+   var aLnk=document.getElementsByName("alink");
+   for (i=0; i<aLnk.length; i++) {
+     aLnk[i].disabled = false;
+   }
+
+}
+//-->
+</SCRIPT>
+</HEAD>
+<body bgcolor="#ffffff" text="#000000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<TABLE WIDTH="700" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD WIDTH="325" BGCOLOR="#417D99" ALIGN="left" VALIGN="top">
+
+<TABLE WIDTH=325 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR>
+<TD COLSPAN=4>
+<A HREF="http://www.areabe.com" TARGET="top">
+<IMG SRC="images/01_swanstor.gif" WIDTH=325 HEIGHT=71 BORDER=0 ALT="SWANstor - Secure Remote Access Software"></A></TD>
+</TR>
+<TR>
+<TD COLSPAN=4>
+<IMG SRC="images/02_easy.gif" WIDTH=325 HEIGHT=46></TD>
+</TR>
+<TR>
+<TD COLSPAN=4>
+<IMG SRC="images/03_access.gif" WIDTH=325 HEIGHT=41></TD>
+</TR>
+<TR>
+<TD COLSPAN=4>
+<IMG SRC="images/04_window_top.gif" WIDTH=325 HEIGHT=23></TD>
+</TR>
+<TR>
+<TD>
+<IMG SRC="images/05_window_left.gif" WIDTH=35 HEIGHT=74></TD>
+<TD COLSPAN=2 bgcolor="#17536B">
+<applet MAYSCRIPT
+  codebase = "/file://swanstor/ssroot"
+  archive  = "easyaccess.jar"
+  code     = "com.areabe.easyaccess.EasyAccess"
+  width    = "252"
+  height   = "74"
+  hspace   = "0"
+  vspace   = "0"
+  align    = "middle"
+>
+<param name = "CABBASE" value = "easyaccess.cab">
+<param name = "debug" value = "false">
+<param name = "configuration" value = "$CONFIG$">
+</applet>
+</TD>
+<TD>
+<IMG SRC="images/07_window_right.gif" WIDTH=38 HEIGHT=74></TD>
+</TR>
+<TR>
+<TD COLSPAN=4>
+<IMG SRC="images/08_window_bottom.gif" WIDTH=325 HEIGHT=24></TD>
+</TR>
+<TR>
+<TD COLSPAN=4>
+<IMG SRC="images/09_under_wind.gif" WIDTH=325 HEIGHT=62></TD>
+</TR>
+<TR>
+<TD COLSPAN=2 bgcolor="#417D99" class="copyrightwhite">
+&nbsp;&nbsp;Copyright(C) AreaBe Japan, Inc. <br>
+&nbsp;&nbsp;All right reserved.</TD>
+<TD COLSPAN=2>
+<IMG SRC="images/11_second_bottom.gif" WIDTH=132 HEIGHT=30></TD>
+</TR>
+<TR>
+<TD COLSPAN=4>
+<IMG SRC="images/12_most_bottom.gif" WIDTH=325 HEIGHT=106></TD>
+</TR>
+<TR>
+<TD><IMG SRC="images/spacer.gif" WIDTH=35 HEIGHT=1></TD>
+<TD><IMG SRC="images/spacer.gif" WIDTH=158 HEIGHT=1></TD>
+<TD><IMG SRC="images/spacer.gif" WIDTH=94 HEIGHT=1></TD>
+<TD><IMG SRC="images/spacer.gif" WIDTH=38 HEIGHT=1></TD>
+</TR>
+</TABLE>
+
+	
+</TD>
+<TD><IMG SRC="./images/spacer.gif" WIDTH="10" HEIGHT="477"></TD>
+
+<TD valign="top">
+	<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	<td>
+	<img src="./images/spacer.gif" width="315" height="70"></td></tr>
+	<tr>
+	<td width="315" height="108" class="normal">
+	表示させたいページを下記のリストより選択してください。 
+	<tr>
+	<td>
+<!--URL_RECORD_BEGIN-->
+<a href="#" target="_blank" class="normal" name="alink" onClick="javascript:new_win('$HREF$'); return false;"> - $DESC$<br>
+
+<!--URL_RECORD_END-->
+
+	</td>
+	</tr>
+	</table>
+	   
+<div>
+<br>
+<a href="/file://swanstor/start">Switch to URL view</a>
+</div>
+	
+</TD>
+<TD WIDTH="50" bgcolor="#E6E6E6">
+&nbsp;</TD></TR>
+</TABLE>
+</BODY>
+</HTML>

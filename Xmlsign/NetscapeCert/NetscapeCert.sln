@@ -1,0 +1,101 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetscapeCert", "NetscapeCert.vcproj", "{85419A75-BDF1-41DE-9973-59F1F0D0CA79}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BB601F01-24F9-40EE-800E-DE85A7E69194} = {BB601F01-24F9-40EE-800E-DE85A7E69194}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetscapeCertPS", "NetscapeCertPS.vcproj", "{9A773091-50F6-449B-BE23-E36A1AC8F292}"
+	ProjectSection(ProjectDependencies) = postProject
+		{85419A75-BDF1-41DE-9973-59F1F0D0CA79} = {85419A75-BDF1-41DE-9973-59F1F0D0CA79}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetscapeUtil", "NetscapeUtil\NetscapeUtil.vcproj", "{BB601F01-24F9-40EE-800E-DE85A7E69194}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetscapeUtilTest", "NetscapeUtil\NetscapeUtilTest\NetscapeUtilTest.vcproj", "{3E341E82-5FC8-4645-B212-7670B5DD4C4A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NsCertTest", "NsCertTest\NsCertTest.vcproj", "{11E57167-8E5A-4A70-8C01-0E5FD819FBFC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pem2PfxUtil", "Pem2PfxUtil\Pem2PfxUtil.vcproj", "{B6711F33-A267-4738-842E-77C4A9D56848}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pem2PfxUtilTest", "Pem2PfxUtil\Pem2PfxUtilTest\Pem2PfxUtilTest.vcproj", "{0262683C-D613-4453-A4C4-151721B8E606}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 8
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {D093788D-108F-48EA-BBC9-C207116771D2}
+		SccProjectUniqueName1 = NetscapeCert.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = NetscapeCertPS.vcproj
+		SccLocalPath2 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName3 = NetscapeUtil\\NetscapeUtil.vcproj
+		SccProjectName3 = \u0022$/Netscape/NetscapeUtil\u0022,\u0020VRUAAAAA
+		SccLocalPath3 = NetscapeUtil
+		CanCheckoutShared = false
+		SccProjectUniqueName4 = NetscapeUtil\\NetscapeUtilTest\\NetscapeUtilTest.vcproj
+		SccProjectName4 = \u0022$/Netscape/NetscapeUtil/NetscapeUtilTest\u0022,\u0020JCVAAAAA
+		SccLocalPath4 = NetscapeUtil\\NetscapeUtilTest
+		CanCheckoutShared = false
+		SccProjectUniqueName5 = NsCertTest\\NsCertTest.vcproj
+		SccProjectName5 = \u0022$/Netscape/NsCertTest\u0022,\u0020IHVAAAAA
+		SccLocalPath5 = NsCertTest
+		CanCheckoutShared = false
+		SccProjectUniqueName6 = Pem2PfxUtil\\Pem2PfxUtilTest\\Pem2PfxUtilTest.vcproj
+		SccLocalPath6 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection6 = Pem2PfxUtil\\Pem2PfxUtilTest\\
+		SccProjectUniqueName7 = Pem2PfxUtil\\Pem2PfxUtil.vcproj
+		SccLocalPath7 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection7 = Pem2PfxUtil\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{85419A75-BDF1-41DE-9973-59F1F0D0CA79}.Debug.ActiveCfg = Debug|Win32
+		{85419A75-BDF1-41DE-9973-59F1F0D0CA79}.Debug.Build.0 = Debug|Win32
+		{85419A75-BDF1-41DE-9973-59F1F0D0CA79}.Release.ActiveCfg = Release|Win32
+		{85419A75-BDF1-41DE-9973-59F1F0D0CA79}.Release.Build.0 = Release|Win32
+		{9A773091-50F6-449B-BE23-E36A1AC8F292}.Debug.ActiveCfg = Debug|Win32
+		{9A773091-50F6-449B-BE23-E36A1AC8F292}.Release.ActiveCfg = Release|Win32
+		{BB601F01-24F9-40EE-800E-DE85A7E69194}.Debug.ActiveCfg = Debug|Win32
+		{BB601F01-24F9-40EE-800E-DE85A7E69194}.Debug.Build.0 = Debug|Win32
+		{BB601F01-24F9-40EE-800E-DE85A7E69194}.Release.ActiveCfg = Release|Win32
+		{BB601F01-24F9-40EE-800E-DE85A7E69194}.Release.Build.0 = Release|Win32
+		{3E341E82-5FC8-4645-B212-7670B5DD4C4A}.Debug.ActiveCfg = Debug|Win32
+		{3E341E82-5FC8-4645-B212-7670B5DD4C4A}.Debug.Build.0 = Debug|Win32
+		{3E341E82-5FC8-4645-B212-7670B5DD4C4A}.Release.ActiveCfg = Release|Win32
+		{3E341E82-5FC8-4645-B212-7670B5DD4C4A}.Release.Build.0 = Release|Win32
+		{11E57167-8E5A-4A70-8C01-0E5FD819FBFC}.Debug.ActiveCfg = Debug|Win32
+		{11E57167-8E5A-4A70-8C01-0E5FD819FBFC}.Debug.Build.0 = Debug|Win32
+		{11E57167-8E5A-4A70-8C01-0E5FD819FBFC}.Release.ActiveCfg = Release|Win32
+		{11E57167-8E5A-4A70-8C01-0E5FD819FBFC}.Release.Build.0 = Release|Win32
+		{B6711F33-A267-4738-842E-77C4A9D56848}.Debug.ActiveCfg = Debug|Win32
+		{B6711F33-A267-4738-842E-77C4A9D56848}.Debug.Build.0 = Debug|Win32
+		{B6711F33-A267-4738-842E-77C4A9D56848}.Release.ActiveCfg = Release|Win32
+		{B6711F33-A267-4738-842E-77C4A9D56848}.Release.Build.0 = Release|Win32
+		{0262683C-D613-4453-A4C4-151721B8E606}.Debug.ActiveCfg = Debug|Win32
+		{0262683C-D613-4453-A4C4-151721B8E606}.Debug.Build.0 = Debug|Win32
+		{0262683C-D613-4453-A4C4-151721B8E606}.Release.ActiveCfg = Release|Win32
+		{0262683C-D613-4453-A4C4-151721B8E606}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

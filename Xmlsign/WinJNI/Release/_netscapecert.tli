@@ -1,0 +1,31 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (3d7f265c).
+//
+// c:\activex\xmlsign\winjni\release\_netscapecert.tli
+//
+// Wrapper implementations for Win32 type library ..\NetscapeCert\_NetscapeCert.tlb
+// compiler-generated file created 06/14/05 at 16:21:55 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ICertStore wrapper method implementations
+//
+
+inline _bstr_t ICertStore::GetCertificateList ( unsigned long * certCount ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetCertificateList(certCount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICertStore::PutNetscapeStorePassword ( _bstr_t _arg1 ) {
+    HRESULT _hr = put_NetscapeStorePassword(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ICertStore::ExportNetscapeCert ( _bstr_t certSerialNumber ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_ExportNetscapeCert(certSerialNumber, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}

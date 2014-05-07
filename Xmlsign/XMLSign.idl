@@ -1,0 +1,284 @@
+/*****************************************************************************************
+ * Copyright: (c) 2000-2002 Infomosaic Corporation.
+ * All rights reserved.
+ * It is violation of international law to use this code without proper written authorization
+ * and license agreement from Infomosaic Corporation.
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED.  IN NO EVENT SHALL INFOMOSAIC CORPORATION  OR
+ * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ * USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ * ====================================================================
+ *
+ * Author: 
+ * Date:   
+ * Change history:
+ *
+ * Date		|	Modified By		|	Brief description of the modification
+ *
+ *
+ *****************************************************************************************
+ */
+// XMLSign.idl : IDL source for XMLSign.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (XMLSign.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(62EC64DC-B26D-46CE-9E33-24289BCF5F63),
+		dual,
+		helpstring("Infomosaic SecureXML Digital Signature ISignature Interface"),
+		pointer_default(unique)
+	]
+	interface ISignature : IDispatch
+	{
+		[propget, id(1), helpstring("property EnvelopingFlag")] HRESULT EnvelopingFlag([out, retval] short *pVal);
+		[propput, id(1), helpstring("property EnvelopingFlag")] HRESULT EnvelopingFlag([in] short newVal);
+		[propget, id(2), helpstring("property RecipientCertificateStore")] HRESULT RecipientCertificateStore([out, retval] BSTR *pVal);
+		[propput, id(2), helpstring("property RecipientCertificateStore")] HRESULT RecipientCertificateStore([in] BSTR newVal);
+		[propget, id(3), helpstring("property SignerCertificate")] HRESULT SignerCertificate([in] long index, [out, retval] BSTR *pVal);
+		[propput, id(3), helpstring("property SignerCertificate")] HRESULT SignerCertificate([in] long index, [in] BSTR newVal);
+		[propget, id(4), helpstring("property SignatureID")] HRESULT SignatureID([in] long index, [out, retval] BSTR *pVal);
+		[propput, id(4), helpstring("property SignatureID")] HRESULT SignatureID([in] long index, [in] BSTR newVal);
+		[propget, id(5), helpstring("property Properties")] HRESULT Properties([in] long sigIndex, [in] long propIndex, [out, retval] BSTR *pVal);
+		[propput, id(5), helpstring("property Properties")] HRESULT Properties([in] long sigIndex, [in] long propIndex, [in] BSTR newVal);
+		[propget, id(6), helpstring("property Base64EncodeXML")] HRESULT Base64EncodeXML([out, retval] BOOL *pVal);
+		[propput, id(6), helpstring("property Base64EncodeXML")] HRESULT Base64EncodeXML([in] BOOL newVal);
+		[propget, id(7), helpstring("property Base64DecodeXML")] HRESULT Base64DecodeXML([out, retval] BOOL *pVal);
+		[propput, id(7), helpstring("property Base64DecodeXML")] HRESULT Base64DecodeXML([in] BOOL newVal);
+		[propget, id(8), helpstring("property DocumentURI")] HRESULT DocumentURI([in] long sigIndex, [in] long uriIndex, [out, retval] BSTR *pVal);
+		[propget, id(9), helpstring("property DigestObjectStatus")] HRESULT DigestObjectStatus([in] long sigIndex, [in] long uriIndex, [out, retval] BOOL *pVal);
+		[propget, id(10), helpstring("property Language")] HRESULT Language([out, retval] BSTR *pVal);
+		[propput, id(10), helpstring("property Language")] HRESULT Language([in] BSTR newVal);
+		[propget, id(11), helpstring("property SignatureStatus")] HRESULT SignatureStatus([in] long sigIndex, [out, retval] BOOL *pVal);
+		[propget, id(12), helpstring("property PhysicalSignatureUsage")] HRESULT PhysicalSignatureUsage([out, retval] long *pVal);
+		[propput, id(12), helpstring("property PhysicalSignatureUsage")] HRESULT PhysicalSignatureUsage([in] long newVal);
+		[propget, id(13), helpstring("property PhysicalSignatureFile")] HRESULT PhysicalSignatureFile([out, retval] BSTR *pVal);
+		[propput, id(13), helpstring("property PhysicalSignatureFile")] HRESULT PhysicalSignatureFile([in] BSTR newVal);
+		[propget, id(14), helpstring("property CapturedSignatureFile")] HRESULT CapturedSignatureFile([out, retval] BSTR *pVal);
+		[id(15), helpstring("method Sign")] HRESULT Sign([in] BSTR URI, [out, retval] BSTR *tempFileName);
+		[propget, id(16), helpstring("property IncludeCamResponse")] HRESULT IncludeCamResponse([out, retval] BOOL *pVal);
+		[propput, id(16), helpstring("property IncludeCamResponse")] HRESULT IncludeCamResponse([in] BOOL newVal);
+		[id(17), helpstring("method SaveXMLSignature")] HRESULT SaveXMLSignature([in] BSTR sigFileName);
+		[id(18), helpstring("method Verify")] HRESULT Verify([in] BSTR signatureFileName, [out, retval] BOOL *sigStatus);
+		[id(19), helpstring("method GetError")] HRESULT GetError([out, retval] BSTR *errorString);
+		[propput, id(20), helpstring("property OverwriteFile")] HRESULT OverwriteFile([in] BOOL newVal);
+		[id(21), helpstring("method PFXExportCertificate")] HRESULT PFXExportCertificate([in] BSTR certID, [in] BSTR password, [out, retval] BSTR *pfxFilePath);
+		[id(22), helpstring("method VerifyDetached")] HRESULT VerifyDetached([in] BSTR signatureFileName, [out, retval] BOOL *sigStatus);
+		[id(23), helpstring("method GetLastError")] HRESULT GetLastError([out, retval] long *errorNum);
+		[id(24), helpstring("method GetX509Certificate")] HRESULT GetX509Certificate([in] BSTR certID, [out, retval] BSTR *certData);
+		[id(25), helpstring("method ViewCertificate")] HRESULT ViewCertificate([in] BSTR certID);
+		[propget, id(26), helpstring("property CertificateCount")] HRESULT CertificateCount([out, retval] long *pVal);
+		[id(27), helpstring("method GetCertificateInfo")] HRESULT GetCertificateInfo([in] long index, [in] long valIndex, [out, retval] BSTR *value);
+		[id(28), helpstring("method SetActiveCertificate")] HRESULT SetActiveCertificate([in] BSTR certID, [out, retval] BOOL *status);
+		[propget, id(29), helpstring("property SignedDocumentPath")] HRESULT SignedDocumentPath([in] long sigIndex, [in] long uriIndex, [out, retval] BSTR *pVal);
+		[propget, id(30), helpstring("property SignerSubject")] HRESULT SignerSubject([in] BSTR sigId, [out, retval] BSTR *pVal);
+		[propget, id(31), helpstring("property CertIssuer")] HRESULT CertIssuer([in] BSTR sigId, [out, retval] BSTR *pVal);
+		[propget, id(32), helpstring("property CertExpiry")] HRESULT CertExpiry([in] BSTR sigId, [out, retval] BSTR *pVal);
+		[propget, id(33), helpstring("property CertSerialNumber")] HRESULT CertSerialNumber([in] BSTR sigId, [out, retval] BSTR *pVal);
+		[id(34), helpstring("method FileExists")] HRESULT FileExists([in] BSTR fileName, [out, retval] BOOL *fileStatus);
+		[propget, id(35), helpstring("property FailedUriCount")] HRESULT FailedUriCount([out, retval] long *pVal);
+		[propget, id(36), helpstring("property TotalUriCount")] HRESULT TotalUriCount([out, retval] long *pVal);
+		[propget, id(37), helpstring("property FailedUriFullPath")] HRESULT FailedUriFullPath([in] long index, [out, retval] BSTR *pVal);
+		[propput, id(37), helpstring("property FailedUriFullPath")] HRESULT FailedUriFullPath([in] long index, [in] BSTR newVal);
+		[propget, id(38), helpstring("property FailedUri")] HRESULT FailedUri([in] long index, [out, retval] BSTR *pVal);
+		[propget, id(39), helpstring("property SignatureCount")] HRESULT SignatureCount([out, retval] long *pVal);
+		[id(40), helpstring("method SignXMLStr")] HRESULT SignXMLStr([in] BSTR xmlStr, [in] BSTR signatureId, [out, retval] BSTR *signedXMLStr);
+		[id(41), helpstring("method ReadAll")] HRESULT ReadAll([in] BSTR fileName, [out, retval] BSTR *fileDataStr);
+		[id(42), helpstring("method SaveXMLStr")] HRESULT SaveXMLStr([in] BSTR inputXMLStr, [in] BSTR fileName, [out, retval] BSTR *path);
+		[id(43), helpstring("method SignHTML")] HRESULT SignHTML([in] IDispatch *document, [out, retval] BSTR *signedHTML);
+		[id(44), helpstring("method SecureXMLVerify")] HRESULT SecureXMLVerify([in] BSTR signedXML, [out, retval] BSTR *verificationResponse);
+		[id(45), helpstring("method SetCSP")] HRESULT SetCSP([in] BSTR CSPName);
+		[id(46), helpstring("method GetSignedHTML")] HRESULT GetSignedHTML([in] BSTR signedHtmlXML, [out, retval] BSTR *originalHTML);
+		[id(47), helpstring("method SignFile")] HRESULT SignFile([in] BSTR inputFile, [in] BSTR outputFile);
+		[id(48), helpstring("method GetSignedFileObject")] HRESULT GetSignedFileObject([in] BSTR signedXML, [in] BSTR saveDir, [out, retval] BSTR *signedFilePath);
+		[id(49), helpstring("method SetStoreName")] HRESULT SetStoreName([in] BSTR storeName);
+		[id(50), helpstring("method GetStoreName")] HRESULT GetStoreName([out, retval] BSTR *storeName);
+		[id(51), helpstring("method SignXMLEnveloped")] HRESULT SignXMLEnveloped([in] BSTR inputXML, [in] BSTR sigId, [out, retval] BSTR *signedXML);
+		[id(52), helpstring("method GetVersion")] HRESULT GetVersion([out, retval] BSTR *version);
+		[id(53), helpstring("method GetLicenseStatus")] HRESULT GetLicenseStatus([out, retval] long *licStatus);
+		[id(54), helpstring("method GetPropertyCount")] HRESULT GetPropertyCount([in] long sigIndex, [out, retval] long *propCount);
+		[id(55), helpstring("method ViewAnyCertificate")] HRESULT ViewAnyCertificate([in] BSTR inputX509Data);
+		[id(56), helpstring("method SelectActiveCertificate")] HRESULT SelectActiveCertificate([out, retval] BSTR *certID);
+		[id(57), helpstring("method VerifyXMLStr")] HRESULT VerifyXMLStr([in] BSTR signedXML, [out, retval] BOOL *sigStatus);
+		[id(58), helpstring("method SetActivePFXFileCert")] HRESULT SetActivePFXFileCert([in] BSTR pfxFileName, [in] BSTR pfxPassword, [out, retval] BSTR *x509Cert);
+		[id(59), helpstring("method PFXExportActiveCertificate")] HRESULT PFXExportActiveCertificate([in] BSTR password, [out, retval] BSTR *pfxFilePath);
+		[propget, id(60), helpstring("property HostName")] HRESULT HostName([out, retval] BSTR *pVal);
+		[propget, id(61), helpstring("property TimeStampURL")] HRESULT TimeStampURL([out, retval] BSTR *pVal);
+		[propput, id(61), helpstring("property TimeStampURL")] HRESULT TimeStampURL([in] BSTR newVal);
+		[propget, id(62), helpstring("property TimeStamping")] HRESULT TimeStamping([out, retval] BOOL *pVal);
+		[propput, id(62), helpstring("property TimeStamping")] HRESULT TimeStamping([in] BOOL newVal);
+		[propget, id(63), helpstring("property HostOsType")] HRESULT HostOsType([out, retval] long *pVal);
+		[propget, id(64), helpstring("property CrlChecking")] HRESULT CrlChecking([out, retval] BOOL *pVal);
+		[propput, id(64), helpstring("property CrlChecking")] HRESULT CrlChecking([in] BOOL newVal);
+		[propget, id(65), helpstring("property SigCertStatus")] HRESULT SigCertStatus([in] long sigIndex, [in] BSTR atTime, [in] long timeFormat, [out, retval] long *pVal);
+		[id(66), helpstring("method VerifyX509CertCRL")] HRESULT VerifyX509CertCRL([in] BSTR certData, [in] BSTR atTime, [in] long timeFormat, [out, retval] BOOL *pVal);
+		[id(67), helpstring("method VerifyPFXCertCRL")] HRESULT VerifyPFXCertCRL([in] BSTR pfxFileName, [in] BSTR pfxPassword, [in] BSTR atTime, [in] long timeFormat, [out, retval] BOOL *pVal);
+		[propget, id(68), helpstring("property AddWindowImage")] HRESULT AddWindowImage([out, retval] BOOL *pVal);
+		[propput, id(68), helpstring("property AddWindowImage")] HRESULT AddWindowImage([in] BOOL newVal);
+		[propput, id(69), helpstring("property CRLLocation")] HRESULT CRLLocation([in] VARIANT newVal);
+		[id(70), helpstring("method VerifyActiveCertificate")] HRESULT VerifyActiveCertificate([out, retval] BOOL *result);
+		[propput, id(71), helpstring("property CertificatePolicy")] HRESULT CertificatePolicy([in] VARIANT newVal);
+		[propget, id(72), helpstring("property AuthorityConstrainedPolicy")] HRESULT AuthorityConstrainedPolicy([out, retval] VARIANT *pVal);
+		[propget, id(73), helpstring("property UserConstrainedPolicy")] HRESULT UserConstrainedPolicy([out, retval] VARIANT *pVal);
+		[propput, id(74), helpstring("property CertificatePolicyChecking")] HRESULT CertificatePolicyChecking([in] BOOL newVal);
+		[propput, id(75), helpstring("property CertificateChainValidation")] HRESULT CertificateChainValidation([in] BOOL newVal);
+		[propput, id(76), helpstring("property CertificatePathLengthChecking")] HRESULT CertificatePathLengthChecking([in] BOOL newVal);
+		[propput, id(77), helpstring("property ConfigFileName")] HRESULT ConfigFileName([in] BSTR newVal);
+		[propput, id(78), helpstring("property DoDCompliance")] HRESULT DoDCompliance([in] BOOL newVal);
+		[propget, id(79), helpstring("property CertificatePolicyExplicit")] HRESULT CertificatePolicyExplicit([out, retval] BOOL *pVal);
+		[propput, id(79), helpstring("property CertificatePolicyExplicit")] HRESULT CertificatePolicyExplicit([in] BOOL newVal);
+		[propput, id(80), helpstring("property CertificateTrustExplicit")] HRESULT CertificateTrustExplicit([in] BOOL newVal);
+		[id(81), helpstring("method SignXMLXpathStr")] HRESULT SignXMLXpathStr([in] BSTR xmlStr,[in]  BSTR xpathExp,[in]  BSTR signatureId,[out, retval] BSTR *signedXMLStr);
+		[propget, id(82), helpstring("property UseHMAC")] HRESULT UseHMAC([out, retval] BOOL *pVal);
+		[propput, id(82), helpstring("property UseHMAC")] HRESULT UseHMAC([in] BOOL newVal);
+		[propget, id(83), helpstring("property HMACPassword")] HRESULT HMACPassword([out, retval] BSTR *pVal);
+		[propput, id(83), helpstring("property HMACPassword")] HRESULT HMACPassword([in] BSTR newVal);
+		[id(84), helpstring("method ChangeOrAddProperty")] HRESULT ChangeOrAddProperty([in] BSTR propertyName, [in]BSTR propertyValue);
+		[propput, id(85), helpstring("property DetailedVerificationFlag")] HRESULT DetailedVerificationFlag([in] BOOL newVal);
+		[id(86), helpstring("method CaptureLiveSignature")] HRESULT CaptureLiveSignature([out, retval] BSTR *signatureFilePath);
+		[id(87), helpstring("method SignDataStr")] HRESULT SignDataStr([in] BSTR dataStrPtr, [out, retval] BSTR *signedXMLStr);
+		[propput, id(88), helpstring("property ExcludeSignerCertificate")] HRESULT ExcludeSignerCertificate([in] BOOL newVal);
+		[id(89), helpstring("method CoSignXMLStr")] HRESULT CoSignXMLStr([in] BSTR signedDataXMLStr, [out, retval] BSTR *coSignedXMLStr);
+		[id(90), helpstring("method CoSignFile")] HRESULT CoSignFile([in] BSTR inputSignedXMLFile, [in] BSTR outFileName, [out, retval] BSTR *outFilePath);
+		[id(91), helpstring("method SignFiles")] HRESULT SignFiles([in] VARIANT fileList, [in] BSTR outFileName, [out, retval] BSTR *outFilePath);
+		[propput, id(92), helpstring("property RecipientCertificates")] HRESULT RecipientCertificates([in] VARIANT newVal);
+		[id(93), helpstring("method EncryptStr")] HRESULT EncryptStr([in] BSTR inputStr, [out,retval] BSTR* cipherStr);
+		[id(94), helpstring("method DecryptStr")] HRESULT DecryptStr([in] BSTR cipherText, [out,retval] BSTR* plainText);
+		[id(95), helpstring("method EncryptFile")] HRESULT EncryptFile([in] BSTR inputFile, [in] BSTR outputFile, [out,retval] BSTR* encryptedFile);
+		[id(96), helpstring("method DecryptFile")] HRESULT DecryptFile([in] BSTR inputFile, [in] BSTR outputFile, [out,retval] BSTR* decryptedFile);
+		[propput, id(97), helpstring("property TrustedRoots")] HRESULT TrustedRoots([in] VARIANT newVal);
+		[propput, id(98), helpstring("property RecipientCertificateFiles")] HRESULT RecipientCertificateFiles([in] VARIANT newVal);
+		[propput, id(99), helpstring("property DetachedObjects")] HRESULT DetachedObjects([in] VARIANT newVal);
+		[propput, id(100), helpstring("property AttachedObjects")] HRESULT AttachedObjects([in] VARIANT newVal);
+		[id(101), helpstring("method ReadAllBase64")] HRESULT ReadAllBase64([in] BSTR uri, [out,retval] BSTR* base64EncodedData);
+		[propput, id(102), helpstring("property DecryptionPFXCertFile")] HRESULT DecryptionPFXCertFile([in] BSTR newVal);
+		[propput, id(103), helpstring("property DecryptUsingPFXFileCert")] HRESULT DecryptUsingPFXFileCert([in] BOOL newVal);
+		[propput, id(104), helpstring("property DecryptionPFXPassword")] HRESULT DecryptionPFXPassword([in] BSTR newVal);
+		[propput, id(105), helpstring("property XpathNamespace")] HRESULT XpathNamespace([in] VARIANT newVal);
+		[propget, id(106), helpstring("property CamServerHost")] HRESULT CamServerHost([out, retval] BSTR* pVal);
+		[propput, id(106), helpstring("property CamServerHost")] HRESULT CamServerHost([in] BSTR newVal);
+		[propget, id(107), helpstring("property CamServerPort")] HRESULT CamServerPort([out, retval] USHORT* pVal);
+		[propput, id(107), helpstring("property CamServerPort")] HRESULT CamServerPort([in] USHORT newVal);
+		[propget, id(108), helpstring("property UseCam")] HRESULT UseCam([out, retval] BOOL* pVal);
+		[propput, id(108), helpstring("property UseCam")] HRESULT UseCam([in] BOOL newVal);
+		[propget, id(109), helpstring("property AgencyId")] HRESULT AgencyId([out, retval] BSTR* pVal);
+		[propput, id(109), helpstring("property AgencyId")] HRESULT AgencyId([in] BSTR newVal);
+		[propget, id(110), helpstring("property CamValidationResponse")] HRESULT CamValidationResponse([out, retval] BSTR* pVal);
+		[id(111), helpstring("method GetSigPropValueByName")] HRESULT GetSigPropValueByName([in] LONG sigIndex, [in] BSTR propName, [out,retval] BSTR* propValue);
+		[id(112), helpstring("method Base64DecodeBufferToFile")] HRESULT Base64DecodeBufferToFile([in] BSTR encodedBuffer, [in] BSTR outFilePath, [out,retval] BSTR* decodedFilePath);
+		[id(113), helpstring("method Base64DecodeFileToFile")] HRESULT Base64DecodeFileToFile([in] BSTR encodedFilePath, [in] BSTR outFilePath, [out,retval] BSTR* decodedFilePath);
+		[id(114), helpstring("method GunZipFile")] HRESULT GunZipFile([in] BSTR gZippedFile, [in] BSTR gUnZippedFile, [out,retval] BSTR* gUnZippedFilePath);
+		[propget, id(115), helpstring("property CertSerialNumberFormat")] HRESULT CertSerialNumberFormat([out,retval] LONG *pValretval);
+		[propput, id(115), helpstring("property CertSerialNumberFormat")] HRESULT CertSerialNumberFormat([in] LONG newVal);
+		[id(116), helpstring("method SecureXMLVerifyFileToBuffer")] HRESULT SecureXMLVerifyFileToBuffer([in] BSTR signedXMLFile, [out,retval] BSTR* verificationResponse);
+		[id(117), helpstring("method SecureXMLVerifyFileToFile")] HRESULT SecureXMLVerifyFileToFile([in] BSTR signedXMLFile, [in] BSTR outFilePath, [out,retval] BSTR* verificationResponseFilePath);
+		[id(118), helpstring("method DeleteSignatureFromXMLStr")] HRESULT DeleteSignatureFromXMLStr([in] BSTR signedXMLStr, [in] BSTR sigId, [out,retval] BSTR* newSigXMLStr);
+		[id(119), helpstring("method DeleteSignatureFromFile")] HRESULT DeleteSignatureFromFile([in] BSTR signedXMLFile, [in] BSTR sigId, [in] BSTR outFilePath, [out,retval] BSTR* newSigFilePath);
+		[propput, id(120), helpstring("property AllowedCertIssuerNames")] HRESULT AllowedCertIssuerNames([in] VARIANT newVal);
+		[propget, id(121), helpstring("property CRLCacheDbConnectionString")] HRESULT CRLCacheDbConnectionString([out, retval] BSTR* pVal);
+		[propput, id(121), helpstring("property CRLCacheDbConnectionString")] HRESULT CRLCacheDbConnectionString([in] BSTR newVal);
+		[propget, id(122), helpstring("property UseCRLCache")] HRESULT UseCRLCache([out, retval] BOOL* pVal);
+		[propput, id(122), helpstring("property UseCRLCache")] HRESULT UseCRLCache([in] BOOL newVal);
+		[propput, id(123), helpstring("property CRLCacheTimeoutInMinutes")] HRESULT CRLCacheTimeoutInMinutes([in] long newVal);
+		[propput, id(124), helpstring("property CanonicalizationMethod")] HRESULT CanonicalizationMethod([in] long newVal);
+		[propget, id(125), helpstring("property NetscapeStorePassword")] HRESULT NetscapeStorePassword([out, retval] BSTR* pVal);
+		[propput, id(125), helpstring("property NetscapeStorePassword")] HRESULT NetscapeStorePassword([in] BSTR newVal);
+		[id(126), helpstring("method SetActivePEMFileCert")] HRESULT SetActivePEMFileCert([in] BSTR pemFileName, [in] BSTR pemPassword, [out,retval] BSTR* pemX509Cert);
+		[propget, id(127), helpstring("property SecureXMLPath")] HRESULT SecureXMLPath([out, retval] BSTR* pVal);
+		[propget, id(128), helpstring("property SignedDocumentCount")] HRESULT SignedDocumentCount([in] LONG sigIndex, [out, retval] LONG* pVal);
+		[id(129), helpstring("method SignXMLByteArray")] HRESULT SignXMLByteArray([in] VARIANT xmlByteArray, [in] BSTR signatureId, [out,retval] VARIANT* signedXMLByteArray);
+		[id(130), helpstring("method SaveXMLByteArray")] HRESULT SaveXMLByteArray([in] VARIANT inputXmlByteArray, [in] BSTR fileName, [out,retval] BSTR* path);
+		[id(131), helpstring("method ReadAllByteArray")] HRESULT ReadAllByteArray([in] BSTR fileName, [out,retval] VARIANT* fileDataByteArray);
+		[id(132), helpstring("method VerifyXMLByteArray")] HRESULT VerifyXMLByteArray([in] VARIANT signedXmlByteArray, [out,retval] BOOL * sigStatus);
+		[id(133), helpstring("method SecureXMLVerifyByteArray")] HRESULT SecureXMLVerifyByteArray([in] VARIANT signedXmlByteArray, [out,retval] VARIANT* verificationResponseByteArray);
+		[id(134), helpstring("method SignXMLXpathByteArray")] HRESULT SignXMLXpathByteArray([in] VARIANT inputXmlByteArray, [in] BSTR xpathExp, [in] BSTR signatureId, [out,retval] VARIANT* signedXmlByteArray);
+		[id(135), helpstring("method SignXMLEnvelopedByteArray")] HRESULT SignXMLEnvelopedByteArray([in] VARIANT inputXmlByteArray, [in] BSTR sigId, [out,retval] VARIANT* signedXmlByteArray);
+		[id(136), helpstring("method Base64DecodeByteArrayToFile")] HRESULT Base64DecodeByteArrayToFile([in] VARIANT encodedBuffer, [in] BSTR outFilePath, [out,retval] BSTR* decodedFilePath);
+		[id(137), helpstring("method Base64DecodeByteArrayToByteArray")] HRESULT Base64DecodeByteArrayToByteArray([in] VARIANT encodedBuffer, [out,retval] VARIANT* decodedBuffer);
+		[id(138), helpstring("method Base64EncodeByteArrayToByteArray")] HRESULT Base64EncodeByteArrayToByteArray([in] VARIANT inputBinary, [out,retval] VARIANT* encodedBuffer);
+		[id(139), helpstring("method Base64EncodeByteArrayToFile")] HRESULT Base64EncodeByteArrayToFile([in] VARIANT inputBinary, [in] BSTR outFilePath, [out,retval] BSTR* encodedFilePath);
+		[id(140), helpstring("method Base64EncodeStrToFile")] HRESULT Base64EncodeStrToFile([in] BSTR inputStr, [in] BSTR outFilePath, [out,retval] BSTR *encodedFilePath);
+		[id(141), helpstring("method Base64EncodeStrToStr")] HRESULT Base64EncodeStrToStr([in] BSTR inputStr, [out,retval] BSTR* encodedStr);
+		[id(142), helpstring("method SetActivePFXB64Data")] HRESULT SetActivePFXB64Data([in] BSTR b64PfxData, [in] BSTR pfxPassword, [out,retval] BSTR* pfxX509Cert);
+		[propget, id(143), helpstring("property FloatingLicense")] HRESULT FloatingLicense([out,retval] BSTR *pVal);
+		[propput, id(143), helpstring("property FloatingLicense")] HRESULT FloatingLicense([in] BSTR newVal);
+		[propget, id(144), helpstring("property LicensedUserCount")] HRESULT LicensedUserCount([out, retval] LONG* pVal);
+		[propput, id(145), helpstring("property IncludeCRLInSignature")] HRESULT IncludeCRLInSignature([in] BOOL newVal);
+		[propget, id(146), helpstring("property UsedCRLList")] HRESULT UsedCRLList([out, retval] VARIANT* pVal);
+		[id(147), helpstring("method GetErrorDetail")] HRESULT GetErrorDetail([in] LONG errorNum, [out,retval] BSTR* errorDesc);
+		[propput, id(148), helpstring("property PhysicalSignatureB64Str")] HRESULT PhysicalSignatureB64Str([in] BSTR newVal);
+		[id(149), helpstring("method GetSignedInfoDigest")] HRESULT GetSignedInfoDigest([in] BSTR xmlStr, [in] BSTR signatureId, [out,retval] BSTR* signedInfoDigest);
+		[id(150), helpstring("method GetX509CertificateChain")] HRESULT GetX509CertificateChain([in] BSTR certID, [out,retval] BSTR* certChainAsB64XmlStr);
+		[propput, id(151), helpstring("property SignerCertificateChain")] HRESULT SignerCertificateChain([in] BSTR newVal);
+		[propget, id(152), helpstring("property SignatureImageId")] HRESULT SignatureImageId([out, retval] BSTR* pVal);
+		[propput, id(152), helpstring("property SignatureImageId")] HRESULT SignatureImageId([in] BSTR newVal);
+		[id(153), helpstring("method SignSignedInfoDigest")] HRESULT SignSignedInfoDigest([in] BSTR b64CertData, [in] BSTR b64SignedInfoDigest, [out,retval] BSTR* b64SigValXml);
+		[id(154), helpstring("method ApplySignatureValue")] HRESULT ApplySignatureValue([in] BSTR b64SigValXml, [out,retval] BSTR* signedXML);
+		[id(155), helpstring("method GetSignedInfoDigestFromByteArray")] HRESULT GetSignedInfoDigestFromByteArray([in] VARIANT xmlByteArray, [in] BSTR signatureId, [out,retval] BSTR* signedInfoDigest);
+		[id(156), helpstring("method ApplySignatureValueGetByteArray")] HRESULT ApplySignatureValueGetByteArray([in] BSTR b64SigValXml, [out,retval] VARIANT* signedXmlByteArray);
+		[id(157), helpstring("method GetSignedDocumentB64Str")] HRESULT GetSignedDocumentB64Str([in] LONG sigIndex, [in] LONG uriIndex, [out,retval] BSTR* signedDocB64Str);
+		[id(158), helpstring("method GetSignedDocumentByteArray")] HRESULT GetSignedDocumentByteArray([in] LONG sigIndex, [in] LONG uriIndex, [out,retval] VARIANT* signedDocumentByteArray);
+		[propget, id(159), helpstring("property CertValidationTransactionId")] HRESULT CertValidationTransactionId([out, retval] BSTR* pVal);
+		[propput, id(159), helpstring("property CertValidationTransactionId")] HRESULT CertValidationTransactionId([in] BSTR newVal);
+		[propget, id(160), helpstring("property IgnoreIncompleteSignature")] HRESULT IgnoreIncompleteSignature([out, retval] BOOL* pVal);
+		[propput, id(160), helpstring("property IgnoreIncompleteSignature")] HRESULT IgnoreIncompleteSignature([in] BOOL newVal);
+		[propget, id(161), helpstring("property SignatureIndexToVerify")] HRESULT SignatureIndexToVerify([out, retval] LONG* pVal);
+		[propput, id(161), helpstring("property SignatureIndexToVerify")] HRESULT SignatureIndexToVerify([in] LONG newVal);
+		[propget, id(162), helpstring("property UseOcsp")] HRESULT UseOcsp([out, retval] BOOL* pVal);
+		[propput, id(162), helpstring("property UseOcsp")] HRESULT UseOcsp([in] BOOL newVal);
+		[propget, id(163), helpstring("property OcspTrustedRespSignerCertPath")] HRESULT OcspTrustedRespSignerCertPath([out, retval] BSTR* pVal);
+		[propput, id(163), helpstring("property OcspTrustedRespSignerCertPath")] HRESULT OcspTrustedRespSignerCertPath([in] BSTR newVal);
+		[propget, id(164), helpstring("property OcspReqSignerPFXCertPath")] HRESULT OcspReqSignerPFXCertPath([out, retval] BSTR* pVal);
+		[propput, id(164), helpstring("property OcspReqSignerPFXCertPath")] HRESULT OcspReqSignerPFXCertPath([in] BSTR newVal);
+		[propget, id(165), helpstring("property OcspReqSignerPFXCertPassword")] HRESULT OcspReqSignerPFXCertPassword([out, retval] BSTR* pVal);
+		[propput, id(165), helpstring("property OcspReqSignerPFXCertPassword")] HRESULT OcspReqSignerPFXCertPassword([in] BSTR newVal);
+		[propget, id(166), helpstring("property OcspResponderURL")] HRESULT OcspResponderURL([out, retval] BSTR* pVal);
+		[propput, id(166), helpstring("property OcspResponderURL")] HRESULT OcspResponderURL([in] BSTR newVal);
+		[propget, id(167), helpstring("property OcspTextResponse")] HRESULT OcspTextResponse([out, retval] BSTR* pVal);
+		[propget, id(168), helpstring("property OcspB64Response")] HRESULT OcspB64Response([out, retval] BSTR* pVal);
+		[propget, id(169), helpstring("property CertRevocationDate")] HRESULT CertRevocationDate([out, retval] BSTR* pVal);
+		[propget, id(170), helpstring("property IncludeOcspResponse")] HRESULT IncludeOcspResponse([out, retval] LONG* pVal);
+		[propput, id(170), helpstring("property IncludeOcspResponse")] HRESULT IncludeOcspResponse([in] LONG newVal);
+		[propput, id(171), helpstring("property ProxyHost")] HRESULT ProxyHost([in] BSTR newVal);
+		[propput, id(172), helpstring("property ProxyPort")] HRESULT ProxyPort([in] USHORT newVal);
+		[propput, id(173), helpstring("property ProxyUserName")] HRESULT ProxyUserName([in] BSTR newVal);
+		[propput, id(174), helpstring("property ProxyPassword")] HRESULT ProxyPassword([in] BSTR newVal);
+		[propput, id(175), helpstring("property InclusiveNamespacePrefixList")] HRESULT InclusiveNamespacePrefixList([in] VARIANT newVal);
+		[propget, id(176), helpstring("property TimeStampFormat")] HRESULT TimeStampFormat([out, retval] LONG* pVal);
+		[propput, id(176), helpstring("property TimeStampFormat")] HRESULT TimeStampFormat([in] LONG newVal);
+		[propget, id(177), helpstring("property TimeStampCritical")] HRESULT TimeStampCritical([out, retval] LONG* pVal);
+		[propput, id(177), helpstring("property TimeStampCritical")] HRESULT TimeStampCritical([in] LONG newVal);
+		[propput, id(178), helpstring("property SignedObjectId")] HRESULT SignedObjectId([in] VARIANT newVal);
+};
+[
+	uuid(7CAD46B3-47CB-45B6-BB83-1B22AE0CB3BC),
+	version(1.0),
+	helpstring("Infomosaic SecureXML Digital Signature & Encryption 1.0 Type Library")
+]
+library XMLSIGNLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(D300C133-A6F6-4FB4-A734-4865FBF5A3B1),
+		helpstring("Infomosaic SecureXML Digital Signature & Encryption Class")
+	]
+	coclass Signature
+	{
+		[default] interface ISignature;
+	};
+};

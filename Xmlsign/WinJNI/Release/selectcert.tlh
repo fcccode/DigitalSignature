@@ -1,0 +1,72 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (18ec7f52).
+//
+// c:\activex\xmlsign\winjni\release\selectcert.tlh
+//
+// C++ source equivalent of Win32 type library SelectCert\Release\SelectCert.dll
+// compiler-generated file created 03/18/04 at 13:05:27 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace SelectCert {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("6cbade9d-ddbc-499c-9084-cf3383b4dd04"))
+/* LIBID */ __SelectCert;
+struct /* coclass */ CCertListWindow;
+struct __declspec(uuid("1e798bf0-adb8-4414-b57d-18257c81a01b"))
+/* dual interface */ ICertListWindow;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICertListWindow, __uuidof(ICertListWindow));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("da62ea20-03f3-4ec8-b390-4b81b59bb053"))
+CCertListWindow;
+    // [ default ] interface ICertListWindow
+
+struct __declspec(uuid("1e798bf0-adb8-4414-b57d-18257c81a01b"))
+ICertListWindow : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Initialize (
+        const _variant_t & certInfoList,
+        long certCount );
+    long selectCertificate (
+        long * certIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Initialize (
+        /*[in]*/ VARIANT certInfoList,
+        /*[in]*/ long certCount ) = 0;
+      virtual HRESULT __stdcall raw_selectCertificate (
+        /*[out]*/ long * certIndex,
+        /*[out,retval]*/ long * certSelected ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\activex\xmlsign\winjni\release\selectcert.tli"
+
+} // namespace SelectCert
+
+#pragma pack(pop)

@@ -1,0 +1,447 @@
+<HTML>
+	<HEAD>
+		<TITLE>Infomosaic SecureXML Java Applet JITC Test Suite</TITLE>
+	</HEAD>
+	<body>
+		<h3 align="center">Infomosaic SecureXML Java Applet JITC Test Suite</h3>
+		<APPLET id="SecureXMLJavaApplet" codeBase="./" height="0" hspace="0" archive="securexmlapplet-capi.jar"
+			width="0" align="middle" code="infomosaic.securexml.applet.XMLSignApplet" vspace="0"
+			name="SecureXMLJavaApplet" scriptable="true" MAYSCRIPT VIEWASTEXT>
+			<PARAM NAME="cabbase" VALUE="securexmlapplet.cab">
+		</APPLET> <APPLET id="ArrayHelper" height="0" width="0" code="JavaArrayApplet.class" name="ArrayHelper"
+			scriptable="true" MAYSCRIPT VIEWASTEXT></APPLET>
+		<script language="javascript">
+var currentFileSelection;
+var sig;
+var newLink;
+var linksEnabled=false;
+var usingPFX=true;
+var certId;
+
+function getJavaArrayAsAString(jString) {
+    jString += "";
+    return jString.split("|");
+}
+
+function disableLinks(){
+   linksEnabled=false;
+   var aLnk=document.getElementsByName("buttons");
+   for (i=0; i<aLnk.length; i++) {
+     aLnk[i].disabled = true;
+   }
+}
+
+function enableLinks(){
+   linksEnabled=true;
+   var aLnk=document.getElementsByName("buttons");
+   for (i=0; i<aLnk.length; i++) {
+     aLnk[i].disabled = false;
+   }
+   sig = document.SecureXMLJavaApplet.getSignature();
+   sig.setDoDCompliance(1);
+   versionLabel.innerText = "Verification Details for SecureXML Java Applet Version: " + sig.getVersion();
+}
+
+function logInputValues() 
+{
+	var i;
+	var res = "";
+	var authConstrainedPolicySet, userConstrainedPolicySet;
+	
+	try {
+	res += "\nUsed CRL files:\n"; 
+	if ((crlFile0.value != null) && (crlFile0.value != ""))
+		res +=	crlFile0.value + "\n"; 
+	if ((crlFile1.value != null) && (crlFile1.value != ""))
+		res +=	crlFile1.value + "\n"; 
+	if ((crlFile2.value != null) && (crlFile2.value != ""))
+		res +=	crlFile2.value + "\n"; 
+	if ((crlFile3.value != null) && (crlFile3.value != ""))
+		res +=	crlFile3.value + "\n";
+	if ((crlFile4.value != null) && (crlFile4.value != ""))
+		res +=	crlFile4.value + "\n";
+	if ((crlURL0.value != null) && (crlURL0.value != ""))
+		res +=	crlURL0.value  + "\n";
+	if ((crlURL1.value != null) && (crlURL1.value != ""))
+		res +=	crlURL1.value  + "\n";
+	if ((crlURL2.value != null) && (crlURL2.value != ""))
+		res +=	crlURL2.value  + "\n";
+	if ((crlURL3.value != null) && (crlURL3.value != ""))
+		res +=	crlURL3.value  + "\n";
+	if ((crlURL4.value != null) && (crlURL4.value != ""))
+		res +=	crlURL4.value  + "\n";
+
+	res += "\nInput User Policies:\n";
+	
+	if (testPolicy1.checked == true)
+		res += "testPolicy1:" + testPolicy1.value + "\n";
+		
+	if (testPolicy2.checked == true)
+		res += "testPolicy2:" + testPolicy2.value + "\n";
+		
+	if (testPolicy3.checked == true)
+		res += "testPolicy3:" + testPolicy3.value + "\n";
+		
+	if (testPolicy4.checked == true)
+		res += "testPolicy4:" + testPolicy4.value + "\n";
+		
+	if (testPolicy5.checked == true)
+		res += "testPolicy5:" + testPolicy5.value + "\n";
+		
+	if (anyPolicy.checked == true)
+		res += "anyPolicy:" + anyPolicy.value + "\n";
+
+	if (policyExplicit.checked == true)
+		res += "Policy Explicit" + "\n";
+
+	res += "\nAuthority Constrained Policy Set:";
+
+	document.ArrayHelper.setStringArray(sig.getAuthorityConstrainedPolicy()); // parameter is Java String[]
+	var jString = document.ArrayHelper.getJavaArrayAsAString(); // this is JavaScript String
+	authConstrainedPolicySet = getJavaArrayAsAString(jString);  // this is JavaScript Array
+	
+	for (i=0; i < authConstrainedPolicySet.length; i++)
+		res += "\n" + authConstrainedPolicySet[i];
+
+	res += "\n\nUser Constrained Policy Set:";
+	document.ArrayHelper.setStringArray(sig.getUserConstrainedPolicy()); // parameter is Java String[]
+	jString = document.ArrayHelper.getJavaArrayAsAString(); // this is JavaScript String
+	userConstrainedPolicySet = getJavaArrayAsAString(jString);  // this is JavaScript Array
+
+	for (i=0; i < userConstrainedPolicySet.length; i++)
+		res += "\n" + userConstrainedPolicySet[i];
+		
+	if (sig.getCertificatePolicyExplicit() == 1)
+        res += "\nExplicit Policy State Variable= TRUE";
+	else
+		res += "\nExplicit Policy State Variable= FALSE";
+		
+    }
+    catch (Exception)
+    {
+		alert("Caught exception inside logInputValues. " + Exception.toString());
+	}
+	
+	return res;
+
+}
+
+function verifyPfxCertificate()
+{
+	var result, err, policyArray;
+	var index = 0;
+	var policyArrayString = "";
+	try
+	{
+		policyArray = new Array();
+		if (testPolicy1.checked == true)
+		{
+			policyArray[index] =  testPolicy1.value;
+			policyArrayString = testPolicy1.value;
+			index++;
+		}
+			
+		if (testPolicy2.checked == true)
+		{
+			policyArray[index] =  testPolicy2.value;
+			if (index != 0)
+			{
+				policyArrayString += "|";
+			}
+			policyArrayString += testPolicy2.value;
+			index++;
+		}
+			
+		if (testPolicy3.checked == true)
+		{
+			policyArray[index] =  testPolicy3.value;
+			if (index != 0)
+			{
+				policyArrayString += "|";
+			}
+			policyArrayString += testPolicy3.value;
+			index++;
+		}
+			
+		if (testPolicy4.checked == true)
+		{
+			policyArray[index] =  testPolicy4.value;
+			if (index != 0)
+			{
+				policyArrayString += "|";
+			}
+			policyArrayString += testPolicy4.value;
+			index++;
+		}
+			
+		if (testPolicy5.checked == true)
+		{
+			policyArray[index] =  testPolicy5.value;
+			if (index != 0)
+			{
+				policyArrayString += "|";
+			}
+			policyArrayString += testPolicy5.value;
+			index++;
+		}
+			
+		if (anyPolicy.checked == true)
+		{
+			policyArray[index] =  anyPolicy.value;
+			if (index != 0)
+			{
+				policyArrayString += "|";
+			}
+			policyArrayString += anyPolicy.value;
+			index++;
+		}
+		document.ArrayHelper.putJavaArray(policyArrayString);
+		sig.setCertificatePolicy(document.ArrayHelper.getJavaArray());
+		
+		if (policyExplicit.checked == true)
+			sig.setCertificatePolicyExplicit(1);
+		else
+			sig.setCertificatePolicyExplicit(0);
+			
+		//Set trusted root certificate
+		document.ArrayHelper.putJavaArray(trustedRootFile.value);
+		sig.setTrustedRoots(document.ArrayHelper.getJavaArray());
+		
+		//Set CRL Files
+		var crlListArrayString;
+		index = 0;
+		
+		if (crlFile0.value != null)
+		{
+			crlListArrayString = crlFile0.value;
+			index++;
+		}
+		if (crlFile1.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlFile1.value;
+			index++;
+		}
+		if (crlFile2.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlFile2.value;
+			index++;
+		}
+		if (crlFile3.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlFile3.value;
+			index++;
+		}
+		if (crlFile4.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlFile4.value;
+			index++;
+		}
+
+		if (crlURL0.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlURL0.value;
+			index++;
+		}
+		if (crlURL1.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlURL1.value;
+			index++;
+		}
+		if (crlURL2.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlURL2.value;
+			index++;
+		}
+		if (crlURL3.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlURL3.value;
+			index++;
+		}
+		if (crlURL4.value != null)
+		{
+			if (index != 0)
+				crlListArrayString += "|";
+			crlListArrayString += crlURL4.value;
+			index++;
+		}
+
+		document.ArrayHelper.putJavaArray(crlListArrayString);
+		sig.setCRLLocation(document.ArrayHelper.getJavaArray());
+
+		if (usingPFX == true)
+			result = sig.verifyPFXCertCRL(selectCertificateFile.value, pfxPassword.value, "", 1);
+		else
+			result = sig.verifyX509CertCRL(sig.getX509Certificate(certId), "", 1);
+		err = sig.getLastError();
+		if (usingPFX == true)
+			verificationResultReport.value = "Certificate File = " + selectCertificateFile.value;
+		else
+			verificationResultReport.value = "IE Cert Store Certificate CN= " + sig.getCertificateInfo(-3, 5);
+		if (result != 1) 
+		{
+			document.verificationStatus.src = "failed.gif";
+			verificationResultReport.value +=	"\n\nCertificate path failed to validate\nLast Error: " + 
+				err + ": " + sig.getErrorDetail(err) + "\n\n" + 
+				"Error Stack: \n" + sig.getError() +
+				logInputValues();
+		}
+		else
+		{
+			document.verificationStatus.src = "verified.gif";
+			verificationResultReport.value = "Certificate File = " + selectCertificateFile.value +
+				"\n\nCertificate path validated"
+				+ logInputValues();
+		}
+	}
+	catch(Exception)
+	{
+		alert("Caught exception " + Exception.toString());
+	}
+	return true;
+}
+
+function viewCertificate_onclick() {
+	var x509Cert = new String();
+	if (usingPFX == true)
+		x509Cert = sig.setActivePFXFileCert(selectCertificateFile.value,pfxPassword.value);
+	else
+		x509Cert = sig.getX509Certificate(certId);	
+	if ((x509Cert != null) && (x509Cert != ""))
+		sig.viewAnyCertificate(x509Cert);
+
+}
+
+function verifyButton_onclick() {
+	verifyPfxCertificate();
+	return true;
+}
+
+function selectCertificate_onclick() {
+	certId = sig.selectActiveCertificate();
+	if ((certId != null) && (certId != ""))
+	{
+		usingPFX = false;
+	}
+}
+
+function clearCrlUrl_onclick()
+{
+	crlURL0.value = "";
+	crlURL1.value = "";
+	crlURL2.value = "";
+	crlURL3.value = "";
+	crlURL4.value = "";
+}
+
+function certInputType_onclick() {
+	if (certInputTypePFX.checked == true)
+	{
+		usingPFX = true;
+		x509Cert = sig.setActivePFXFileCert(selectCertificateFile.value,pfxPassword.value);
+		activeCertSubject.value = sig.getCertificateInfo(-2, 3);
+	}
+	else
+	{
+		usingPFX = false;
+		activeCertSubject.value = sig.getCertificateInfo(-3, 3);
+	}
+}
+
+		</script>
+		<TABLE height="877" cellSpacing="1" cellPadding="1" width="928" align="center" border="1">
+			<TR>
+				<TD width="739" height="32">Select Certificate File</TD>
+				<TD height="32"><INPUT id="selectCertificateFile" style="WIDTH: 506px; HEIGHT: 22px" type="file" size="40"></TD>
+				<TD height="32"></TD>
+			</TR>
+			<TR>
+				<TD width="739" height="28">PFX/P12 File Password</TD>
+				<TD height="28"><INPUT id="pfxPassword" style="WIDTH: 506px; HEIGHT: 22px" type="text" size="65" value="password"
+						name="pfxPassword"></TD>
+				<TD height="28"></TD>
+			</TR>
+			<TR>
+				<TD width="739" height="55">
+					<P>&nbsp;<INPUT id="selectCertificate" onclick="return selectCertificate_onclick();" type="button"
+							value="Select Certificate From Store" name="selectCertificate"></P>
+					<P>User Policies<BR>
+						<INPUT id="testPolicy1" style="WIDTH: 22px; HEIGHT: 20px" type="checkbox" size="22" value="2.16.840.1.101.3.1.48.1"
+							name="testPolicy1">test-policy-1: 2.16.840.1.101.3.1.48.1<BR>
+						<INPUT id="testPolicy2" style="WIDTH: 22px; HEIGHT: 20px" type="checkbox" size="22" value="2.16.840.1.101.3.1.48.2"
+							name="testPolicy2">test-policy-2: 2.16.840.1.101.3.1.48.2<BR>
+						<INPUT id="testPolicy3" style="WIDTH: 22px; HEIGHT: 20px" type="checkbox" size="22" value="2.16.840.1.101.3.1.48.3"
+							name="testPolicy3">test-policy-3: 2.16.840.1.101.3.1.48.3<BR>
+						<INPUT id="testPolicy4" style="WIDTH: 22px; HEIGHT: 20px" type="checkbox" size="22" value="2.16.840.1.101.3.1.48.4"
+							name="testPolicy4">test-policy-4: 2.16.840.1.101.3.1.48.4<BR>
+						<INPUT id="testPolicy5" style="WIDTH: 22px; HEIGHT: 20px" type="checkbox" size="22" value="2.16.840.1.101.3.1.48.5"
+							name="testPolicy5">test-policy-5: 2.16.840.1.101.3.1.48.5<BR>
+						<INPUT id="anyPolicy" style="WIDTH: 22px; HEIGHT: 20px" type="checkbox" size="22" value="2.5.29.32.0"
+							name="anyPolicy">any-policy: 2.5.29.32.0<BR>
+						<INPUT id="policyExplicit" style="WIDTH: 22px; HEIGHT: 20px" type="checkbox" size="22"
+							name="policyExplicit">Policy Explicit
+					</P>
+					<P>Trusted Root Certificate</P>
+					<P><INPUT id="trustedRootFile" type="file" size="52" name="File1"></P>
+					<P>&nbsp;</P>
+					<P>&nbsp;</P>
+					<P>&nbsp;</P>
+					<P><IMG id="verificationStatus" alt="" src="verified.gif" align="left" name="verificationStatus"></P>
+					<P>&nbsp;</P>
+					<P>&nbsp;</P>
+				</TD>
+				<TD height="55">
+					<P><INPUT id="viewCertificate" style="WIDTH: 252px; HEIGHT: 24px" onclick="return viewCertificate_onclick()"
+							type="button" size="37" value="View Certificate" name="viewCertificate"></P>
+					<P>Enter CRL 
+						URLs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT id="clearCrlUrl" onclick="return clearCrlUrl_onclick();" type="button" value="Clear CRL URLs"
+							name="clearCrlUrl">
+						<BR>
+						<INPUT id="crlURL0" type="text" size="77" name="crlURL0"><BR>
+						<INPUT id="crlURL1" type="text" size="77" name="crlURL1"><BR>
+						<INPUT id="crlURL2" type="text" size="77" name="crlURL2"><BR>
+						<INPUT id="crlURL3" type="text" size="77" name="crlURL3"><BR>
+						<INPUT id="crlURL4" type="text" size="77" name="crlURL4"></P>
+					<P>CRL Files</P>
+					<P><INPUT id="crlFile0" type="file" size="64" name="crlFile0"><BR>
+						<INPUT id="crlFile1" type="file" size="64" name="crlFile1"><BR>
+						<INPUT id="crlFile2" type="file" size="64" name="crlFile2"><BR>
+						<INPUT id="crlFile3" type="file" size="64" name="crlFile3"><BR>
+						<INPUT id="crlFile4" type="file" size="64" name="crlFile4"></P>
+					<P><INPUT id="certInputTypePFX" type="radio" CHECKED onclick="return certInputType_onclick()"
+							value="PFX" name="certInputType">&nbsp;Use PFX/P12 File<BR>
+						<INPUT id="certInputTypeIE" type="radio" value="IE" name="certInputType" onclick="return certInputType_onclick()">&nbsp;Use 
+						Certificate From IE Certificate Store</P>
+					<P><BR>
+						Selected Certificate Subject: <INPUT id="activeCertSubject" type="text" size="76" name="activeCertSubject"><BR>
+						<INPUT id="verifyButton" onclick="verifyButton_onclick()" type="button" value="Verify Selected Certificate"
+							name="verifyButton"></P>
+					<P>&nbsp;</P>
+				</TD>
+				<TD height="55"></TD>
+			</TR>
+			<TR>
+				<TD width="460" colSpan="2" height="200">
+					<DIV id="versionLabel" align="center"></DIV>
+					<TEXTAREA id="verificationResultReport" name="verificationResultReport" rows="30" cols="112"></TEXTAREA>
+				</TD>
+				<TD width="460" height="200"></TD>
+			</TR>
+		</TABLE>
+	</body>
+</HTML>

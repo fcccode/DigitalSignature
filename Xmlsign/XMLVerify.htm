@@ -1,0 +1,371 @@
+<HTML>
+<HEAD>
+<TITLE>Verify Digital Signature</TITLE>
+<STYLE>
+  .xml {font-size:10pt;font-family:Arial;cursor:hand}
+  .tag {color:purple; font-weight:bold;cursor:hand}
+  .attribute {color:blue; font-weight:bold;cursor:hand}
+  .attrvalue {color:magenta; font-weight:bold;cursor:hand }
+  .comment {color:green; font-weight:bold;cursor:hand }
+  .pi {color:brown; font-weight:bold;cursor:hand }
+  h3  { background-color:#80f0c0 } 
+  A:link { color:#003399; text-decoration:none; }
+  A:visited { color:#6699CC; text-decoration:none; }
+  A:hover { text-decoration:underline; }
+</STYLE>
+
+</HEAD>
+
+<OBJECT ID="XMLSigX" CLASSID="CLSID:D300C133-A6F6-4FB4-A734-4865FBF5A3B1" 
+	CODEBASE="XMLDigitalSignature.cab#Version=1,0,0,1">
+</OBJECT>
+<SCRIPT LANGUAGE="VBScript">
+
+DIM storedString
+DIM storedValue
+DIM xmlurl
+DIM xmlSignature
+DIM var1
+DIM reason
+
+count = 0
+var1=""
+xmlSignature = ""
+
+Dim xmldoc, xindex, fname
+Dim NODE_ELEMENT, NODE_ATTRIBUTE, NODE_TEXT, NODE_CDATA, NODE_ENTITYREF, NODE_ENTITY
+Dim NODE_PI , NODE_COMMENT, NODE_DOCUMENT, NODE_DOCTYPE, NODE_DOCFRAG, NODE_NOTATION
+
+NODE_ELEMENT = 1
+NODE_ATTRIBUTE = 2
+NODE_TEXT = 3
+NODE_CDATA = 4
+NODE_ENTITYREF = 5
+NODE_ENTITY = 6
+NODE_PI = 7
+NODE_COMMENT = 8
+NODE_DOCUMENT = 9
+NODE_DOCTYPE = 10
+NODE_DOCFRAG = 11
+NODE_NOTATION = 12
+
+Sub validate()
+
+	'stop
+    Set xmldoc = createObject("Msxml2.DOMDocument")
+    xmldoc.onreadystatechange = getRef("HandleReadyState")
+    xmldoc.ondataavailable = getRef("HandleData") 
+     
+    document.all("XML").innerHTML = ""
+    errordiv.innerHTML = ""
+    ERRORSRC.innerText = ""
+    xmldoc.validateOnParse = true
+    Dim retval, fileName
+    retval = 1
+    fname = UserInfo.file_name.value
+    if (fname = "") Then
+	   MsgBox("Please enter a valid signature file")
+	   Exit Sub
+    end if
+    oData.innerHTML = ""
+    var1 = "Verifying XML Digital Signature for File " & fname
+    oData.innerHTML = var1
+    retval = Len(fname)
+    retval = InStr(1,fname,":",1)
+    if (retval <> 0) Then
+       fileName = Mid(fname,retval+1)
+    end if
+    xmlurl = "file://" & fileName
+    xmldoc.load(xmlurl)
+end sub
+
+sub HandleData
+	Dim count, root
+    count = xmldoc.childNodes.length
+    Set root = xmldoc.documentElement
+    if (not isnull(root)) then
+        count = count + root.childNodes.length
+    end if
+    errordiv.innerHTML = "Loaded " & count & " nodes"
+end sub
+
+sub ToggleVisibility(name)
+    Dim e 
+    Set e = document.all(name)
+    if (e.style.display = "none") then
+        e.style.display = ""
+        e.value = ""
+    else
+        e.style.display = "none"
+    end if
+end sub
+
+sub HandleReadyState
+	Dim msg, retval, reason, var1, sigFileName, docFileName
+
+    if (xmldoc.readyState = 4) then
+        if (xmldoc.childNodes.length = 0) then
+            HandleError(xmldoc)
+        else
+            var1 = ""
+            msg = "Your XML is well formed"
+            msg = msg & " and is validated"
+            errordiv.innerHTML = msg
+	    sigFileName = UserInfo.file_name.value
+	    retval = XMLSigX.Verify(sigFileName)
+	    reason=""
+	    if (retval = 0) then
+		reason = XMLSigX.GetError
+		var1 = var1 & "<br> Verify failed. Return value from verify = " & retval & " Reason = " & reason
+		oData.innerHTML = var1
+		docFileName = UserInfo.documentName.value
+		if ( docFileName = "") Then
+			ToggleVisibility("documentName")
+			var1 = "<br>"
+			oData.innerHTML = var1
+		else
+			retval = XMLSigX.VerifyDetached(sigFileName, docFileName)
+			if (retval = 0) then
+				reason = XMLSigX.GetError
+				var1 = var1 & "<br> Detached Verify failed. Return value = " & retval & " Reason = " & reason
+				oData.innerHTML = var1
+			else
+				var1 = var1 & "Detached XML Signature verification successful"
+				var1 = var1 & "<br> Signature verified successfully. SignatureID = " & XMLSigX.SignatureID
+				var1 = var1 & "<br> SignatureAlgorithm = " & XMLSigX.SignatureAlgorithm
+				var1 = var1 & "<br> DigestAlgorithm = " & XMLSigX.DigestAlgorithm
+				var1 = var1 & "<br> DocumentURI = " & XMLSigX.DocumentURI
+				var1 = var1 & "<br> DigestObjectStatus = " & XMLSigX.DigestObjectStatus
+				var1 = var1 & "<br> Properties = " & XMLSigX.Properties
+				oData.innerHTML = var1
+			end if
+		end if
+	    else
+		var1 = var1 & "<br> Signature verified successfully. SignatureID = " & XMLSigX.SignatureID
+		oData.innerHTML = var1
+		var1 = var1 & "<br> SignatureAlgorithm = " & XMLSigX.SignatureAlgorithm
+		var1 = var1 & "<br> DigestAlgorithm = " & XMLSigX.DigestAlgorithm
+		var1 = var1 & "<br> DocumentURI = " & XMLSigX.DocumentURI
+		var1 = var1 & "<br> DigestObjectStatus = " & XMLSigX.DigestObjectStatus
+		var1 = var1 & "<br> Properties = " & XMLSigX.Properties
+		oData.innerHTML = var1
+	   end if
+	   XMLSigX.Empty()
+           xindex = 0
+'           DisplayTree xmldoc, document.all("XML")
+        end if
+    end if
+end sub
+
+function FormatErrorCode(rc)
+    if (rc < 0) then
+		rc = (65536*65536) + rc
+	end if
+		FormatErrorCode = "0x" + Ucase(cStr(rc))
+		' rc.toString(16).toUpperCase()
+end function
+
+sub HandleError( xmldoc )
+	Dim err, msg 
+    Set err = xmldoc.parseError
+    msg = "<span class=tag>" & err.reason & "<br>File: " & err.url
+    msg = msg & "<br>Line: " & err.line
+    msg = msg & ", Position: " & err.linepos
+    msg = msg & ", ErrorCode: " & FormatErrorCode(err.errorCode)
+    msg = msg & "</span>"
+    document.all("errordiv").innerHTML = msg
+    
+    Dim code, i
+    code = ""
+    
+    if (err.linepos > 0 AND err.srcText <> "") then
+        'code = err.srcText.replace(/\t/g," ") + "\n";
+        code = Replace(err.srcText , "\t" , " ") & "\n"
+        for i = 1 to err.linepos - 1 
+            code = code & "-"
+        next
+        code = code & "^"
+    end if
+    document.all("ERRORSRC").innerText = code
+end sub
+
+
+sub DisplayTree(node, html)
+    
+    Dim id, dd, attributes, exists, child, children
+    id = "x" & xindex
+    xindex = xindex + 1
+    html.innerHTML = "<dl class=xml><dt><dd id=" & id & "></dl>"
+    Set dd = html.all(id)
+    Set attributes = node.attributes
+
+    ' Possible test for nonexistence... I stopped here before new years.. 
+    if (not isnull(attributes)) and (not attributes is nothing) then
+        Set child = attributes.nextNode
+        while not isnull(child) and not child is nothing
+			Call AddRow(dd, child)
+			Set child = attributes.nextNode
+        wend
+    end if
+    Set children = node.childNodes
+    Set child = children.nextNode
+    while not isnull(child) and not child is nothing
+		Call AddRow(dd, child)
+		Set child = children.nextNode
+	wend
+end sub
+
+function formatNode(typ)
+	Dim types(13)
+	types(0) = "none"
+	types(1) = "ELEMENT"
+	types(2) = "ATTRIBUTE"
+	types(3) = "TEXT"
+	types(4) = "CDATA"
+	types(5) = "ENTITYREF"
+	types(6) = "ENTITY"
+	types(7) = "PI"
+	types(8) = "COMMENT"
+	types(9) = "DOCUMENT" 
+	types(10) = "SCHEMA"
+	types(11) = "DOCFRAG"
+	types(12) = "NOTATION" 
+    formatNode = types(typ)
+end function
+
+function getNodeName(node)
+    Dim typ, name
+    typ = node.nodeType
+    name = ""
+    if (typ = NODE_ELEMENT   OR _ 
+        typ = NODE_ATTRIBUTE OR _
+        typ = NODE_ENTITYREF OR _
+        typ = NODE_PI        OR _
+        typ = NODE_DOCTYPE   OR _
+        typ = NODE_ENTITY    OR _
+        typ = NODE_NOTATION) then
+        name = node.nodeName
+    end if
+    getNodeName = name
+end function
+
+sub AddRow(dd, child)
+	Dim id, typ, row
+    id = "x" & xindex
+    xindex = xindex + 1
+    typ = child.nodeType
+    row = ""
+    
+    if (child.hasChildNodes()) then 
+        row = "<li style='list-style-type:disc'>"
+    else 
+        row = "<li style='list-style-type:circle'>"
+	end if
+	
+	Dim hideValue , style
+    hideValue = false
+    style = "xml"
+    if (typ = NODE_ELEMENT) then
+        style = "tag"
+    elseif (typ = NODE_ATTRIBUTE) then
+        style = "attribute"
+    elseif (typ = NODE_COMMENT) then
+        style = "comment"
+    elseif (typ = NODE_PI) then
+        if (not isnull(child.attributes)) then
+            hideValue = true
+        end if
+        style = "pi"
+    end if
+
+    row = row & "<span class=" & style & " onclick=ToggleRow('" & id & "') "
+    row = row & "onmouseover=MouseMove('over') onmouseout=MouseMove('exit')>"
+    row = row & formatNode(typ) & ": "
+    
+    row = row & getNodeName(child)
+
+    if  not hideValue AND not isnull(child.nodeValue) then
+        row = row & " " & child.nodeValue
+    end if
+    
+    row = row &  "</span><div xstate=0 id=" & id & "></div>"
+    dd.insertAdjacentHTML "BeforeEnd", row 
+
+    ' store XML nodes on html elements as expando properties.
+    Dim item, div
+    Set item = dd.children(dd.children.length-1) ' the list item.
+    Set div = item.all(id)
+    Call div.setAttribute("xml", child)
+end sub
+
+sub ToggleRow(divid)
+	Dim div
+    Set div = XML.all(divid)
+    if (div.xstate = 0) then
+        div.xstate = 1
+        DisplayTree div.xml, div
+    else if (div.xstate = 1) then
+			div.xstate = 2
+			div.style.display = "none"
+		 else
+			div.xstate = 1
+			div.style.display = ""
+		 end if
+    end if
+end sub
+
+sub MouseMove(which)
+	Dim row, color
+	if which = "over" then 
+	color = yellow
+	else
+	color = ""
+	end if
+	
+    Set row = window.event.srcElement
+    row.style.backgroundColor = color
+end sub
+
+
+</SCRIPT>
+
+
+<body TOPMARGIN="0">
+<table width=100% cellspacing=0 cellpadding =0 bgcolor=CCCCFF>
+<tr><td bgcolor=navy width=100% colspan=3><font size=3  color=white><b>Verify XML Signature</b></td></tr>
+
+
+<tr><td><br>Select the signature document to be verified<p></td> 
+<form Name="UserInfo" action="verify.asp" method="post">
+
+<td><input name=file_name type=file size=30 ></td></tr>
+<tr><td><input name=documentName type=file size=30></td></tr>
+
+<tr><td colspan=2> <hr><p></td></tr>
+
+<tr><td colspan=2>Click on button to verify signature<p></td></tr>
+
+
+<tr><td colspan=2>
+
+<input type="Button" value="Verify" OnClick="Validate()">
+
+
+
+<p></td></tr>
+</form>
+
+
+</table>
+
+<Span ID="oData"> This is where output shows up </Span>
+<div id="ERRORDIV" style="COLOR: purple; FONT-SIZE: 16px; FONT-WEIGHT: bold"></div>
+
+<xmp id="ERRORSRC"></xmp>
+<div id="XML" class="xml"></div>
+
+<br>
+<font FACE="MS SANS SERIF" SIZE="1" COLOR="black">
+
+</BODY>
+</HTML>

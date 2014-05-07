@@ -1,0 +1,22 @@
+To use PFX with jarsigner:
+
+1. Download Bounce Castle JCE or use the one from "jce" folder. You have to
+copy this file to your JVM "jre\lib\ext" folder.
+
+2. Edit java.security, provider sections. Should look like this:
+security.provider.1=sun.security.provider.Sun
+security.provider.2=org.bouncycastle.jce.provider.BouncyCastleProvider
+
+3. Use command from listpfx.bat to list alailable certificates from your
+PFX file. Replace filename and password in the command line. Redirect output
+to some file - you will need key alias which is pretty long.
+
+4. Take key alias from that output (in my example it was something long between 
+symbols "{...}", including those symbols. Put that alias as last parameter of
+the "jarsigner" command in makeSUNJVM.bat. Replace filename and PFX password 
+with your values.
+
+5. Now you should be able to sign the Jar by calling makeSUNJVM.bat. Signed Jar 
+is moved to "www". 
+
+Once Jar is signed, you don't need any changes in the policy files.

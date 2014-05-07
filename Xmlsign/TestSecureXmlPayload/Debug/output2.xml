@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<SecureXML_Payload><SourceProcess_Id>2</SourceProcess_Id><Nonce>This is my nonce 2</Nonce><SignatureObject_Id>8</SignatureObject_Id><API><API_Name>getCRLLocation</API_Name><Param_Count>1</Param_Count><Param Type="StringArray" ArraySize="3"><Value>http://www.infomosaic.org</Value><Value>http://www.infomosaic.com</Value><Value>http://www.infomosaic.net</Value></Param></API></SecureXML_Payload>
+

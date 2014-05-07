@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CATALOG>
+  <CD>
+    <TITLE>Empire Burlesque</TITLE>
+    <ARTIST>Bob Dylan</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Columbia</COMPANY>
+    <PRICE>10.90</PRICE>
+    <YEAR>1985</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Hide your heart</TITLE>
+    <ARTIST>Bonnie Tylor</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>CBS Records</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1988</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Greatest Hits</TITLE>
+    <ARTIST>Dolly Parton</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>RCA</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1982</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Still got the blues</TITLE>
+    <ARTIST>Gary More</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Virgin redords</COMPANY>
+    <PRICE>10.20</PRICE>
+    <YEAR>1990</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Eros</TITLE>
+    <ARTIST>Eros Ramazzotti</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>BMG</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1997</YEAR>
+  </CD>
+  <CD>
+    <TITLE>One night only</TITLE>
+    <ARTIST>Bee Gees</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Polydor</COMPANY>
+    <PRICE>10.90</PRICE>
+    <YEAR>1998</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Sylvias Mother</TITLE>
+    <ARTIST>Dr.Hook</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>CBS</COMPANY>
+    <PRICE>8.10</PRICE>
+    <YEAR>1973</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Maggie May</TITLE>
+    <ARTIST>Rod Stewart</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Pickwick</COMPANY>
+    <PRICE>8.50</PRICE>
+    <YEAR>1990</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Romanza</TITLE>
+    <ARTIST>Andrea Bocelli</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>Polydor</COMPANY>
+    <PRICE>10.80</PRICE>
+    <YEAR>1996</YEAR>
+  </CD>
+  <CD>
+    <TITLE>When a man loves a woman</TITLE>
+    <ARTIST>Percy Sledge</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Atlantic</COMPANY>
+    <PRICE>8.70</PRICE>
+    <YEAR>1987</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Black angel</TITLE>
+    <ARTIST>Savage Rose</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>Mega</COMPANY>
+    <PRICE>10.90</PRICE>
+    <YEAR>1995</YEAR>
+  </CD>
+  <CD>
+    <TITLE>1999 Grammy Nominees</TITLE>
+    <ARTIST>Many</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Grammy</COMPANY>
+    <PRICE>10.20</PRICE>
+    <YEAR>1999</YEAR>
+  </CD>
+  <CD>
+    <TITLE>For the good times</TITLE>
+    <ARTIST>Kenny Rogers</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Mucik Master</COMPANY>
+    <PRICE>8.70</PRICE>
+    <YEAR>1995</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Big Willie style</TITLE>
+    <ARTIST>Will Smith</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Columbia</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1997</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Tupelo Honey</TITLE>
+    <ARTIST>Van Morrison</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Polydor</COMPANY>
+    <PRICE>8.20</PRICE>
+    <YEAR>1971</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Soulsville</TITLE>
+    <ARTIST>Jorn Hoel</ARTIST>
+    <COUNTRY>Norway</COUNTRY>
+    <COMPANY>WEA</COMPANY>
+    <PRICE>7.90</PRICE>
+    <YEAR>1996</YEAR>
+  </CD>
+  <CD>
+    <TITLE>The very best of</TITLE>
+    <ARTIST>Cat Stevens</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Island</COMPANY>
+    <PRICE>8.90</PRICE>
+    <YEAR>1990</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Stop</TITLE>
+    <ARTIST>Sam Brown</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>A and M</COMPANY>
+    <PRICE>8.90</PRICE>
+    <YEAR>1988</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Bridge of Spies</TITLE>
+    <ARTIST>T`Pau</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Siren</COMPANY>
+    <PRICE>7.90</PRICE>
+    <YEAR>1987</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Private Dancer</TITLE>
+    <ARTIST>Tina Turner</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Capitol</COMPANY>
+    <PRICE>8.90</PRICE>
+    <YEAR>1983</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Midt om natten</TITLE>
+    <ARTIST>Kim Larsen</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>Medley</COMPANY>
+    <PRICE>7.80</PRICE>
+    <YEAR>1983</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Pavarotti Gala Concert</TITLE>
+    <ARTIST>Luciano Pavarotti</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>DECCA</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1991</YEAR>
+  </CD>
+  <CD>
+    <TITLE>The dock of the bay</TITLE>
+    <ARTIST>Otis Redding</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Atlantic</COMPANY>
+    <PRICE>7.90</PRICE>
+    <YEAR>1987</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Picture book</TITLE>
+    <ARTIST>Simply Red</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>Elektra</COMPANY>
+    <PRICE>7.20</PRICE>
+    <YEAR>1985</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Red</TITLE>
+    <ARTIST>The Communards</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>London</COMPANY>
+    <PRICE>7.80</PRICE>
+    <YEAR>1987</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Unchain my heart</TITLE>
+    <ARTIST>Joe Cocker</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>EMI</COMPANY>
+    <PRICE>8.20</PRICE>
+    <YEAR>1987</YEAR>
+  </CD>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="SecondSignature"><!--XML Signature produced by Infomosaic SecureXML, http://www.infomosaic.net--><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116"><XPath>ancestor-or-self::CD</XPath></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>7A/mAlK7azZCqQZcE99cqdyENGk=</DigestValue></Reference><Reference Id="REF_Properties_SecondSignature" URI="#PROPERTIES_SecondSignature"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>793GbQKQWAk6K+AIukqY8h/cvwE=</DigestValue></Reference></SignedInfo><SignatureValue>O3Q7oz9vLAamhSipzXhp/Op0CEMDq6uKKXCN5ht8/mmVOtFqXDO4GIz5r+qU8eTFDFiOMR/wsDxQJPCQEQAJe03Celt4eRBarGokhNDD5G1qAeved/RO8+kmxWAjYSMFzjqtZIdWNB5ot6AlIYVOXKVekeWrfC8q86rDcs9wiAo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yexEA1xXgYU04FCAy97DxuYa4feguktP3TIA5Qwh4YoyoqkMpXGZWFpbGRgkShq8uZEeqFhdk4d0+/XHt56+GkFYdGKFpg69TtYy+VxRDU8I2OZ3rMjs3NjLa/Ydjr1/I6a556PKJzimirjmovbghEh/7N8sMpFY+Hrx2Satops=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIHTjCCBjagAwIBAgIKPfemqQAAAAABWjANBgkqhkiG9w0BAQUFADCBvzEiMCAGCSqGSIb3DQEJARYTaW5mb0BpbmZvbW9zYWljLmNvbTELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMREwDwYDVQQHEwhTYW4gSm9zZTEfMB0GA1UEChMWSW5mb21vc2FpYyBDb3Jwb3JhdGlvbjEqMCgGA1UECxMhWE1MIERpZ2l0YWwgU2lnbmF0dXJlIERldmVsb3BtZW50MR8wHQYDVQQDExZJbmZvbW9zYWljIENvcnBvcmF0aW9uMB4XDTAyMDUyODE2MjUwMFoXDTAzMDUyODE2MzUwMFowgbwxIzAhBgkqhkiG9w0BCQEWFHNhbGVzQGluZm9tb3NhaWMuY29tMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExETAPBgNVBAcTCFNhbiBKb3NlMR8wHQYDVQQKExZJbmZvbW9zYWljIENvcnBvcmF0aW9uMSowKAYDVQQLEyFYTUwgRGlnaXRhbCBTaWduYXR1cmUgRGV2ZWxvcG1lbnQxGzAZBgNVBAMeEgBTAGkAZwBuAGUAcgAgACMAMTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyexEA1xXgYU04FCAy97DxuYa4feguktP3TIA5Qwh4YoyoqkMpXGZWFpbGRgkShq8uZEeqFhdk4d0+/XHt56+GkFYdGKFpg69TtYy+VxRDU8I2OZ3rMjs3NjLa/Ydjr1/I6a556PKJzimirjmovbghEh/7N8sMpFY+Hrx2SatopsCAwEAAaOCA88wggPLMA4GA1UdDwEB/wQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcDAjAdBgNVHQ4EFgQU7ZguzqBc7BItfzTRLRAzkn+59uQwgfsGA1UdIwSB8zCB8IAUyDoe8/LPn+bACFA7aurljP5Nte6hgcWkgcIwgb8xIjAgBgkqhkiG9w0BCQEWE2luZm9AaW5mb21vc2FpYy5jb20xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTERMA8GA1UEBxMIU2FuIEpvc2UxHzAdBgNVBAoTFkluZm9tb3NhaWMgQ29ycG9yYXRpb24xKjAoBgNVBAsTIVhNTCBEaWdpdGFsIFNpZ25hdHVyZSBEZXZlbG9wbWVudDEfMB0GA1UEAxMWSW5mb21vc2FpYyBDb3Jwb3JhdGlvboIQN2ikHVFArblPpz2OZYaSNjCCATgGA1UdHwSCAS8wggErMIHToIHQoIHNhoHKbGRhcDovLy9DTj1JbmZvbW9zYWljJTIwQ29ycG9yYXRpb24sQ049aW5mb21vc2FpYy1zcnZyLENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWluZm9tb3NhaWMsREM9bmV0P2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RjbGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDBToFGgT4ZNaHR0cDovL2luZm9tb3NhaWMtc3J2ci5pbmZvbW9zYWljLm5ldC9DZXJ0RW5yb2xsL0luZm9tb3NhaWMlMjBDb3Jwb3JhdGlvbi5jcmwwggFJBggrBgEFBQcBAQSCATswggE3MIG6BggrBgEFBQcwAoaBrWxkYXA6Ly8vQ049SW5mb21vc2FpYyUyMENvcnBvcmF0aW9uLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWluZm9tb3NhaWMsREM9bmV0P2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RjbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MHgGCCsGAQUFBzAChmxodHRwOi8vaW5mb21vc2FpYy1zcnZyLmluZm9tb3NhaWMubmV0L0NlcnRFbnJvbGwvaW5mb21vc2FpYy1zcnZyLmluZm9tb3NhaWMubmV0X0luZm9tb3NhaWMlMjBDb3Jwb3JhdGlvbi5jcnQwDQYJKoZIhvcNAQEFBQADggEBABiMY9R8IyD0OKJKRXySay+bTGqQNCdI3+UOQlIjJxXwaVkRbE0WtleO/daiIQJSrejiGLjIxP0qvYFxPxJdNIWOYDB5ERXxCzQm3V6RsSpwdDRaTv4TukZ5WJQ5SFS8l37tdG+IN6K9FyRo+Fd5hcFJvb9V0ruO2gS4b//P4qGlBZwqjn4w2gfW8ltevYdiB/kTa5iUbyP6xlKqzgF6LG1x/f6ivnEXhlKd4GHQY2UPbojih02GQabme2sl4E+Xs0eipzkSTVnw18TWbZq2NJfHI0anSPJJLmnNGwQXK5b0uilYNlU8ySblIMMuWe5PBlcO8b9ywjNeRJHOS2ft1+g=</X509Certificate></X509Data></KeyInfo><Object Id="PROPERTIES_SecondSignature"><SignatureProperties><SignatureProperty Id="SecureXMLLicenseUsed " Target="SecondSignature"> Non Production Demo License</SignatureProperty></SignatureProperties></Object></Signature></CATALOG>

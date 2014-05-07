@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[UseSecureXMLFromVB.vbp]
+SCC_Aux_Path =\\Infomosaic-eng2\XMLSignature\,
+SCC_Project_Name =this project is not under source code control
+
+[SecureXMLFromVB.vbp]
+SCC_Aux_Path = "\\Infomosaic-eng2\CDrive\XMLSignature"
+SCC_Project_Name = "$/XMLSign/Programming/SecureXMLFromVB", GTTAAAAA

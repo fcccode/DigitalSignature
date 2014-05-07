@@ -1,0 +1,26 @@
+HKCR
+{
+	XMLSign.Certificate.1 = s 'Certificate Class'
+	{
+		CLSID = s '{16472410-43E8-4B0C-8509-25FACD959C16}'
+	}
+	XMLSign.Certificate = s 'Certificate Class'
+	{
+		CLSID = s '{16472410-43E8-4B0C-8509-25FACD959C16}'
+		CurVer = s 'XMLSign.Certificate.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {16472410-43E8-4B0C-8509-25FACD959C16} = s 'Certificate Class'
+		{
+			ProgID = s 'XMLSign.Certificate.1'
+			VersionIndependentProgID = s 'XMLSign.Certificate'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7CAD46B3-47CB-45B6-BB83-1B22AE0CB3BC}'
+		}
+	}
+}

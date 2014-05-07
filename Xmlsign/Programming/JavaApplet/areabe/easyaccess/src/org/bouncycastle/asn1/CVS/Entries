@@ -1,0 +1,43 @@
+D/cms////
+D/pkcs////
+D/x509////
+/ASN1OctetString.java/1.1.2.1/Sat Nov 22 00:38:42 2003//Tpro5-ea
+/ASN1OutputStream.java/1.1.2.1/Sat Nov 22 00:38:52 2003//Tpro5-ea
+/ASN1Sequence.java/1.1.2.1/Sat Nov 22 00:39:01 2003//Tpro5-ea
+/ASN1Set.java/1.1.2.1/Sat Nov 22 00:39:10 2003//Tpro5-ea
+/ASN1TaggedObject.java/1.1.2.1/Sat Nov 22 00:39:19 2003//Tpro5-ea
+/BERConstructedOctetString.java/1.1.2.1/Sat Nov 22 00:39:31 2003//Tpro5-ea
+/BERConstructedSequence.java/1.1.2.1/Sat Nov 22 00:39:41 2003//Tpro5-ea
+/BERInputStream.java/1.1.2.1/Sat Nov 22 00:39:52 2003//Tpro5-ea
+/BEROutputStream.java/1.1.2.1/Sat Nov 22 00:40:00 2003//Tpro5-ea
+/BERSet.java/1.1.2.1/Sat Nov 22 00:40:07 2003//Tpro5-ea
+/BERTaggedObject.java/1.1.2.1/Sat Nov 22 00:40:16 2003//Tpro5-ea
+/DERBMPString.java/1.1.2.1/Sat Nov 22 00:40:24 2003//Tpro5-ea
+/DERBitString.java/1.1.2.1/Sat Nov 22 00:40:32 2003//Tpro5-ea
+/DERBoolean.java/1.1.2.1/Sat Nov 22 00:40:39 2003//Tpro5-ea
+/DERConstructedSequence.java/1.1.2.1/Sat Nov 22 00:40:50 2003//Tpro5-ea
+/DERConstructedSet.java/1.1.2.1/Sat Nov 22 00:41:02 2003//Tpro5-ea
+/DEREncodable.java/1.1.2.1/Sat Nov 22 00:41:08 2003//Tpro5-ea
+/DEREncodableVector.java/1.1.2.1/Sat Nov 22 00:41:15 2003//Tpro5-ea
+/DEREnumerated.java/1.1.2.1/Sat Nov 22 00:41:22 2003//Tpro5-ea
+/DERGeneralizedTime.java/1.1.2.1/Sat Nov 22 00:41:30 2003//Tpro5-ea
+/DERIA5String.java/1.1.2.1/Sat Nov 22 00:41:37 2003//Tpro5-ea
+/DERInputStream.java/1.1.2.1/Sat Nov 22 01:27:34 2003//Tpro5-ea
+/DERInteger.java/1.1.2.1/Sat Nov 22 00:41:52 2003//Tpro5-ea
+/DERObject.java/1.1.2.1/Sat Nov 22 00:42:00 2003//Tpro5-ea
+/DERObjectIdentifier.java/1.1.2.1/Sat Nov 22 00:42:06 2003//Tpro5-ea
+/DEROctetString.java/1.1.2.1/Sat Nov 22 00:42:12 2003//Tpro5-ea
+/DEROutputStream.java/1.1.2.1/Sat Nov 22 00:42:23 2003//Tpro5-ea
+/DERPrintableString.java/1.1.2.1/Sat Nov 22 00:42:29 2003//Tpro5-ea
+/DERSequence.java/1.1.2.1/Sat Nov 22 00:42:37 2003//Tpro5-ea
+/DERSet.java/1.1.2.1/Sat Nov 22 00:42:43 2003//Tpro5-ea
+/DERString.java/1.1.2.1/Sat Nov 22 00:42:50 2003//Tpro5-ea
+/DERT61String.java/1.1.2.1/Sat Nov 22 00:42:56 2003//Tpro5-ea
+/DERTaggedObject.java/1.1.2.1/Sat Nov 22 00:43:03 2003//Tpro5-ea
+/DERTags.java/1.1.2.1/Sat Nov 22 00:43:08 2003//Tpro5-ea
+/DERUTCTime.java/1.1.2.1/Sat Nov 22 00:43:16 2003//Tpro5-ea
+/DERUTF8String.java/1.1.2.1/Sat Nov 22 00:43:21 2003//Tpro5-ea
+/DERUniversalString.java/1.1.2.1/Sat Nov 22 00:43:28 2003//Tpro5-ea
+/DERUnknownTag.java/1.1.2.1/Sat Nov 22 00:43:35 2003//Tpro5-ea
+/DERVisibleString.java/1.1.2.1/Sat Nov 22 00:43:42 2003//Tpro5-ea
+/OIDTokenizer.java/1.1.2.1/Sat Nov 22 00:43:49 2003//Tpro5-ea

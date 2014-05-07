@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Pem2PfxUtil.sln]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/Netscape/Pem2PfxUtil", NCVAAAAA
+
+[Pem2PfxUtil.vcproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\CDrive\XMLSignature"
+SCC_Project_Name = "$/XMLSign/NetscapeCert/Pem2PfxUtil", LVZAAAAA

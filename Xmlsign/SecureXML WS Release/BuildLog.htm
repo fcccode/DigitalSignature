@@ -1,0 +1,106 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: XMLSign, Configuration: SecureXML WS Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\ActiveX\XMLSign\SecureXML WS Release\RSP00001D.rsp" with contents
+[
+/Ox /Ob1 /I "include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "LOG_WS" /D "_WINDLL" /D "_ATL_STATIC_REGISTRY" /D "_MBCS" /GF /FD /EHsc /MT /Gy /Yu"StdAfx.h" /Fp".\ReleaseMinSize/XMLSign.pch" /Fo".\WSRelease/" /Fd".\WSRelease/" /FR"SecureXML WS Release/" /W3 /c
+.\XMLSign.cpp
+.\WindowImage.cpp
+.\Signature.cpp
+.\SigMouseImage.cpp
+.\SigFileImage.cpp
+.\ShowSelectCert.cpp
+.\License.cpp
+.\CRLCache.cpp
+.\config.cpp
+.\CertVerify.cpp
+.\CAMClient.cpp
+]
+Creating command line "cl.exe @"c:\ActiveX\XMLSign\SecureXML WS Release\RSP00001D.rsp" /nologo"
+Creating temporary file "c:\ActiveX\XMLSign\SecureXML WS Release\RSP00001E.rsp" with contents
+[
+/Ox /Ob1 /I "include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "LOG_WS" /D "_WINDLL" /D "_ATL_STATIC_REGISTRY" /D "_MBCS" /GF /FD /EHsc /MT /Gy /Yc"StdAfx.h" /Fp".\ReleaseMinSize/XMLSign.pch" /Fo".\WSRelease/" /Fd".\WSRelease/" /FR"SecureXML WS Release/" /W3 /c
+.\StdAfx.cpp
+]
+Creating command line "cl.exe @"c:\ActiveX\XMLSign\SecureXML WS Release\RSP00001E.rsp" /nologo"
+Creating command line "rc.exe /d "NDEBUG" /l 0x409 /I "SecureXML WS Release" /fo"SecureXML WS Release/XMLSign.res" .\XMLSign.rc"
+Creating temporary file "c:\ActiveX\XMLSign\SecureXML WS Release\RSP00001F.rsp" with contents
+[
+/OUT:".\WSRelease/XMLSign.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"lib" /DLL /NODEFAULTLIB:"libc.lib" /NODEFAULTLIB:"libcd.lib" /DEF:".\XMLSign.def" /PDB:".\WSRelease/XMLSign.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:".\WSRelease/XMLSign.lib" /MACHINE:I386 crypt32.lib xmlsig.lib ws2_32.lib msxml2.lib libxml2.lib Version.lib shlwapi.lib comctl32.lib odbc32.lib odbccp32.lib gdiplus.lib wldap32.lib zlib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\wsrelease\CAMClient.obj
+.\wsrelease\CertVerify.obj
+.\wsrelease\config.obj
+.\wsrelease\CRLCache.obj
+.\wsrelease\License.obj
+.\wsrelease\ShowSelectCert.obj
+.\wsrelease\SigFileImage.obj
+.\wsrelease\SigMouseImage.obj
+.\wsrelease\Signature.obj
+.\wsrelease\StdAfx.obj
+.\wsrelease\WindowImage.obj
+.\wsrelease\XMLSign.obj
+".\SecureXML WS Release\XMLSign.res"
+]
+Creating command line "link.exe @"c:\ActiveX\XMLSign\SecureXML WS Release\RSP00001F.rsp""
+Creating temporary file "c:\ActiveX\XMLSign\SecureXML WS Release\BAT000020.bat" with contents
+[
+@echo off
+regsvr32 /s /c "c:\ActiveX\XMLSign\wsrelease\XMLSign.dll"
+echo regsvr32 exec. time > "SecureXML WS Release\regsvr32.trg"
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing registration"
+exit 1
+:VCEnd
+]
+Creating command line ""c:\ActiveX\XMLSign\SecureXML WS Release\BAT000020.bat""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+StdAfx.cpp
+statreg.cpp is obsolete. Please remove it from your project.
+atlimpl.cpp is obsolete. Please remove it from your project.
+Compiling...
+XMLSign.cpp
+WindowImage.cpp
+Signature.cpp
+Signature.cpp(1771) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(4637) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(5019) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(5671) : warning C4018: '<' : signed/unsigned mismatch
+SigMouseImage.cpp
+SigFileImage.cpp
+SigFileImage.cpp(204) : warning C4244: 'argument' : conversion from 'LONG' to 'Gdiplus::REAL', possible loss of data
+SigFileImage.cpp(204) : warning C4244: 'argument' : conversion from 'LONG' to 'Gdiplus::REAL', possible loss of data
+ShowSelectCert.cpp
+License.cpp
+CRLCache.cpp
+CRLCache.cpp(63) : warning C4244: 'return' : conversion from 'LONGLONG' to 'long', possible loss of data
+CRLCache.cpp(152) : warning C4018: '>=' : signed/unsigned mismatch
+config.cpp
+CertVerify.cpp
+CAMClient.cpp
+Generating Code...
+Compiling resources...
+Linking...
+   Creating library .\WSRelease/XMLSign.lib and object .\WSRelease/XMLSign.exp
+License.obj : warning LNK4217: locally defined symbol _xmlFree imported in function "public: int __thiscall CLicense::verifyFormSchema(unsigned char *,struct _xmlDoc *,struct _GLOBAL_SIG *)" (?verifyFormSchema@CLicense@@QAEHPAEPAU_xmlDoc@@PAU_GLOBAL_SIG@@@Z)
+Performing registration
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\ActiveX\XMLSign\SecureXML WS Release\BuildLog.htm"
+XMLSign - 0 error(s), 9 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

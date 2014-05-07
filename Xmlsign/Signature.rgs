@@ -1,0 +1,26 @@
+HKCR
+{
+	XMLSign.Signature.1 = s 'Signature Class'
+	{
+		CLSID = s '{D300C133-A6F6-4FB4-A734-4865FBF5A3B1}'
+	}
+	XMLSign.Signature = s 'Signature Class'
+	{
+		CLSID = s '{D300C133-A6F6-4FB4-A734-4865FBF5A3B1}'
+		CurVer = s 'XMLSign.Signature.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D300C133-A6F6-4FB4-A734-4865FBF5A3B1} = s 'Signature Class'
+		{
+			ProgID = s 'XMLSign.Signature.1'
+			VersionIndependentProgID = s 'XMLSign.Signature'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7CAD46B3-47CB-45B6-BB83-1B22AE0CB3BC}'
+		}
+	}
+}

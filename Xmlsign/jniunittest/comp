@@ -1,0 +1,4 @@
+#!/bin/sh
+CP=classes:lib/junit.jar:lib/securexml.jar
+LD_LIBRARY_PATH=lib:../securexmlc/lib:/usr/local/lib/nss; export LD_LIBRARY_PATH
+/usr/java/j2sdk1.4.2_03/bin/javac -classpath .:$CP -d classes *.java

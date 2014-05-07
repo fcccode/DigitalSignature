@@ -1,0 +1,58 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (43562c41).
+//
+// c:\activex\xmlsign\nssrelease\sigwinimage.tli
+//
+// Wrapper implementations for Win32 type library SigWinImage\Release\SigWinImage.dll
+// compiler-generated file created 03/17/05 at 12:56:46 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ICaptureImage wrapper method implementations
+//
+
+inline _bstr_t ICaptureImage::CaptureCurrentWindowImage ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CaptureCurrentWindowImage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICaptureImage::PutPhysicalSignatureFile ( _bstr_t _arg1 ) {
+    HRESULT _hr = put_PhysicalSignatureFile(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICaptureImage::PutUpperX ( long _arg1 ) {
+    HRESULT _hr = put_UpperX(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICaptureImage::PutUpperY ( long _arg1 ) {
+    HRESULT _hr = put_UpperY(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICaptureImage::PutWidth ( long _arg1 ) {
+    HRESULT _hr = put_Width(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICaptureImage::PutHeight ( long _arg1 ) {
+    HRESULT _hr = put_Height(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ICaptureImage::ShowFileSignature ( _bstr_t guidStr ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_ShowFileSignature(guidStr, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ICaptureImage::CaptureMouseSignature ( _bstr_t guidStr ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CaptureMouseSignature(guidStr, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}

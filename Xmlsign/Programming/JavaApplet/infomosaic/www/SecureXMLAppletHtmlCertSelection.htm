@@ -1,0 +1,169 @@
+<html>
+	<body onLoad="disableLinks()">
+		<applet codebase = "."
+			archive  = "xmlsignapplet.jar"
+			code     = "infomosaic.securexml.applet.XMLSignApplet"
+			id="name1" 
+			name="name1" 
+			codebase="./"
+			scriptable="true" 
+			width    = "0"
+			height   = "0"
+			hspace   = "0"
+			vspace   = "0"
+			align    = "middle"
+			MAYSCRIPT VIEWASTEXT>
+		<param name = "CABBASE" value = "xmlsignapplet.cab">
+		<param name = "LIBURL" value = "http://www.infomosaic.net/Downloads/SignatureL.dll">
+		<param name = "LIBSIZE" value = "860160">
+		</applet>
+      <script id=clientEventHandlersJS language=javascript>
+<!--
+var sig;
+var certSerialNumber, varHtml;
+
+function setCert(snum)
+{
+	certSerialNumber = snum
+	if (certSerialNumber != "")
+		sig.setActiveCertificate(certSerialNumber);
+}
+
+function ViewCert()
+{
+	if (certSerialNumber == "")
+	{
+		alert("Please select a signature key");
+		return false;
+	}
+	sig.viewCertificate(certSerialNumber);
+}
+
+function loadForm() 
+{
+	var Element, CertIndex, retval, count;
+	var SerialNo, IssuedBy, IssuedTo, ExpiryDate;
+
+	varHtml = "<TABLE BORDER=1 CELLPADDING=0><TR><TD>&nbsp;</TD><TD>Issued To</TD><TD>Issued By</TD><TD>Exp.Date</TD></TR>"
+
+		count = sig.getCertificateCount();
+	if (count != 0)
+	{
+		if (count > 1)
+			selectCertMsg.style.display = "";
+		else
+			usingCertMsg.style.display = "";
+		for (CertIndex = 0; CertIndex < count; CertIndex++)
+		{
+			SerialNo = sig.getCertificateInfo(CertIndex, 1);
+			IssuedBy = sig.getCertificateInfo(CertIndex, 2);
+			IssuedTo = sig.getCertificateInfo(CertIndex, 3);
+			ExpiryDate = sig.getCertificateInfo(CertIndex, 4);
+			if (count == 1)
+			{
+				varHtml = varHtml + "<TR><TD><INPUT TYPE=radio onclick=setCert(&quot;" + SerialNo + "&quot;)				NAME=&quot;certId&quot; VALUE=&quot;" + SerialNo + "&quot; CHECKED>" + "</TD><TD>" + IssuedTo + "</TD><TD>" +		IssuedBy + "</TD><TD>" + ExpiryDate + "</TD></TR>";
+				setCert(SerialNo);
+			}
+			else
+				varHtml = varHtml + "<TR><TD><INPUT TYPE=radio onclick=setCert(&quot;" + SerialNo + "&quot;)				NAME=&quot;certId&quot; VALUE=&quot;" + SerialNo + "&quot;>" + "</TD><TD>" + IssuedTo + "</TD><TD>" +		IssuedBy + "</TD><TD>" + ExpiryDate + "</TD></TR>"
+		}
+		varHtml = varHtml + "</TABLE>";
+	}
+	else
+		varHtml ="<br><font color=red size=3>You must have a PKI certificate with access to private key to sign documents.<br><a href=https://www.infomosaic.net/certificate>Please click here to get one for free</a></font>";
+	CertData.innerHTML = varHtml;
+}
+var newLink;
+var linksEnabled=false;
+function disableLinks(){
+   linksEnabled=false;
+   var aLnk=document.getElementsByName("buttons");
+   for (i=0; i<aLnk.length; i++) {
+     aLnk[i].disabled = true;
+   }
+}
+
+function enableLinks(){
+   linksEnabled=true;
+   var aLnk=document.getElementsByName("buttons");
+   for (i=0; i<aLnk.length; i++) {
+     aLnk[i].disabled = false;
+   }
+   sig = document.name1.getSignature();
+   loadForm();
+}
+
+function x1()
+{
+	var certCount=0;
+	var certId = new String();
+        var ainfo = document.name1.getAppletInfo();
+	try
+	{
+		alert(sig.getSecureXMLPath());
+//		sig.selectActiveCertificate();
+		sig.setPhysicalSignatureUsage(2);
+		sig.setFloatingLicense(sig.readAll("http://www.infomosaic.net/Downloads/FloatingLic.txt"));
+		outputArea.innerText = sig.signDataStr("This is a test") + sig.getError();
+	}
+	catch(Exception)
+	{
+		alert(ainfo + ": Caught exception " + Exception.toString());
+	}
+	return true;
+}
+//-->
+		</Script>
+      <form name="UserInfo" ID="Form1">
+        <table width="100%" cellspacing=0 cellpadding =0 bgcolor=#0f95ae style="BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: medium;  BORDER-RIGHT-WIDTH: 1px" ID="Table1">
+          <tbody> 
+          <tr> 
+            <td bgcolor=DarkOrange width="100%" colspan=3 style="BACKGROUND-COLOR: DarkOrange"><font size=3  color=white><b>XML 
+              Signature: Sign document</b></font> </td>
+          </tr>
+          <tr> 
+            <p></p>
+            <td colspan=3><label id="selectCertMsg" style="DISPLAY: none"><font color=white size=3>Please 
+              select a key for your signature:</font></label></td>
+          </tr>
+          <tr> 
+            <p></p>
+            <td colspan=3><label id="usingCertMsg" style="DISPLAY: none"><font color=white size=3>Using 
+              the following key for your signature:</font></label></td>
+          </tr>
+          <tr> 
+            <td colspan=3> <span id="CertData"> Certificates&nbsp; </span> </td>
+          </tr>
+          <tr> 
+            <td> 
+              <p> 
+                <input onClick="ViewCert()" type=button value="View Certificate" id=button2 name=button2>
+              </p>
+            </td>
+            <td colspan=2> 
+              <p> 
+                <input onClick="return x1()" type=button value="Sign Document" name="button" ID="Submit1">
+              </p>
+            </td>
+            <td> 
+              <p></p>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan=3> 
+              <p></p>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan=3> 
+              <p>&nbsp;</p>
+            </td>
+          </tr>
+          </tbody> 
+        </table>
+        <p> 
+        <hr>
+      </form>
+		<div id="outputArea"></div>
+   	</body>
+</html>

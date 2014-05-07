@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[FormLicense.vcproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\CDrive\XMLSignature"
+SCC_Project_Name = "$/XMLSign/FormLicense", GIVAAAAA
+
+[FormLicensePS.vcproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/XMLSign/FormLicense", GIVAAAAA

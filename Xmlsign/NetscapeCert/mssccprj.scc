@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[NetscapeCert.sln]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/Netscape/NetscapeCert/NetscapeCert", QGVAAAAA
+
+[NetscapeCert.vcproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\cdrive\XMLSignature"
+SCC_Project_Name = "$/XMLSign/NetscapeCert", JVZAAAAA
+
+[NetscapeCertPS.vcproj]
+SCC_Aux_Path = "\\Infomosaic-eng2\XMLSignature\"
+SCC_Project_Name = "$/Netscape/NetscapeCert/NetscapeCert", QGVAAAAA

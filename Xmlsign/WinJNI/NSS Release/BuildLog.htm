@@ -1,0 +1,176 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: WinJNI, Configuration: NSS Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\ActiveX\XMLSign\WinJNI\NSS Release\RSP000001.rsp" with contents
+[
+/O2 /I "..\include" /I "..\." /I "C:\j2sdk1.4.1_05\include" /I "C:\j2sdk1.4.1_05\include\win32" /I "..\include\mozilla" /I "..\..\XMLSignJava\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "WINJNI_EXPORTS" /D "JNIBINDING" /D "NSS" /D "_WINDLL" /D "_MBCS" /FD /EHsc /MT /GS /Fo"NSS Release/" /Fd"NSS Release/vc70.pdb" /W3 /c /TP
+\ActiveX\XMLSign\Signature.cpp
+\ActiveX\XMLSign\ShowSelectCert.cpp
+\ActiveX\XMLSign\License.cpp
+.\infomosaic_securexml_SignatureImpl.cpp
+\ActiveX\XMLSign\CRLCache.cpp
+\ActiveX\XMLSign\config.cpp
+\ActiveX\XMLSign\CharConversion.cpp
+\ActiveX\XMLSign\CertVerify.cpp
+\ActiveX\XMLSign\CAMClient.cpp
+]
+Creating command line "cl.exe @"c:\ActiveX\XMLSign\WinJNI\NSS Release\RSP000001.rsp" /nologo"
+Creating temporary file "c:\ActiveX\XMLSign\WinJNI\NSS Release\RSP000002.rsp" with contents
+[
+/OUT:"..\libnss\SignatureL.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"..\libnss" /LIBPATH:"..\lib" /DLL /DEBUG /PDB:"NSS Release/WinJNI.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /IMPLIB:"NSS Release/SignatureL.lib" /MACHINE:X86 nsldap32v50.lib smime3.lib ssl3.lib nss3.lib libplc4.lib libplds4.lib libnspr4.lib xmlsig_nss.lib ws2_32.lib msxml2.lib libxml2.lib Version.lib shlwapi.lib comctl32.lib odbc32.lib odbccp32.lib zlib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+".\NSS Release\CAMClient.obj"
+".\NSS Release\CertVerify.obj"
+".\NSS Release\CharConversion.obj"
+".\NSS Release\config.obj"
+".\NSS Release\CRLCache.obj"
+".\NSS Release\infomosaic_securexml_SignatureImpl.obj"
+".\NSS Release\License.obj"
+".\NSS Release\ShowSelectCert.obj"
+".\NSS Release\Signature.obj"
+".\NSS Release\Sntp.obj"
+".\NSS Release\stdafx.obj"
+".\NSS Release\WinJNI.obj"
+".\NSS Release\WinJNI.res"
+]
+Creating command line "link.exe @"c:\ActiveX\XMLSign\WinJNI\NSS Release\RSP000002.rsp""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+Signature.cpp
+\ActiveX\XMLSign\Signature.cpp(256) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(412) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(434) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(435) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(437) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(448) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(456) : warning C4995: 'lstrcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(456) : warning C4995: 'lstrcpyA': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(340) : warning C4101: 'lret' : unreferenced local variable
+\ActiveX\XMLSign\Signature.cpp(339) : warning C4101: 'hkey' : unreferenced local variable
+\ActiveX\XMLSign\Signature.cpp(628) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(1615) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(1823) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(1824) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(1886) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2022) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2412) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+\ActiveX\XMLSign\Signature.cpp(2535) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2537) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2539) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2560) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2563) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2564) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2601) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2629) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2665) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2668) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2669) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2707) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(2735) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(3075) : warning C4101: 'guidStr' : unreferenced local variable
+\ActiveX\XMLSign\Signature.cpp(3071) : warning C4101: 'sigGuid' : unreferenced local variable
+\ActiveX\XMLSign\Signature.cpp(3598) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(4845) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(4846) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(4849) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(4896) : warning C4995: 'wcscpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6208) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6505) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6508) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6511) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6517) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6541) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6543) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6545) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6553) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6633) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6641) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6664) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(6665) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(7170) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(7171) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(7197) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(7203) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(7595) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(7598) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8026) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8083) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8084) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8086) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8087) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8124) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8232) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8395) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8439) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8469) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8470) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8471) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(8472) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(9255) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(9684) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(9779) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(11279) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(11285) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(11348) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(11403) : warning C4018: '<' : signed/unsigned mismatch
+\ActiveX\XMLSign\Signature.cpp(11405) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(12245) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(12669) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13000) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13219) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13225) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13313) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13314) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13315) : warning C4995: 'strcat': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13731) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13767) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(13774) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(14377) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(15705) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(15908) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(16035) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(16943) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(17025) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(17155) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+\ActiveX\XMLSign\Signature.cpp(17314) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(17319) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(18474) : warning C4995: 'wcscpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(18709) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(18751) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(18969) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(19079) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(19117) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(19122) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(19127) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(19132) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(19137) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(19142) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+\ActiveX\XMLSign\Signature.cpp(19147) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+ShowSelectCert.cpp
+License.cpp
+infomosaic_securexml_SignatureImpl.cpp
+CRLCache.cpp
+\ActiveX\XMLSign\CRLCache.cpp(67) : warning C4244: 'return' : conversion from 'LONGLONG' to 'long', possible loss of data
+config.cpp
+CharConversion.cpp
+CertVerify.cpp
+CAMClient.cpp
+Generating Code...
+Linking...
+LINK : fatal error LNK1181: cannot open input file 'xmlsig_nss.lib'
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\ActiveX\XMLSign\WinJNI\NSS Release\BuildLog.htm"
+WinJNI - 1 error(s), 110 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

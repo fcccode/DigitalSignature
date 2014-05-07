@@ -1,0 +1,130 @@
+Test 1 Successful. Certificate Validated Successfully
+Test 2 Successful. Certificate Validation Failed Last Error: 78: At least one of the certificates in the chain has invalid signature
+Test 3 Successful. Certificate Validation Failed Last Error: 78: At least one of the certificates in the chain has invalid signature
+Test 4 Successful. Certificate Validated Successfully
+Test 5 Successful. Certificate Validation Failed Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+Test 6 Successful. Certificate Validation Failed Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+Test 7 Successful. Certificate Validated Successfully
+Test 8 Successful. Certificate Validation Failed Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+Test 9 Successful. Certificate Validation Failed Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+Test 10 Successful. Certificate Validation Failed Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+Test 11 Successful. Certificate Validation Failed Last Error: 76: Certificate is expired or at least one of the certificates in the chain has invalid time
+Test 12 Successful. Certificate Validated Successfully
+Test 13 Successful. Certificate Validation Failed Last Error: 83: Issuer name <> Subject name of issuer certificate
+Test 14 Successful. Certificate Validation Failed Last Error: 83: Issuer name <> Subject name of issuer certificate
+Test 15 Successful. Certificate Validated Successfully 
+Test 16 Successful. Certificate Validated Successfully
+Test 17 Successful. Certificate Validated Successfully
+Test 18 Successful. Certificate Validated Successfully
+Test 19 Successful. Certificate Validation Failed Last Error: 74: No CRL related data found for the certificate/chain
+Test 20 Successful. Certificate Validation Failed Last Error: 75: Certificate revoked according to CRL
+Test 21 Successful. Certificate Validation Failed Last Error: 75: Certificate revoked according to CRL
+Test 22 Successful. Certificate Validation Failed Last Error: 84: Either the intermediate certificate does not have a basicConstraints extension or it is not marked critical or the cA is set to false
+Test 23 Successful. Certificate Validation Failed Last Error: 84: Either the intermediate certificate does not have a basicConstraints extension or it is not marked critical or the cA is set to false
+Test 24 Successful. Certificate Validated Successfully
+Test 25 Successful. Certificate Validation Failed Last Error: 84: Either the intermediate certificate does not have a basicConstraints extension or it is not marked critical or the cA is set to false
+Test 26 Successful. Certificate Validated Successfully
+Test 27 Successful. Certificate Validated Successfully
+Test 28 Successful. Certificate Validation Failed Last Error: 85: Certificate key usage error
+Test 29 Successful. Certificate Validation Failed Last Error: 85: Certificate key usage error
+Test 30 Successful. Certificate Validated Successfully
+Test 31 Successful. Certificate Validation Failed Last Error: 85: Certificate key usage error
+Test 32 Successful. Certificate Validation Failed Last Error: 85: Certificate key usage error
+Test 33 Successful. Certificate Validated Successfully
+Test 34 Successful. ipolset=any policy, explicit=true. Certificate Validated Successfully
+Test 34 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Test 34 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Test 34 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 34 Successful. ipolset=not test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 34 Successful. ipolset=not test-policy-1, explicit=false. Certificate Validated Successfully
+Test 35 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 35 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 36 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 36 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 37 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 37 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 38 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 38 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 39 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 39 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 39 Successful. ipolset=set including test-policy-1, explicit=true. Certificate Validated Successfully
+Test 39 Successful. ipolset=set including test-policy-1, explicit=false. Certificate Validated Successfully
+Test 39 Successful. ipolset=set not including test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 39 Successful. ipolset=set including test-policy-1, explicit=false. Certificate Validated Successfully
+Test 40 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 40 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 41 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 41 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 42 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 42 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 43 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 43 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 44 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 44 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 45 Successful. ipolset=any policy, explicit=false. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 45 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 46 Successful. ipolset=any-policy, explicit=false. Certificate Validated Successfully
+Test 46 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 46 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Test 46 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 46 Successful. ipolset=not including test-policy-1, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 46 Successful. ipolset=not including test-policy-1, explicit=false. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 47 Successful. ipolset=any policy, explicit=false. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 47 Successful. ipolset=any policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 48 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 48 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Test 48 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 48 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 48 Successful. ipolset=not including test-policy-1, explicit=false. Certificate Validated Successfully
+Test 48 Successful. ipolset=not including test-policy-1, explicit=true, Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 49 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 49 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Test 49 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Test 49 Successful. ipolset=not including test-policy-1/2, explicit=true, Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 49 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 49 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 50 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 50 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Test 50 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Test 50 Successful. ipolset=not including test-policy-1/2, explicit=true. Certificate Validated Successfully
+Test 50 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Test 50 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 51 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Test 51 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 52 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 52 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 52 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Test 52 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 53 Successful. ipolset=test-policy-1, explicit=false. Certificate Validated Successfully
+Test 53 Successful. ipolset=test-policy-1, explicit=true. Certificate Validated Successfully
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=true. Certificate Validated Successfully
+Test 53 Successful. ipolset=not including test-policy-1/2, explicit=false. Certificate Validated Successfully
+Test 53 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 86: Certificate policy validation failed
+Test 53 Successful. ipolset=any policy, explicit=false. Certificate Validated Successfully
+Test 53 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 54 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90: There is a violation of the path length constraint in the certificate chain
+Test 55 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90: There is a violation of the path length constraint in the certificate chain
+Test 56 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 57 Successful. ipolset=any-policy, explicit=true. Certificate Validated Successfully
+Test 58 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90: There is a violation of the path length constraint in the certificate chain
+Test 59 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90: There is a violation of the path length constraint in the certificate chain
+Test 60 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90: There is a violation of the path length constraint in the certificate chain
+Test 61 Successful. ipolset=any-policy, explicit=true. Certificate Validation Failed Last Error: 90: There is a violation of the path length constraint in the certificate chain
+Test 62 Successful. Certificate Validated Successfully
+Test 63 Successful. Certificate Validated Successfully
+Test 64 Successful. Certificate Validation Failed Last Error: 74: No CRL related data found for the certificate/chain
+Test 65 Successful. Certificate Validation Failed Last Error: 74: No CRL related data found for the certificate/chain
+Test 66 Successful. Certificate Validation Failed Last Error: 74: No CRL related data found for the certificate/chain
+Test 67 Successful. Certificate Validated Successfully
+Test 68 Successful. Certificate Validation Failed Last Error: 58: Import failed for PFX certificate
+Test 69 Successful. Certificate Validation Failed Last Error: 75: Certificate revoked according to CRL
+Test 70 Successful. Certificate Validation Failed Last Error: 75: Certificate revoked according to CRL
+Test 71 Successful. Certificate Validation Failed Last Error: 75: Certificate revoked according to CRL
+Test 72 Successful. Certificate Validation Failed Last Error: 87: The nextUpdate time is earlier than current time
+Test 73 Successful. Certificate Validation Failed Last Error: 87: The nextUpdate time is earlier than current time
+Test 74 Successful. Certificate Validated Successfully
+Test 75 Successful. Certificate Validation Failed Last Error: 73: Generic error on CRL validation
+Test 76 Successful. Certificate Validation Failed Last Error: 73: Generic error on CRL validation

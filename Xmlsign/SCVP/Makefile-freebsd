@@ -1,0 +1,26 @@
+#
+
+OPENSSLROOT= /usr/work/openssl/work/openssl-0.9.7c
+RESOLVSEC= /usr/local/lib/libresolvsec.a
+
+CFLAGS+= -g -Wall -Ddnssec_trust -Dldap_lookup
+CFLAGS+= -I/usr/local/include -I${OPENSSLROOT}/include
+LDFLAGS+= -L/usr/local/lib -lcurl -lldap \
+	-L${OPENSSLROOT} -lcrypto -lssl ${RESOLVSEC}
+
+all: clt srv simplesrv
+
+clt: scvp_clt.c
+	${CC} ${CFLAGS} scvp_clt.c -o clt ${LDFLAGS}
+
+srv: scvp_srv.o scvp_ldap.o getrrcertbyname.o
+	${CC} ${CFLAGS} scvp_srv.o scvp_ldap.o getrrcertbyname.o \
+	-o srv ${LDFLAGS}
+
+
+simplesrv: simplesrv.c
+	gcc -g -Wall simplesrv.c -o simplesrv
+
+
+clean:
+	-rm *.o a.out clt srv

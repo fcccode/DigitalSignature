@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JITCTestSuite", "JITCTestSuite.csproj", "{64108D72-358A-42A4-ACDB-A599791DF0DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{64108D72-358A-42A4-ACDB-A599791DF0DD}.Debug.ActiveCfg = Debug|.NET
+		{64108D72-358A-42A4-ACDB-A599791DF0DD}.Debug.Build.0 = Debug|.NET
+		{64108D72-358A-42A4-ACDB-A599791DF0DD}.Release.ActiveCfg = Release|.NET
+		{64108D72-358A-42A4-ACDB-A599791DF0DD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

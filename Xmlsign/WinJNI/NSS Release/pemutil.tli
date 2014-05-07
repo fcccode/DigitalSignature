@@ -1,0 +1,19 @@
+// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (3029f82b).
+//
+// c:\activex\xmlsign\winjni\nss release\pemutil.tli
+//
+// Wrapper implementations for Win32 type library PemUtil\Release\PemUtil.dll
+// compiler-generated file created 12/28/04 at 13:24:24 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IPemObject wrapper method implementations
+//
+
+inline _bstr_t IPemObject::CovertToPFX ( _bstr_t pemFileName, _bstr_t pemPassword ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CovertToPFX(pemFileName, pemPassword, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}

@@ -1,0 +1,48 @@
+// SecurePad.idl : IDL source for SecurePad.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (SecurePad.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(F5734F4F-8013-496B-A7F6-10D2F1C048FD),
+		dual,
+		helpstring("IePad Interface"),
+		pointer_default(unique)
+	]
+	interface IePad : IDispatch
+	{
+		[id(1), helpstring("method GetPhysicalSignature")] HRESULT GetPhysicalSignature([out, retval] BSTR *sigFilePath);
+		[id(2), helpstring("method GetEpadPropXML")] HRESULT GetEpadPropXML([out, retval] BSTR *ePadPropXML);
+		[propget, id(3), helpstring("property UpperX")] HRESULT UpperX([out, retval] long *pVal);
+		[propput, id(3), helpstring("property UpperX")] HRESULT UpperX([in] long newVal);
+		[propget, id(4), helpstring("property UpperY")] HRESULT UpperY([out, retval] long *pVal);
+		[propput, id(4), helpstring("property UpperY")] HRESULT UpperY([in] long newVal);
+		[propget, id(5), helpstring("property Width")] HRESULT Width([out, retval] long *pVal);
+		[propput, id(5), helpstring("property Width")] HRESULT Width([in] long newVal);
+		[propget, id(6), helpstring("property Heigth")] HRESULT Heigth([out, retval] long *pVal);
+		[propput, id(6), helpstring("property Heigth")] HRESULT Heigth([in] long newVal);
+	};
+
+[
+	uuid(43176C29-BEA3-401B-A3E2-6A1C3FCCD612),
+	version(1.0),
+	helpstring("SecurePad 1.0 Type Library")
+]
+library SECUREPADLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(ACC8C50C-31C8-4453-A535-84C5F8C9F99A),
+		helpstring("ePad Class")
+	]
+	coclass ePad
+	{
+		[default] interface IePad;
+	};
+};

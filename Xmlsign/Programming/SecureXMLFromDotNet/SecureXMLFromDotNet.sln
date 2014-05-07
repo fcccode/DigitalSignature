@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWinApp", "CSharpWinApp\CSharpWinApp.csproj", "{64108D72-358A-42A4-ACDB-A599791DF0DD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBWinApp", "VBWinApp\VBWinApp.vbproj", "{9F00CD8E-7418-4E13-8968-2ED68A5E2FC0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpAspDotNet", "http://localhost/CSharpAspDotNet/CSharpAspDotNet.csproj", "{66173E60-A939-42F6-88C6-34DAE458BBE3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {21DA35F9-5830-47D7-B84E-1502EC539F69}
+		SccProjectUniqueName1 = http://localhost/CSharpAspDotNet/CSharpAspDotNet.csproj
+		SccProjectName1 = \u0022$/SecureXMLRelease/ActiveX/Programming/SecureXMLFromDotNet/CSharpAspDotNet\u0022,\u0020QUTAAAAA
+		SccLocalPath1 = http://localhost/CSharpAspDotNet/
+		CanCheckoutShared = false
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = CSharpWinApp\\CSharpWinApp.csproj
+		SccLocalPath2 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = CSharpWinApp\\
+		SccProjectUniqueName3 = VBWinApp\\VBWinApp.vbproj
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection3 = VBWinApp\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{64108D72-358A-42A4-ACDB-A599791DF0DD}.Debug.ActiveCfg = Debug|.NET
+		{64108D72-358A-42A4-ACDB-A599791DF0DD}.Debug.Build.0 = Debug|.NET
+		{64108D72-358A-42A4-ACDB-A599791DF0DD}.Release.ActiveCfg = Release|.NET
+		{64108D72-358A-42A4-ACDB-A599791DF0DD}.Release.Build.0 = Release|.NET
+		{9F00CD8E-7418-4E13-8968-2ED68A5E2FC0}.Debug.ActiveCfg = Debug|.NET
+		{9F00CD8E-7418-4E13-8968-2ED68A5E2FC0}.Debug.Build.0 = Debug|.NET
+		{9F00CD8E-7418-4E13-8968-2ED68A5E2FC0}.Release.ActiveCfg = Release|.NET
+		{9F00CD8E-7418-4E13-8968-2ED68A5E2FC0}.Release.Build.0 = Release|.NET
+		{66173E60-A939-42F6-88C6-34DAE458BBE3}.Debug.ActiveCfg = Debug|.NET
+		{66173E60-A939-42F6-88C6-34DAE458BBE3}.Debug.Build.0 = Debug|.NET
+		{66173E60-A939-42F6-88C6-34DAE458BBE3}.Release.ActiveCfg = Release|.NET
+		{66173E60-A939-42F6-88C6-34DAE458BBE3}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

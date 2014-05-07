@@ -1,0 +1,238 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: XMLSign, Configuration: SecureSign Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\ActiveX\XMLSign\SecureSign Release\RSP00000E.rsp" with contents
+[
+/env win32  /tlb "SecureSign Release/XMLSign.tlb" /h "SecurePad_h.h"
+.\include\SecurePad\SecurePad.idl
+]
+Creating command line "midl.exe @"c:\ActiveX\XMLSign\SecureSign Release\RSP00000E.rsp" /nologo"
+Creating temporary file "c:\ActiveX\XMLSign\SecureSign Release\RSP00000F.rsp" with contents
+[
+/O2 /I "include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "FREE_SECURESIGN" /D "_WINDLL" /D "_MBCS" /D "_ATL_STATIC_REGISTRY" /FD /EHsc /MT /Yu"StdAfx.h" /Fp"SecureSign Release/XMLSignS.pch" /Fo"SecureSign Release/" /Fd"SecureSign Release/" /FR"SecureSign Release/" /W3 /c
+.\XMLSign.cpp
+.\Sntp.cpp
+.\Signature.cpp
+.\ShowSelectCert.cpp
+.\License.cpp
+.\CRLCache.cpp
+.\config.cpp
+.\CharConversion.cpp
+.\CertVerify.cpp
+.\CAMClient.cpp
+]
+Creating command line "cl.exe @"c:\ActiveX\XMLSign\SecureSign Release\RSP00000F.rsp" /nologo"
+Creating temporary file "c:\ActiveX\XMLSign\SecureSign Release\RSP000010.rsp" with contents
+[
+/O2 /I "include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "FREE_SECURESIGN" /D "_WINDLL" /D "_MBCS" /D "_ATL_STATIC_REGISTRY" /FD /EHsc /MT /Yc"StdAfx.h" /Fp"SecureSign Release/XMLSignS.pch" /Fo"SecureSign Release/" /Fd"SecureSign Release/" /FR"SecureSign Release/" /W3 /c
+.\StdAfx.cpp
+]
+Creating command line "cl.exe @"c:\ActiveX\XMLSign\SecureSign Release\RSP000010.rsp" /nologo"
+Creating command line "rc.exe /d "NDEBUG" /l 0x409 /I "SecureSign Release" /fo"SecureSign Release/XMLSign.res" .\XMLSign.rc"
+Creating temporary file "c:\ActiveX\XMLSign\SecureSign Release\RSP000011.rsp" with contents
+[
+/OUT:"SecureSign Release/XMLSignS.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"..\securexmlc\lib" /LIBPATH:"lib" /DLL /NODEFAULTLIB:"libc.lib" /NODEFAULTLIB:"libcd.lib" /DEF:".\XMLSign.def" /PDB:"SecureSign Release/XMLSignS.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:"SecureSign Release/XMLSignS.lib" /MACHINE:I386 crypt32.lib xmlsig.lib ws2_32.lib msxml2.lib libxml2.lib Version.lib shlwapi.lib comctl32.lib odbc32.lib odbccp32.lib wldap32.lib zlib.lib gdiplus.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+".\SecureSign Release\CAMClient.obj"
+".\SecureSign Release\CertVerify.obj"
+".\SecureSign Release\CharConversion.obj"
+".\SecureSign Release\config.obj"
+".\SecureSign Release\CRLCache.obj"
+".\SecureSign Release\License.obj"
+".\SecureSign Release\ShowSelectCert.obj"
+".\SecureSign Release\Signature.obj"
+".\SecureSign Release\Sntp.obj"
+".\SecureSign Release\StdAfx.obj"
+".\SecureSign Release\XMLSign.obj"
+".\SecureSign Release\XMLSign.res"
+]
+Creating command line "link.exe @"c:\ActiveX\XMLSign\SecureSign Release\RSP000011.rsp""
+Creating temporary file "c:\ActiveX\XMLSign\SecureSign Release\BAT000012.bat" with contents
+[
+@echo off
+regsvr32 /s /c "c:\ActiveX\XMLSign\SecureSign Release\XMLSignS.dll"
+echo regsvr32 exec. time > "SecureSign Release\regsvr32.trg"
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing registration"
+exit 1
+:VCEnd
+]
+Creating command line ""c:\ActiveX\XMLSign\SecureSign Release\BAT000012.bat""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating Type Library...
+Processing .\include\SecurePad\SecurePad.idl
+SecurePad.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\wtypes.idl
+wtypes.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\basetsd.h
+basetsd.h
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\guiddef.h
+guiddef.h
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\ocidl.idl
+ocidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oleidl.idl
+oleidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\servprov.idl
+servprov.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\urlmon.idl
+urlmon.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\msxml.idl
+msxml.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oaidl.acf
+oaidl.acf
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\ocidl.acf
+ocidl.acf
+Compiling...
+StdAfx.cpp
+Compiling...
+XMLSign.cpp
+Sntp.cpp
+Signature.cpp
+Signature.cpp(256) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(412) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(434) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(435) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(437) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(448) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(456) : warning C4995: 'lstrcpy': name was marked as #pragma deprecated
+Signature.cpp(456) : warning C4995: 'lstrcpyA': name was marked as #pragma deprecated
+Signature.cpp(628) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(1615) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(1823) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(1824) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(1886) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(2022) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2412) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(2535) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2537) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2539) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2560) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2563) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2564) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2601) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2629) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2665) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2668) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2669) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2707) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(2735) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(3075) : warning C4101: 'guidStr' : unreferenced local variable
+Signature.cpp(3071) : warning C4101: 'sigGuid' : unreferenced local variable
+Signature.cpp(3598) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(4845) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+Signature.cpp(4846) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+Signature.cpp(4849) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+Signature.cpp(4896) : warning C4995: 'wcscpy': name was marked as #pragma deprecated
+Signature.cpp(5085) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(5121) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(5128) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6208) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6505) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6508) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6511) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6517) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6541) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6543) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6545) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(6553) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6633) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6641) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6664) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(6665) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(7170) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(7171) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(7197) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(7203) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(7595) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(7598) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8026) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(8083) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8084) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8086) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8087) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8124) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8232) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8395) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8439) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8469) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8470) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(8471) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(8472) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(9255) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(9684) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(9779) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(11279) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(11285) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(12245) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(12669) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13000) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13219) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13225) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13313) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(13314) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(13315) : warning C4995: 'strcat': name was marked as #pragma deprecated
+Signature.cpp(13731) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13767) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(13774) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(14377) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(15705) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(15908) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(16035) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(16943) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(17025) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(17155) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(17314) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(17319) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(18474) : warning C4995: 'wcscpy': name was marked as #pragma deprecated
+Signature.cpp(18709) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(18751) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+Signature.cpp(18969) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19079) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19117) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19122) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19127) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19132) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19137) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19142) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+Signature.cpp(19147) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+ShowSelectCert.cpp
+License.cpp
+CRLCache.cpp
+CRLCache.cpp(67) : warning C4244: 'return' : conversion from 'LONGLONG' to 'long', possible loss of data
+CRLCache.cpp(171) : warning C4018: '>=' : signed/unsigned mismatch
+config.cpp
+CharConversion.cpp
+CertVerify.cpp
+CAMClient.cpp
+Generating Code...
+Compiling resources...
+Linking...
+   Creating library SecureSign Release/XMLSignS.lib and object SecureSign Release/XMLSignS.exp
+XMLSignS.exp : warning LNK4070: /OUT:XMLSign.DLL directive in .EXP differs from output filename 'SecureSign Release/XMLSignS.dll'; ignoring directive
+License.obj : warning LNK4217: locally defined symbol _xmlFree imported in function "public: int __thiscall CLicense::verifyFormSchema(unsigned char *,struct _xmlDoc *,struct _GLOBAL_SIG *)" (?verifyFormSchema@CLicense@@QAEHPAEPAU_xmlDoc@@PAU_GLOBAL_SIG@@@Z)
+Performing registration
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\ActiveX\XMLSign\SecureSign Release\BuildLog.htm"
+XMLSign - 0 error(s), 111 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

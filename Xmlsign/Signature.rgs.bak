@@ -1,0 +1,52 @@
+HKCR
+{
+	XMLSign.Signature.1 = s 'Signature Class'
+	{
+		CLSID = s '{D300C133-A6F6-4FB4-A734-4865FBF5A3B1}'
+	}
+	XMLSign.Signature = s 'Signature Class'
+	{
+		CLSID = s '{D300C133-A6F6-4FB4-A734-4865FBF5A3B1}'
+		CurVer = s 'XMLSign.Signature.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D300C133-A6F6-4FB4-A734-4865FBF5A3B1} = s 'Signature Class'
+		{
+			ProgID = s 'XMLSign.Signature.1'
+			VersionIndependentProgID = s 'XMLSign.Signature'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7CAD46B3-47CB-45B6-BB83-1B22AE0CB3BC}'
+		}
+	}
+}
+HKLM
+{
+	SOFTWARE
+	{
+		Microsoft
+		{
+			'Internet Explorer'
+			{
+				NoRemove Extensions
+				{
+					ForceRemove {D300C133-A6F6-4FB4-A734-4865FBF5A3B1}
+					{
+						val 'Default Visible' = s 'Yes'
+						val 'ButtonText' = s 'Sign This Page'
+						val 'MenuText' = s 'SecureXML Menu'
+						val 'MenuStatusBar' = s 'This will call SecureXML ActiveX component'
+						val 'HotIcon' =  s '%MODULEPATH%\icon1.ico'
+						val 'Icon' =  s '%MODULEPATH%\icon1.ico'
+						val 'CLSID' = s '{1FBA04EE-3024-11d2-8F1F-0000F87ABD16}'
+						val 'ClsidExtension' = s '{D300C133-A6F6-4FB4-A734-4865FBF5A3B1}'
+					}
+				}
+			}
+		}
+	}
+}

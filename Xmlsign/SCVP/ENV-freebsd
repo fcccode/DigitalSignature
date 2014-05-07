@@ -1,0 +1,2 @@
+setenv LD_LIBRARY_PATH /usr/work/openssl/work/openssl-0.9.7c
+setenv MANPATH ${MANPATH}:/usr/share/openssl/man

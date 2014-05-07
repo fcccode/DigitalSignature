@@ -1,0 +1,123 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Chile) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESL)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_CHILE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(AFX_TARG_ESL)
+#if defined(APSTUDIO_INVOKED)
+IDD_SHOWSELECTCERT$(AFX_TARG_ESL) DIALOGEX 0, 0, 305, 197
+#else
+IDD_SHOWSELECTCERT DIALOGEX 0, 0, 305, 197
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Escoja Certificado"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "BUENO",IDOK,7,146,50,16
+    PUSHBUTTON      "Cancele",IDCANCEL,61,146,50,16
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,31,290,110
+    PUSHBUTTON      "Vea Certificado",IDC_BUTTON1,115,147,75,15
+    LTEXT           "Escoja el Certificado usted quiere el uso de ou:",
+                    IDC_STATIC,9,9,258,15
+    LTEXT           "Infomosaic SecureXML Digital Signature. Copyright (c) Infomosaic Corporation 2001-2005",
+                    IDC_STATIC,8,174,291,12
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "XMLSign"
+    IDC_SIGOK               "    OK    "
+    IDS_SIGNEW              "Start Over"
+    IDS_SERIALNO            "Número de serie"
+    IDS_EXPDATE             "Fecha de vencimiento"
+    IDS_ISSUEDBY            "Publicado por"
+    IDS_ISSUEDTO            "Publicado a"
+    IDS_MSGINSTALL          "Please Install PKI Certificate"
+    IDS_MSGNOCERT           "No PKI Certificates Found"
+    IDS_CAPTION             "Escoja Certificado"
+END
+
+#endif    // Spanish (Chile) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

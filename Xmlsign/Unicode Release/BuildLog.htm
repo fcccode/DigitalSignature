@@ -1,0 +1,174 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: XMLSign, Configuration: Unicode Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\ActiveX\XMLSign\Unicode Release\RSP000031.rsp" with contents
+[
+/O2 /I "include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "UNICODE" /D "_WINDLL" /D "_MBCS" /D "_ATL_STATIC_REGISTRY" /FD /EHsc /MT /Yu"StdAfx.h" /Fp".\ReleaseMinSize/XMLSign.pch" /Fo".\ReleaseMinSize/" /Fd".\ReleaseMinSize/" /FR"Unicode Release/" /W3 /c
+.\Signature.cpp
+]
+Creating command line "cl.exe @"c:\ActiveX\XMLSign\Unicode Release\RSP000031.rsp" /nologo"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+Signature.cpp
+Signature.cpp(284) : error C2664: '_strlwr' : cannot convert parameter 1 from 'LPWSTR' to 'char *'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(345) : error C2664: 'RegOpenKeyExW' : cannot convert parameter 2 from 'const char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(356) : error C2440: 'initializing' : cannot convert from 'TCHAR [400]' to 'std::basic_string<_Elem,_Traits,_Ax>'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+Signature.cpp(428) : error C2664: 'VerQueryValueW' : cannot convert parameter 2 from 'const char [2]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(1876) : error C2664: 'DeleteFileW' : cannot convert parameter 1 from 'char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(1878) : error C2664: 'MoveFileW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(1983) : error C2664: 'StrCmpW' : cannot convert parameter 1 from 'const char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(2029) : error C2664: 'StrCmpW' : cannot convert parameter 1 from 'const char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(2189) : error C2664: 'StrCmpW' : cannot convert parameter 1 from 'const char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(2224) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(2392) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(2396) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(2404) : error C2664: 'CreateFileW' : cannot convert parameter 1 from 'LPCSTR' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(2498) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(2502) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(2510) : error C2664: 'CreateFileW' : cannot convert parameter 1 from 'LPCSTR' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(3396) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(3400) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(4132) : error C2664: 'StrChrW' : cannot convert parameter 1 from 'char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5377) : error C2664: 'GetClassNameW' : cannot convert parameter 2 from 'char [100]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5387) : error C2664: 'FindWindowExW' : cannot convert parameter 3 from 'const char [21]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5390) : error C2664: 'FindWindowExW' : cannot convert parameter 3 from 'const char [25]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5403) : error C2664: 'GetProcAddress' : cannot convert parameter 2 from 'const unsigned short [18]' to 'LPCSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5519) : error C2664: 'StrCmpW' : cannot convert parameter 1 from 'const char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5558) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(5863) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5867) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5875) : error C2664: 'CreateFileW' : cannot convert parameter 1 from 'LPCSTR' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5973) : error C2664: 'StrCmpW' : cannot convert parameter 1 from 'const char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(5983) : warning C4800: 'unsigned char *' : forcing value to bool 'true' or 'false' (performance warning)
+Signature.cpp(6840) : warning C4018: '<' : signed/unsigned mismatch
+Signature.cpp(6923) : error C2664: 'GetComputerNameW' : cannot convert parameter 1 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(7065) : error C2664: 'StrStrW' : cannot convert parameter 1 from 'char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(7067) : error C2664: 'StrStrW' : cannot convert parameter 1 from 'char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(7068) : error C2664: 'StrTrimW' : cannot convert parameter 1 from 'char *' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(7970) : error C2664: 'DeleteFileW' : cannot convert parameter 1 from 'char [261]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(8288) : error C2664: 'StrChrW' : cannot convert parameter 1 from 'LPSTR' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(8389) : error C2664: 'StrChrW' : cannot convert parameter 1 from 'LPSTR' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(9819) : error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(ATL::CSimpleStringT<BaseType>::PCXSTR,...)' : cannot convert parameter 1 from 'const char [3]' to 'ATL::CSimpleStringT<BaseType>::PCXSTR'
+        with
+        [
+            BaseType=wchar_t,
+            StringTraits=ATL::StrTraitATL<wchar_t,ATL::ChTraitsCRT<wchar_t>>
+        ]
+        and
+        [
+            BaseType=TCHAR
+        ]
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(9823) : error C2440: 'type cast' : cannot convert from 'ATL::CString' to 'LPCSTR'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+Signature.cpp(10482) : error C2664: 'CertOpenSystemStoreW' : cannot convert parameter 2 from 'char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(10671) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(10675) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(10695) : error C2664: 'CreateFileW' : cannot convert parameter 1 from 'LPCSTR' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(12386) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(12390) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(12606) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(12610) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(13732) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(13736) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(14309) : error C2664: 'StrChrW' : cannot convert parameter 1 from 'char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(14567) : error C2664: 'StrChrW' : cannot convert parameter 1 from 'LPSTR' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(14668) : error C2664: 'StrChrW' : cannot convert parameter 1 from 'LPSTR' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(15060) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(15064) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(15263) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(15267) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(15390) : error C2664: 'GetTempPathW' : cannot convert parameter 2 from 'char [260]' to 'LPWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(15394) : error C2664: 'GetTempFileNameW' : cannot convert parameter 1 from 'char [260]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(16261) : error C2664: 'StrCmpW' : cannot convert parameter 1 from 'const char *' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(17916) : error C2664: 'ATL::CString ATL::CTime::FormatGmt(LPCTSTR) const' : cannot convert parameter 1 from 'const char [21]' to 'LPCTSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+Signature.cpp(17925) : error C2440: 'initializing' : cannot convert from 'ATL::CSimpleStringT<BaseType>::PCXSTR' to 'std::basic_string<_Elem,_Traits,_Ax>'
+        with
+        [
+            BaseType=TCHAR
+        ]
+        and
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\ActiveX\XMLSign\Unicode Release\BuildLog.htm"
+XMLSign - 58 error(s), 4 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

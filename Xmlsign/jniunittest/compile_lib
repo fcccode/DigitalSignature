@@ -1,0 +1,6 @@
+cd /home/anil/mozilla1.6/xpcom/XMLSignLinuxA
+gmake
+gmake header
+mv infomosaic/securexml/securexml.jar /home/alex/UnitTest/lib
+mv libSignatureL.so /home/alex/UnitTest/lib
+cd 

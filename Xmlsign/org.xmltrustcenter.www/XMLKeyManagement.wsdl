@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s1="http://www.xkms.org/schema/xkms-2001-01-20" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.w3.org/2000/09/xmldsig#" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.xkms.org/schema/xkms-2001-01-20" name="XMLKeyManagement" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.w3.org/2000/09/xmldsig#" version="0.1">
+      <s:simpleType name="CryptoBinary">
+        <s:restriction base="s:base64Binary" />
+      </s:simpleType>
+      <s:element name="Signature" type="s0:SignatureType" />
+      <s:complexType name="SignatureType">
+        <s:sequence>
+          <s:element ref="s0:SignedInfo" />
+          <s:element ref="s0:SignatureValue" />
+          <s:element minOccurs="0" ref="s0:KeyInfo" />
+          <s:element minOccurs="0" maxOccurs="unbounded" ref="s0:Object" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:element name="SignatureValue" type="s0:SignatureValueType" />
+      <s:complexType name="SignatureValueType">
+        <s:simpleContent>
+          <s:extension base="s:base64Binary">
+            <s:attribute name="Id" type="s:ID" use="optional" />
+          </s:extension>
+        </s:simpleContent>
+      </s:complexType>
+      <s:element name="SignedInfo" type="s0:SignedInfoType" />
+      <s:complexType name="SignedInfoType">
+        <s:sequence>
+          <s:element ref="s0:CanonicalizationMethod" />
+          <s:element ref="s0:SignatureMethod" />
+          <s:element maxOccurs="unbounded" ref="s0:Reference" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:element name="CanonicalizationMethod" type="s0:CanonicalizationMethodType" />
+      <s:complexType name="CanonicalizationMethodType" mixed="true">
+        <s:sequence>
+          <s:any minOccurs="0" maxOccurs="unbounded" namespace="##any" />
+        </s:sequence>
+        <s:attribute name="Algorithm" type="s:anyURI" use="required" />
+      </s:complexType>
+      <s:element name="SignatureMethod" type="s0:SignatureMethodType" />
+      <s:complexType name="SignatureMethodType" mixed="true">
+        <s:sequence>
+          <s:element minOccurs="0" name="HMACOutputLength" type="s0:HMACOutputLengthType" />
+          <s:any minOccurs="0" maxOccurs="unbounded" namespace="##other" />
+        </s:sequence>
+        <s:attribute name="Algorithm" type="s:anyURI" use="required" />
+      </s:complexType>
+      <s:element name="Reference" type="s0:ReferenceType" />
+      <s:complexType name="ReferenceType">
+        <s:sequence>
+          <s:element minOccurs="0" ref="s0:Transforms" />
+          <s:element ref="s0:DigestMethod" />
+          <s:element ref="s0:DigestValue" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+        <s:attribute name="URI" type="s:anyURI" use="optional" />
+        <s:attribute name="Type" type="s:anyURI" use="optional" />
+      </s:complexType>
+      <s:element name="Transforms" type="s0:TransformsType" />
+      <s:complexType name="TransformsType">
+        <s:sequence>
+          <s:element maxOccurs="unbounded" ref="s0:Transform" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Transform" type="s0:TransformType" />
+      <s:complexType name="TransformType" mixed="true">
+        <s:choice minOccurs="0" maxOccurs="unbounded">
+          <s:any namespace="##other" processContents="lax" />
+          <s:element name="XPath" type="s:string" />
+        </s:choice>
+        <s:attribute name="Algorithm" type="s:anyURI" use="required" />
+      </s:complexType>
+      <s:element name="DigestMethod" type="s0:DigestMethodType" />
+      <s:complexType name="DigestMethodType" mixed="true">
+        <s:sequence>
+          <s:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax" />
+        </s:sequence>
+        <s:attribute name="Algorithm" type="s:anyURI" use="required" />
+      </s:complexType>
+      <s:element name="DigestValue" type="s0:DigestValueType" />
+      <s:simpleType name="DigestValueType">
+        <s:restriction base="s:base64Binary" />
+      </s:simpleType>
+      <s:element name="KeyInfo" type="s0:KeyInfoType" />
+      <s:complexType name="KeyInfoType" mixed="true">
+        <s:sequence>
+          <s:element ref="s0:KeyName" />
+          <s:element ref="s0:KeyValue" />
+          <s:element ref="s0:RetrievalMethod" />
+          <s:element ref="s0:X509Data" />
+          <s:element ref="s0:PGPData" />
+          <s:element ref="s0:SPKIData" />
+          <s:element ref="s0:MgmtData" />
+          <s:any namespace="##other" processContents="lax" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:element name="KeyName" type="s:string" />
+      <s:element name="MgmtData" type="s:string" />
+      <s:element name="KeyValue" type="s0:KeyValueType" />
+      <s:complexType name="KeyValueType" mixed="true">
+        <s:choice>
+          <s:element ref="s0:DSAKeyValue" />
+          <s:element ref="s0:RSAKeyValue" />
+          <s:any namespace="##other" processContents="lax" />
+        </s:choice>
+      </s:complexType>
+      <s:element name="RetrievalMethod" type="s0:RetrievalMethodType" />
+      <s:complexType name="RetrievalMethodType">
+        <s:sequence>
+          <s:element minOccurs="0" name="Transforms" type="s0:TransformsType" />
+        </s:sequence>
+        <s:attribute name="URI" type="s:anyURI" />
+        <s:attribute name="Type" type="s:anyURI" use="optional" />
+      </s:complexType>
+      <s:element name="X509Data" type="s0:X509DataType" />
+      <s:complexType name="X509DataType">
+        <s:sequence maxOccurs="unbounded">
+          <s:choice>
+            <s:element name="X509IssuerSerial" type="s0:X509IssuerSerialType" />
+            <s:element name="X509SKI" type="s:base64Binary" />
+            <s:element name="X509SubjectName" type="s:string" />
+            <s:element name="X509Certificate" type="s:base64Binary" />
+            <s:element name="X509CRL" type="s:base64Binary" />
+            <s:any namespace="##other" processContents="lax" />
+          </s:choice>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="X509IssuerSerialType">
+        <s:sequence>
+          <s:element name="X509IssuerName" type="s:string" />
+          <s:element name="X509SerialNumber" type="s:integer" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PGPData" type="s0:PGPDataType" />
+      <s:complexType name="PGPDataType">
+        <s:choice>
+          <s:sequence>
+            <s:element name="PGPKeyID" type="s:base64Binary" />
+            <s:element minOccurs="0" name="PGPKeyPacket" type="s:base64Binary" />
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax" />
+          </s:sequence>
+        </s:choice>
+      </s:complexType>
+      <s:element name="SPKIData" type="s0:SPKIDataType" />
+      <s:complexType name="SPKIDataType">
+        <s:sequence maxOccurs="unbounded">
+          <s:element name="SPKISexp" type="s:base64Binary" />
+          <s:any minOccurs="0" namespace="##other" processContents="lax" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Object" type="s0:ObjectType" />
+      <s:complexType name="ObjectType" mixed="true">
+        <s:sequence minOccurs="0" maxOccurs="unbounded">
+          <s:any namespace="##any" processContents="lax" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+        <s:attribute name="MimeType" type="s:string" use="optional" />
+        <s:attribute name="Encoding" type="s:anyURI" use="optional" />
+      </s:complexType>
+      <s:element name="Manifest" type="s0:ManifestType" />
+      <s:complexType name="ManifestType">
+        <s:sequence>
+          <s:element maxOccurs="unbounded" ref="s0:Reference" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:element name="SignatureProperties" type="s0:SignaturePropertiesType" />
+      <s:complexType name="SignaturePropertiesType">
+        <s:sequence>
+          <s:element maxOccurs="unbounded" ref="s0:SignatureProperty" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:element name="SignatureProperty" type="s0:SignaturePropertyType" />
+      <s:complexType name="SignaturePropertyType" mixed="true">
+        <s:choice maxOccurs="unbounded">
+          <s:any namespace="##other" processContents="lax" />
+        </s:choice>
+        <s:attribute name="Target" type="s:anyURI" use="required" />
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:simpleType name="HMACOutputLengthType">
+        <s:restriction base="s:integer" />
+      </s:simpleType>
+      <s:element name="DSAKeyValue" type="s0:DSAKeyValueType" />
+      <s:complexType name="DSAKeyValueType">
+        <s:sequence>
+          <s:sequence minOccurs="0">
+            <s:element name="P" type="s0:CryptoBinary" />
+            <s:element name="Q" type="s0:CryptoBinary" />
+          </s:sequence>
+          <s:element minOccurs="0" name="J" type="s0:CryptoBinary" />
+          <s:element minOccurs="0" name="G" type="s0:CryptoBinary" />
+          <s:element name="Y" type="s0:CryptoBinary" />
+          <s:sequence minOccurs="0">
+            <s:element name="Seed" type="s0:CryptoBinary" />
+            <s:element name="PgenCounter" type="s0:CryptoBinary" />
+          </s:sequence>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RSAKeyValue" type="s0:RSAKeyValueType" />
+      <s:complexType name="RSAKeyValueType">
+        <s:sequence>
+          <s:element name="Modulus" type="s0:CryptoBinary" />
+          <s:element name="Exponent" type="s0:CryptoBinary" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.xkms.org/schema/xkms-2001-01-20">
+      <s:import namespace="http://www.w3.org/2000/09/xmldsig#" />
+      <s:element name="Recover" type="s1:RecoverType" />
+      <s:element name="Revoke" type="s1:RevokeType" />
+      <s:element name="Locate" type="s1:LocateType" />
+      <s:element name="Register" type="s1:RegisterType" />
+      <s:element name="Validate" type="s1:ValidateType" />
+      <s:element name="RegisterResult" type="s1:RegisterResultType" />
+      <s:element name="RecoverResult" type="s1:RecoverResultType" />
+      <s:element name="RevokeResult" type="s1:RevokeResultType" />
+      <s:element name="LocateResult" type="s1:LocateResultType" />
+      <s:element name="ValidateResult" type="s1:ValidateResultType" />
+      <s:complexType name="LocateType">
+        <s:sequence>
+          <s:element minOccurs="0" name="TransactionID" type="s:string" />
+          <s:element name="Query" type="s1:KeyInfoType" />
+          <s:element minOccurs="0" name="Respond" type="s1:RespondType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LocateResultType">
+        <s:sequence>
+          <s:element minOccurs="0" name="TransactionID" type="s:string" />
+          <s:element name="Result" type="s1:ResultCodeType" />
+          <s:element minOccurs="0" name="Answer" type="s1:LocateResultAnswerType" />
+          <s:element minOccurs="0" name="ErrorInfo" type="s1:ErrorInfoType" />
+          <s:element minOccurs="0" maxOccurs="1" ref="s0:Signature" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:complexType name="ValidateType">
+        <s:sequence>
+          <s:element name="Query" type="s1:KeyBindingType" />
+          <s:element minOccurs="0" name="Respond" type="s1:RespondType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ValidateResultType">
+        <s:sequence>
+          <s:element name="Result" type="s1:ResultCodeType" />
+          <s:element minOccurs="0" name="Answer" type="s1:ValidateResultAnswerType" />
+          <s:element minOccurs="0" name="ErrorInfo" type="s1:ErrorInfoType" />
+          <s:element minOccurs="0" maxOccurs="1" ref="s0:Signature" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:complexType name="ValidateResultAnswerType">
+        <s:sequence>
+          <s:element name="KeyBinding" type="s1:KeyBindingType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RegisterType">
+        <s:sequence>
+          <s:element name="Prototype" type="s1:KeyBindingType" />
+          <s:element name="AuthInfo" type="s1:AuthInfoType" />
+          <s:element name="Respond" type="s1:RespondType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RegisterResultType">
+        <s:sequence>
+          <s:element name="Result" type="s1:ResultCodeType" />
+          <s:element minOccurs="0" name="Answer" type="s1:RegisterResultAnswerType" />
+          <s:element minOccurs="0" name="Private" type="s1:PrivateType" />
+          <s:element minOccurs="0" name="ErrorInfo" type="s1:ErrorInfoType" />
+          <s:element minOccurs="0" maxOccurs="1" ref="s0:Signature" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:complexType name="RegisterResultAnswerType">
+        <s:sequence>
+          <s:element name="KeyBinding" type="s1:KeyBindingType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RecoverType">
+        <s:sequence>
+          <s:element ref="s1:Register" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RecoverResultType">
+        <s:sequence>
+          <s:element ref="s1:RegisterResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RevokeType">
+        <s:sequence>
+          <s:element ref="s1:Register" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PrivateType">
+        <s:sequence>
+          <s:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax" />
+        </s:sequence>
+        <s:anyAttribute namespace="##any" processContents="lax" />
+      </s:complexType>
+      <s:complexType name="RevokeResultType">
+        <s:sequence>
+          <s:element ref="s1:RegisterResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ErrorInfoType">
+        <s:sequence>
+          <s:element name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" name="ErrorActor" type="s:string" />
+          <s:element minOccurs="0" name="ErrorDetail" type="s1:ErrorDetailType" />
+        </s:sequence>
+        <s:attribute name="errorCode" type="s:string" use="required" />
+      </s:complexType>
+      <s:complexType name="ErrorDetailType">
+        <s:sequence>
+          <s:any namespace="##other" processContents="strict" />
+        </s:sequence>
+        <s:anyAttribute namespace="##other" processContents="strict" />
+      </s:complexType>
+      <s:simpleType name="ErrorCodeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Client" />
+          <s:enumeration value="Server" />
+          <s:enumeration value="Client.MalformedKeyNamePassed" />
+          <s:enumeration value="Client.InvalidPassPhraseAuth" />
+          <s:enumeration value="*" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="KeyBindingType">
+        <s:sequence>
+          <s:element minOccurs="0" name="TransactionID" type="s:string" />
+          <s:element name="Status" type="s1:AssertionStatusType" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KeyID" type="s:string" />
+          <s:element minOccurs="0" ref="s0:KeyInfo" />
+          <s:element minOccurs="0" name="PassPhrase" type="s:string" />
+          <s:element minOccurs="0" name="ProcessInfo" type="s1:ProcessInfoType" />
+          <s:element minOccurs="0" name="ValidityInterval" type="s1:ValidityIntervalType" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KeyUsage" type="s1:KeyUsageType" />
+          <s:element minOccurs="0" name="Private" type="s1:PrivateType" />
+        </s:sequence>
+        <s:attribute name="Id" type="s:ID" use="optional" />
+      </s:complexType>
+      <s:complexType name="KeyInfoType">
+        <s:sequence>
+          <s:element ref="s0:KeyInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RespondType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" type="s1:RespondEnum" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="RespondEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="KeyName" />
+          <s:enumeration value="KeyValue" />
+          <s:enumeration value="X509Cert" />
+          <s:enumeration value="X509Chain" />
+          <s:enumeration value="X509CRL" />
+          <s:enumeration value="OCSP" />
+          <s:enumeration value="RetrievalMethod" />
+          <s:enumeration value="MgmtData" />
+          <s:enumeration value="PGPData" />
+          <s:enumeration value="PGPWeb" />
+          <s:enumeration value="SPKIData" />
+          <s:enumeration value="Multiple" />
+          <s:enumeration value="Private" />
+          <s:enumeration value="ValidityInterval" />
+          <s:enumeration value="KeyUsage" />
+          <s:enumeration value="Status" />
+          <s:enumeration value="SignedResult" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="LocateResultAnswerType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" ref="s0:KeyInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ResultCodeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="NoMatch" />
+          <s:enumeration value="NotFound" />
+          <s:enumeration value="Incomplete" />
+          <s:enumeration value="Failure" />
+          <s:enumeration value="Refused" />
+          <s:enumeration value="Pending" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="AssertionStatusType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Valid" />
+          <s:enumeration value="Invalid" />
+          <s:enumeration value="Indeterminate" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ProcessInfoType">
+        <s:sequence minOccurs="0" maxOccurs="unbounded">
+          <s:any namespace="##other" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ValidityIntervalType">
+        <s:sequence>
+          <s:element minOccurs="0" name="NotBefore" type="s:dateTime" />
+          <s:element minOccurs="0" name="NotAfter" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="KeyUsageType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Encryption" />
+          <s:enumeration value="Signature" />
+          <s:enumeration value="Exchange" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="AuthInfoType">
+        <s:choice>
+          <s:element name="AuthUserInfo" type="s1:AuthUserInfoType" />
+          <s:element name="AuthServerInfo" type="s1:AuthServerInfoType" />
+        </s:choice>
+      </s:complexType>
+      <s:complexType name="ProofOfPossessionType">
+        <s:sequence>
+          <s:element minOccurs="0" ref="s0:Signature" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="KeyBindingAuthType">
+        <s:sequence>
+          <s:element minOccurs="0" ref="s0:Signature" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AuthUserInfoType">
+        <s:sequence>
+          <s:element minOccurs="0" name="ProofOfPossession" type="s1:ProofOfPossessionType" />
+          <s:element minOccurs="0" name="KeyBindingAuth" type="s1:KeyBindingAuthType" />
+          <s:element minOccurs="0" name="PassPhraseAuth" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AuthServerInfoType">
+        <s:sequence>
+          <s:element minOccurs="0" name="KeyBindingAuth" type="s1:KeyBindingAuthType" />
+          <s:element minOccurs="0" name="PassPhraseAuth" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="Register">
+    <part name="body" element="s1:Register" />
+  </message>
+  <message name="RegisterResult">
+    <part name="body" element="s1:RegisterResult" />
+  </message>
+  <message name="Validate">
+    <part name="body" element="s1:Validate" />
+  </message>
+  <message name="ValidateResult">
+    <part name="body" element="s1:ValidateResult" />
+  </message>
+  <message name="Locate">
+    <part name="body" element="s1:Locate" />
+  </message>
+  <message name="LocateResult">
+    <part name="body" element="s1:LocateResult" />
+  </message>
+  <portType name="KeyServicePortType">
+    <operation name="Register">
+      <input message="s1:Register" />
+      <output message="s1:RegisterResult" />
+      <fault message="s1:RegisterResult" />
+    </operation>
+    <operation name="Validate">
+      <input message="s1:Validate" />
+      <output message="s1:ValidateResult" />
+      <fault message="s1:ValidateResult" />
+    </operation>
+    <operation name="Locate">
+      <input message="s1:Locate" />
+      <output message="s1:LocateResult" />
+      <fault message="s1:LocateResult" />
+    </operation>
+  </portType>
+  <binding name="KeyServiceSoapBinding" type="s1:KeyServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="Register">
+      <soap:operation soapAction="http://www.xkms.org/schema/xkms-2001-01-20#Register" style="document" />
+      <input>
+        <soap:body use="literal" parts="body" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="body" />
+      </output>
+    </operation>
+    <operation name="Validate">
+      <soap:operation soapAction="http://www.xkms.org/schema/xkms-2001-01-20#Validate" style="document" />
+      <input>
+        <soap:body use="literal" parts="body" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="body" />
+      </output>
+    </operation>
+    <operation name="Locate">
+      <soap:operation soapAction="http://www.xkms.org/schema/xkms-2001-01-20#Locate" style="document" />
+      <input>
+        <soap:body use="literal" parts="body" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="XMLKeyManagementService">
+    <documentation>Verisign's XML Key Management Service (XKMS)</documentation>
+    <port name="KeyServiceSoapPort" binding="s1:KeyServiceSoapBinding">
+      <soap:address location="http://xkms.verisign.com/xkms/Acceptor.nano" />
+    </port>
+  </service>
+  <service name="PilotXMLKeyManagementService">
+    <documentation>Verisign's Pilot XML Key Management Service (XKMS)</documentation>
+    <port name="KeyServiceSoapPort" binding="s1:KeyServiceSoapBinding">
+      <soap:address location="http://pilot-xkms.verisign.com/xkms/Acceptor.nano" />
+    </port>
+  </service>
+</definitions>

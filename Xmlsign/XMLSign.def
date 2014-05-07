@@ -1,0 +1,9 @@
+; XMLSign.def : Declares the module parameters.
+
+LIBRARY      "XMLSign.DLL"
+
+EXPORTS
+	DllCanUnloadNow      PRIVATE
+	DllGetClassObject    PRIVATE
+	DllRegisterServer    PRIVATE
+	DllUnregisterServer	 PRIVATE

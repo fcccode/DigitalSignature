@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE envelope [
+<!ENTITY dsig "http://www.w3.org/2000/09/xmldsig#">
+<!ENTITY c14n "http://www.w3.org/TR/2001/REC-xml-c14n-20010315">
+<!ENTITY xpath "http://www.w3.org/TR/1999/REC-xpath-19991116">
+<!ENTITY xslt "http://www.w3.org/TR/1999/REC-xslt-19991116">
+<!ATTLIST Notaries Id ID #IMPLIED>
+]>
+<!-- Preamble -->
+<Envelope xmlns="http://www.usps.gov/" xmlns:foo="http://www.usps.gov/foo" xml:lang="EN">
+  <DearSir>foo</DearSir>
+  <Body Id="SignonRq">bar</Body>
+  <Notaries xmlns="" Id="notaries">
+    <Notary name="Great, A. T."/>
+    <Notary name="Hun, A. T."/>
+  </Notaries>
+  <!-- Commentary -->
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="MySignature"><!--XML Signature produced by Infomosaic SecureXML, http://www.infomosaic.net--><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#notaries"><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>zZvcjoqrnJQHxLkH9WwNAjlYIMs=</DigestValue></Reference></SignedInfo><SignatureValue>0BQFCSbwKaDHgCrWKpKFJp7eJceiU+1sGNzgSfZCA1PUEcKan/j24hSwv/ZhOArlIBwskIvxK1gceTc1WqISca3KODsf+GBE3qFi0/XAq+QIqnjEjZiE83fNiVmuc41sACPOmGF46U6odkqoHrviuoek78uR3HYrbLVJ2Ppt7cw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>13TPMOBMuU3M0jUeb1N2RgC8r79AsFJa8pIVkPT+50kZGcszZXOExak6c+cMkPwOjCQ//7FC/MgAfzWukV+oq37tq9/Z5tMIB74PSNCkC3VtjHXGbneQ9Ar3oKYjuJowauWFrpIxDVLUQMzeXupvGHXzZG3BcD/8d0vAM8YK1U0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature>
+</Envelope>
+<!-- Postamble -->

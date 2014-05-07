@@ -1,0 +1,42 @@
+<html>
+	<body>
+		<applet code="infomosaic.securexml.applet.XMLSignApplet"
+			archive="securexmlapplet.jar"   
+			id="sigObj" 
+			name="sigObj" 
+			codebase="./"
+			scriptable="true" 
+			width    = "10"
+			height   = "10"
+			hspace   = "0"
+			vspace   = "0"
+			align    = "middle"
+			MAYSCRIPT VIEWASTEXT></applet>
+		<Script language="JavaScript">
+function x1()
+{
+	var certCount=0;
+	var certId = new String();
+	try
+	{
+		alert(document.sigObj.getSecureXMLPath());
+		document.sigObj.selectActiveCertificate();
+		document.sigObj.setEnvelopingFlag(2);
+		document.sigObj.setSignatureID(0, "MySignature");
+		var signedXML = document.sigObj.sign("http://www.infomosaic.net/signature.tmpl");
+		signedXMLDisplay.innerText = document.sigObj.readAll(signedXML);
+		alert("Signature completed. Last Error = " + document.sigObj.getLastError());
+	}
+	catch(Exception)
+	{
+		alert("Caught exception" + Exception.toString());
+	}
+	return true;
+}
+		</Script>
+		<form>
+		<input type="button" value="Click Me" onclick="return x1()">
+		</form>
+		<div id="signedXMLDisplay"></div>
+	</body>
+</html>

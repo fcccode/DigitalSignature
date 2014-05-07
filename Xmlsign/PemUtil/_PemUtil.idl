@@ -1,0 +1,40 @@
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\objsafe.idl";
+
+[
+	object,
+	uuid(12F2BF07-DC45-4684-A4BC-8A5F44984777),
+	dual,
+	helpstring("IPemObject Interface"),
+	pointer_default(unique)
+] 
+#line 14 "c:\\activex\\xmlsign\\pemutil\\pemobject.h"
+interface IPemObject : IDispatch {
+#line 16 "c:\\activex\\xmlsign\\pemutil\\pemobject.h"
+	[id(1),helpstring("method CovertToPFX")] HRESULT  CovertToPFX([in] BSTR pemFileName, [in] BSTR pemPassword, [out,retval] BSTR *pfxFilePath );
+};
+
+
+[ version(1.0), uuid(9C90C924-8646-4ED4-8EEF-5A6B94B827F9), helpstring("PemUtil 1.0 Type Library") ]
+library PemUtil
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(D8F3211F-302F-45DB-8187-CDF6B7677D90),
+		helpstring("PemObject Class")
+	] 
+#line 32 "c:\\activex\\xmlsign\\pemutil\\pemobject.h"
+	coclass CPemObject {
+		interface IPemObject;
+	};
+
+}
+
